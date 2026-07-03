@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Profesionales | MEBO International</title>
+  <meta name="description" content="Portal exclusivo para profesionales de la salud: documentación técnica, guías clínicas, bibliografía completa y recursos educativos.">
+  <meta name="keywords" content="MEBO, MEBT, quemaduras, regeneración, cicatrización, crema MEBO, América Latina">
+  <meta name="author" content="MEBO International">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mebo-international.com/">
+  <meta property="og:title" content="Para Profesionales | MEBO International">
+  <meta property="og:description" content="Portal exclusivo para profesionales de la salud: documentación técnica, guías clínicas, bibliografía completa y recursos educativos.">
+  <meta property="og:image" content="assets/favicon.svg">
+  <meta property="og:locale" content="es_LA">
+  <meta property="og:site_name" content="MEBO International">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Para Profesionales | MEBO International">
+  <meta name="twitter:description" content="Portal exclusivo para profesionales de la salud: documentación técnica, guías clínicas, bibliografía completa y recursos educativos.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <!-- Barra de progreso de lectura -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span class="logo-mark">M</span> MEBO</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-mebo.html">Sobre MEBO</a></li>
+        <li><a href="tecnologia.html">Tecnología MEBT</a></li>
+        <li><a href="producto.html">MEBO Crem</a></li>
+        <li><a href="evidencia.html">Evidencia Clínica</a></li>
+        <li><a href="profesionales.html" class="active">Para Profesionales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span class="nav-lang">ES</span>
+        <a href="contacto.html" class="btn btn--primary">Contactar</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content" role="main">
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span>Para Profesionales</div>
+      <h1>Portal de Profesionales de la Salud</h1>
+      <p>Recursos técnicos, clínicos y educativos exclusivos para médicos, enfermeros y profesionales sanitarios.</p>
+    </div>
+  </section>
+
+  <!-- HCP Gate -->
+  <section class="section">
+    <div class="container">
+      <div id="hcp-gate" class="hcp-gate fade-in">
+        <div class="gate-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h2>Acceso restringido</h2>
+        <p>Este contenido está dirigido exclusivamente a profesionales de la salud. Al continuar, usted confirma que es un profesional médico autorizado y acepta utilizar esta información con fines profesionales.</p>
+        <form id="hcp-gate-form">
+          <label class="gate-confirm">
+            <input type="checkbox" id="hcp-confirm" name="hcp-confirm">
+            <span>Confirmo que soy un profesional de la salud autorizado (médico, enfermero, farmacéutico u otro profesional sanitario) y deseo acceder a la información técnica y clínica de MEBO Crem.</span>
+          </label>
+          <button type="submit" id="hcp-enter" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;opacity:0.5;">Acceder al contenido profesional</button>
+        </form>
+        <p style="margin-top:var(--space-lg);font-size:0.82rem;color:var(--color-text-muted);">
+          Si no es profesional de la salud, visite nuestra sección de <a href="producto.html">información general del producto</a> o <a href="contacto.html">contáctenos</a> para más información.
+        </p>
+      </div>
+
+      <!-- Contenido HCP (oculto hasta confirmar) -->
+      <div id="hcp-content" class="hcp-content">
+        <div style="text-align:center;margin-bottom:var(--space-2xl);">
+          <span class="badge badge--success">Acceso autorizado · Sesión de profesional</span>
+        </div>
+
+        <!-- Recursos Técnicos -->
+        <div class="section-header">
+          <span class="eyebrow">Recursos Técnicos</span>
+          <h2>Documentación clínica completa</h2>
+          <p>Acceda a fichas técnicas, guías de uso, datos farmacológicos y materiales educativos especializados.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="resource-card fade-in">
+            <div class="resource-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <h4>Ficha técnica completa</h4>
+              <p>Composición, farmacología, farmacocinética, datos de seguridad preclínica y clínica.</p>
+            </div>
+          </div>
+          <div class="resource-card fade-in">
+            <div class="resource-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div>
+              <h4>Guía de prescripción</h4>
+              <p>Protocolos de dosificación, frecuencia de aplicación y manejo según tipo y severidad de lesión.</p>
+            </div>
+          </div>
+          <div class="resource-card fade-in">
+            <div class="resource-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            </div>
+            <div>
+              <h4>Bibliografía científica completa</h4>
+              <p>Base de datos con las 45+ publicaciones científicas, metaanálisis y revisiones sobre MEBT.</p>
+            </div>
+          </div>
+          <div class="resource-card fade-in">
+            <div class="resource-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <div>
+              <h4>Biblioteca de casos clínicos</h4>
+              <p>Casos clínicos documentados con imágenes, evolución y resultados del tratamiento con MEBO.</p>
+            </div>
+          </div>
+          <div class="resource-card fade-in">
+            <div class="resource-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <h4>Programa de educación continua</h4>
+              <p>Cursos en línea, webinars y certificaciones sobre la tecnología MEBT y medicina regenerativa.</p>
+            </div>
+          </div>
+          <div class="resource-card fade-in">
+            <div class="resource-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div>
+              <h4>Protocolos de seguridad</h4>
+              <p>Información de farmacovigilancia, reporte de eventos adversos y contraindicaciones detalladas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Información Técnica Detallada (dentro de HCP content) -->
+  <section class="section section--alt" id="hcp-content-section" style="display:none;">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Datos Farmacológicos</span>
+        <h2>Información técnica detallada</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card fade-in">
+          <h3>Farmacodinamia</h3>
+          <p>MEBO Crem ejerce su efecto terapéutico a través de múltiples mecanismos complementarios:</p>
+          <ul>
+            <li><strong>Efecto barrera:</strong> Forma una película semipermeable que protege la herida manteniendo la humedad fisiológica</li>
+            <li><strong>Actividad antiinflamatoria:</strong> Inhibición de mediadores proinflamatorios (PGE2, TNF-α, IL-6)</li>
+            <li><strong>Actividad antimicrobiana:</strong> Acción bacteriostática y bactericida de amplio espectro sin desarrollar resistencia</li>
+            <li><strong>Estimulación regenerativa:</strong> Promueve la liberación de factores de crecimiento endógenos (EGF, FGF)</li>
+          </ul>
+        </div>
+        <div class="card fade-in">
+          <h3>Farmacocinética</h3>
+          <p>Al ser un producto de uso tópico, la absorción sistémica es mínima:</p>
+          <ul>
+            <li>Los componentes activos actúan localmente en el lecho de la herida</li>
+            <li>La absorción sistémica es despreciable en piel intacta y baja en piel lesionada</li>
+            <li>No se han detectado concentraciones plasmáticas significativas en estudios toxicocinéticos</li>
+            <li>Eliminación principalmente por desbridamiento de la crema residual durante los cambios de apósito</li>
+          </ul>
+        </div>
+        <div class="card fade-in">
+          <h3>Seguridad preclínica</h3>
+          <ul>
+            <li><strong>Toxicidad aguda:</strong> DL50 > 5,000 mg/kg (vía oral en roedores) — clasificada como prácticamente no tóxica</li>
+            <li><strong>Irritación cutánea:</strong> No irritante en modelo de Draize</li>
+            <li><strong>Sensibilización:</strong> No sensibilizante en test de Magnusson-Kligman</li>
+            <li><strong>Mutagenicidad:</strong> Negativa en test de Ames y ensayo de micronúcleos</li>
+          </ul>
+        </div>
+        <div class="card fade-in">
+          <h3>Interacciones</h3>
+          <ul>
+            <li>No se han descrito interacciones medicamentosas significativas</li>
+            <li>Se recomienda no combinar con antisépticos tópicos agresivos (yodo, peróxido) que puedan alterar el ambiente húmedo</li>
+            <li>Se puede utilizar complementariamente con antibioterapia sistémica cuando esté indicada</li>
+            <li>Consultar la ficha técnica completa para información detallada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section fade-in">
+        <h2>¿Necesita información específica?</h2>
+        <p>Nuestro equipo de asesoría médica está disponible para responder consultas técnicas de profesionales de la salud.</p>
+        <a href="contacto.html" class="btn btn--light btn--lg">Contactar al equipo médico</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span class="logo-mark">M</span> MEBO</div>
+          <p style="font-size:0.9rem;color:rgba(255,255,255,0.7);max-width:320px;">Líder mundial en terapia de quemaduras y regeneración de piel. Ciencia al servicio de la vida desde 1987.</p>
+        </div>
+        <div>
+          <h5>Empresa</h5>
+          <ul>
+            <li><a href="sobre-mebo.html">Sobre MEBO</a></li>
+            <li><a href="tecnologia.html">Tecnología MEBT</a></li>
+            <li><a href="evidencia.html">Evidencia Clínica</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Productos</h5>
+          <ul>
+            <li><a href="producto.html">MEBO Crem</a></li>
+            <li><a href="profesionales.html">Para Profesionales</a></li>
+            <li><a href="tecnologia.html">Indicaciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Aviso Legal</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year">2025</span> MEBO International. Todos los derechos reservados.</span>
+        <span>Diseñado para profesionales y pacientes en América Latina</span>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      Este sitio tiene fines informativos. Consulte siempre a su profesional de la salud antes de utilizar cualquier producto médico.
+    </div>
+  </footer>
+
+  </main>
+
+<!-- Cookie Consent -->
+<div class="cookie-consent" id="cookie-consent">
+  <h4>Aviso sobre cookies</h4>
+  <p>Utilizamos cookies propias y de terceros para mejorar la experiencia de navegación, analizar el uso del sitio y personalizar el contenido. Puede aceptar todas las cookies o solo las esenciales. Más información en nuestra <a href="#">Política de Privacidad</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn--primary" data-cookie-action="all">Aceptar todas</button>
+    <button class="btn btn--outline" data-cookie-action="essential">Solo esenciales</button>
+  </div>
+</div>
+
+  <div class="compliance-banner">
+    <span>Consulte siempre a su profesional de la salud. La información de este sitio no sustituye el consejo médico.</span>
+    <button class="dismiss-btn" aria-label="Cerrar aviso">×</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
