@@ -261,6 +261,23 @@
     }
   }
 
+  /* ---------- Language Switcher (同期跳转) ---------- */
+  function initLanguageSwitcher() {
+    var switcher = document.querySelector('.lang-switcher');
+    if (!switcher) return;
+
+    switcher.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        // El href ya contiene la URL destino. Solo añadimos manejo adicional si hay data-page.
+        var targetPage = link.getAttribute('data-target-page');
+        if (targetPage) {
+          e.preventDefault();
+          window.location.href = targetPage;
+        }
+      });
+    });
+  }
+
   /* ---------- Inicialización ---------- */
   function init() {
     initMobileNav();
@@ -273,6 +290,7 @@
     initCookieConsent();
     initContactForm();
     initFooterYear();
+    initLanguageSwitcher();
   }
 
   if (document.readyState === 'loading') {
