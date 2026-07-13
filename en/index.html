@@ -7,7 +7,6 @@
   <title>MEBO International | Regeneration that heals. Science that protects.</title>
   <meta name="description" content="MEBO International — Global leader in burn therapy and skin regeneration. MEBT technology with over 35 years of clinical experience in 73+ countries.">
   <link rel="alternate" hreflang="es" href="../index.html">
-  <link rel="alternate" hreflang="pt" href="../pt/index.html">
   <link rel="alternate" hreflang="en" href="index.html">
   <link rel="alternate" hreflang="x-default" href="../index.html">
 
@@ -86,9 +85,7 @@
       </ul>
       <div class="nav-actions">
         <div class="lang-switcher">
-          <a href="../index.html">ES</a>
-          <a href="../pt/index.html">PT</a>
-          <a href="index.html" class="active">EN</a>
+          <a href="../index.html">ES</a>          <a href="index.html" class="active">EN</a>
         </div>
         <a href="contact.html" class="btn btn--primary">Contact us</a>
       </div>
@@ -138,6 +135,29 @@
       <div class="trust-item">
         <div class="trust-value">100M+</div>
         <div class="trust-label">Patients treated</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Demonstration -->
+  <section class="section section--alt video-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Product</span>
+        <h2>MEBO Ointment in Action</h2>
+        <p>Discover how MEBT technology facilitates the natural regeneration of skin in burn treatment.</p>
+      </div>
+      <div class="video-wrapper">
+        <div class="video-poster" id="video-poster-en" onclick="playHeroVideoEn()" role="button" tabindex="0" aria-label="Play demonstration video">
+          <div class="play-button">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="video-label">Watch demonstration</span>
+        </div>
+        <video id="hero-video-en" class="hero-video" preload="none" controls style="display:none;" aria-label="MEBO Ointment demonstration video">
+          <source src="../assets/videos/MEBO_Burn_Repair_Ointment.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
       </div>
     </div>
   </section>
@@ -361,5 +381,19 @@
 
   <script src="../js/main.js"></script>
   <script src="../js/analytics.js"></script>
+<script>
+function playHeroVideoEn() {
+  var poster = document.getElementById('video-poster-en');
+  var video = document.getElementById('hero-video-en');
+  if (poster && video) {
+    poster.style.display = 'none';
+    video.style.display = 'block';
+    video.play();
+  }
+}
+document.getElementById('video-poster-en') && document.getElementById('video-poster-en').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playHeroVideoEn(); }
+});
+</script>
 </body>
 </html>

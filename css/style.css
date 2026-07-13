@@ -1615,6 +1615,99 @@ body.no-js .fade-in {
 }
 
 /* ---------- Print Styles ---------- */
+
+
+/* ============================================
+   Video Section — MEBO Ointment Demonstration
+   ============================================ */
+
+.video-section {
+  padding: var(--space-3xl) 0;
+}
+
+.video-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  background: var(--color-surface);
+}
+
+.video-poster {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.video-poster:hover {
+  transform: scale(1.01);
+  box-shadow: 0 16px 48px rgba(11, 79, 108, 0.18);
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition), background var(--transition);
+  margin-bottom: var(--space-md);
+}
+
+.play-button svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent);
+  margin-left: 4px;
+}
+
+.video-poster:hover .play-button {
+  transform: scale(1.08);
+  background: #fff;
+}
+
+.video-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hero-video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    padding: var(--space-2xl) 0;
+  }
+  .play-button {
+    width: 64px;
+    height: 64px;
+  }
+  .play-button svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 @media print {
   .navbar,
   .nav-toggle,
