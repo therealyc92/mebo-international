@@ -2233,7 +2233,112 @@ body.no-js .fade-in {
   margin: 0;
 }
 
-/* Dressing Methods */
+.usage-step-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-sm);
+  display: block;
+}
+
+/* Dressing Flow Diagram */
+.dressing-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-sm);
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+
+.flow-step span {
+  font-size: 0.7rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.flow-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.flow-dot.wound {
+  background: #FDECEA;
+  color: var(--color-danger);
+  border: 2px solid var(--color-danger);
+}
+
+.flow-dot.cream {
+  background: var(--color-accent-pale);
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+
+.flow-dot.gauze {
+  background: #E8EDEE;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.flow-dot.pad {
+  background: #FFF3E0;
+  color: #D4860E;
+  border: 2px solid var(--color-warning);
+}
+
+.flow-dot.done {
+  background: #E8F5E9;
+  color: var(--color-success);
+  border: 2px solid var(--color-success);
+  font-size: 1rem;
+}
+
+.flow-arrow {
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .usage-step-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 var(--space-sm) 0 0;
+  }
+  .dressing-flow {
+    gap: 0.3rem;
+    padding: var(--space-sm);
+  }
+  .flow-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.65rem;
+  }
+  .flow-step span {
+    font-size: 0.65rem;
+  }
+  .flow-arrow {
+    font-size: 0.9rem;
+  }
+}
 .dressing-methods {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
