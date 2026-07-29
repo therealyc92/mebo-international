@@ -301,12 +301,17 @@ li { margin-bottom: 0.3rem; }
 .nav-logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: var(--radius-sm);
+  padding: 5px 12px;
 }
 
 .nav-logo .logo-img {
-  height: 38px;
+  height: 40px;
   width: auto;
   display: block;
+  max-width: none;
 }
 
 .nav-menu {
