@@ -78,51 +78,76 @@
     elements.forEach(function (el) { observer.observe(el); });
   }
 
-  /* ---------- Contador animado de estadísticas ---------- */
+  /* ---------- Contador animado de estadísticas (Odometer style) ---------- */
   function initCounters() {
-    var counters = document.querySelectorAll('[data-counter]');
-    if (!counters.length) return;
+    var odometers = document.querySelectorAll('.odometer');
+    if (!odometers.length) return;
 
-    var animateCounter = function (el) {
-      var target = parseInt(el.getAttribute('data-counter'), 10);
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var buildOdometer = function (el) {
+      var target = el.getAttribute('data-target');
       var suffix = el.getAttribute('data-suffix') || '';
-      var duration = 1800;
 
-      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reduceMotion) {
-        el.textContent = target.toLocaleString('es') + suffix;
+      // If target is not numeric, just show text
+      if (!target || !/^\d+$/.test(target)) {
+        el.textContent = (target || '') + suffix;
         return;
       }
 
-      var startMs = Date.now();
-      var tick = setInterval(function () {
-        var elapsed = Date.now() - startMs;
-        var progress = Math.min(elapsed / duration, 1);
-        var eased = 1 - Math.pow(1 - progress, 3);
-        var current = Math.floor(eased * target);
-        el.textContent = current.toLocaleString('es') + suffix;
-        if (progress >= 1) {
-          clearInterval(tick);
-          el.textContent = target.toLocaleString('es') + suffix;
+      var digits = target.split('');
+
+      digits.forEach(function (digit, i) {
+        var digitWrap = document.createElement('span');
+        digitWrap.className = 'odometer-digit';
+
+        var strip = document.createElement('span');
+        strip.className = 'odometer-digit-strip';
+
+        // Build 0-9 digit strip
+        for (var n = 0; n <= 9; n++) {
+          var num = document.createElement('span');
+          num.textContent = n;
+          strip.appendChild(num);
         }
-      }, 16);
+
+        digitWrap.appendChild(strip);
+        el.appendChild(digitWrap);
+
+        if (!reduceMotion) {
+          // Animate with staggered delay per digit
+          setTimeout(function () {
+            strip.style.transform = 'translateY(-' + (parseInt(digit, 10) * 100) + '%)';
+          }, 150 + i * 120);
+        } else {
+          // Show final value immediately for reduced motion
+          strip.style.transform = 'translateY(-' + (parseInt(digit, 10) * 100) + '%)';
+        }
+      });
+
+      if (suffix) {
+        var suffixEl = document.createElement('span');
+        suffixEl.className = 'odometer-suffix';
+        suffixEl.textContent = suffix;
+        el.appendChild(suffixEl);
+      }
     };
 
     if (!('IntersectionObserver' in window)) {
-      counters.forEach(animateCounter);
+      odometers.forEach(buildOdometer);
       return;
     }
 
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          animateCounter(entry.target);
+          buildOdometer(entry.target);
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
-    counters.forEach(function (el) { observer.observe(el); });
+    odometers.forEach(function (el) { observer.observe(el); });
   }
 
   /* ---------- Barras de gráfico animadas ---------- */

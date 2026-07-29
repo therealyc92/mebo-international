@@ -2669,3 +2669,41 @@ body.no-js .fade-in {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Odometer Number Animation ---------- */
+.odometer {
+  display: inline-flex;
+  align-items: flex-start;
+  height: 1em;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.odometer-digit {
+  display: inline-block;
+  position: relative;
+  width: 0.55em;
+  height: 100%;
+}
+
+.odometer-digit-strip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.odometer-digit-strip span {
+  display: block;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+}
+
+.odometer-suffix {
+  display: inline-block;
+  margin-left: 0.05em;
+}
