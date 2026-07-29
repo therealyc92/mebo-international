@@ -59,7 +59,7 @@
 
   /* Layout */
   --max-width: 1200px;
-  --nav-height: 72px;
+  --nav-height: 80px;
 }
 
 /* ---------- Reset ---------- */
@@ -301,14 +301,22 @@ li { margin-bottom: 0.3rem; }
 .nav-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   background: #fff;
-  border-radius: var(--radius-sm);
-  padding: 5px 12px;
+  border-radius: var(--radius-md);
+  padding: 8px 18px;
+  margin-right: 1.5rem;
+  box-shadow: 0 1px 3px rgba(11, 79, 108, 0.1);
+  transition: box-shadow var(--transition);
+}
+
+.nav-logo:hover {
+  box-shadow: 0 2px 6px rgba(11, 79, 108, 0.15);
 }
 
 .nav-logo .logo-img {
-  height: 40px;
+  height: 48px;
   width: auto;
   display: block;
   max-width: none;
@@ -1266,10 +1274,11 @@ textarea.form-control {
 .footer .footer-brand .logo-wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .footer .footer-brand .logo-img {
-  height: 26px;
+  height: 32px;
   width: auto;
   display: block;
   filter: brightness(0) saturate(0) invert(1);
