@@ -117,11 +117,11 @@
         if (!reduceMotion) {
           // Animate with staggered delay per digit
           setTimeout(function () {
-            strip.style.transform = 'translateY(-' + (parseInt(digit, 10) * 100) + '%)';
+            strip.style.transform = 'translateY(-' + (parseInt(digit, 10) * 10) + '%)';
           }, 150 + i * 120);
         } else {
           // Show final value immediately for reduced motion
-          strip.style.transform = 'translateY(-' + (parseInt(digit, 10) * 100) + '%)';
+          strip.style.transform = 'translateY(-' + (parseInt(digit, 10) * 10) + '%)';
         }
       });
 
