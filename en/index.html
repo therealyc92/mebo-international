@@ -96,23 +96,65 @@
 
   <main id="main-content" role="main">
 
-  <!-- Hero -->
+  <!-- Hero Carousel -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Regeneration that heals.<br>Science that protects.</h1>
-        <p class="hero-subtitle">
-          Starting with Burn Treatments, MEBO International leads the field of Wound Management with our regenerative medicine technology, benefiting 40 millions of patients across 70+ countries for over 40+ years.
-        </p>
-        <div class="hero-actions">
-          <a href="product.html" class="btn btn--accent btn--lg">Discover Our Products</a>
-          <a href="technology.html" class="btn btn--light btn--lg">Explore Our Technology</a>
+    <div class="hero-slides">
+      <!-- Slide 1: Regeneration -->
+      <div class="hero-slide active" data-slide="0">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Regeneration that heals.<br>Science that protects.</h1>
+            <p class="hero-subtitle">
+              Starting with Burn Treatments, MEBO International leads the field of Wound Management with our regenerative medicine technology, benefiting 40 millions of patients across 70+ countries for over 40+ years.
+            </p>
+            <div class="hero-actions">
+              <a href="product.html" class="btn btn--accent btn--lg">Discover Our Products</a>
+              <a href="technology.html" class="btn btn--light btn--lg">Explore Our Technology</a>
+            </div>
+          </div>
+          <div class="hero-graphic" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+          </div>
         </div>
       </div>
-      <div class="hero-graphic" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
+
+      <!-- Slide 2: APEC 2023 -->
+      <div class="hero-slide" data-slide="1">
+        <div class="container">
+          <div class="hero-content">
+            <div class="apec-badge">
+              <svg viewBox="0 0 80 60" fill="none" aria-hidden="true">
+                <path d="M20 55 L40 5 L60 55" stroke="#5eead4" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M28 40 L52 40" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+                <text x="62" y="18" fill="#5eead4" font-family="Poppins" font-weight="700" font-size="16">2023</text>
+              </svg>
+              <div class="apec-badge-text">
+                <div class="apec-badge-year">APEC</div>
+                <div class="apec-badge-sub">United States</div>
+              </div>
+            </div>
+            <h1>APEC 2023<br><span class="apec-highlight">Enterprise Partner</span></h1>
+            <p class="hero-subtitle">
+              MEBO International is proud to serve as an official enterprise partner of APEC 2023, driving global collaboration in regenerative medicine and healthcare innovation.
+            </p>
+            <div class="hero-actions">
+              <a href="news.html" class="btn btn--accent btn--lg">Learn more about our APEC Journey</a>
+              <a href="about.html" class="btn btn--light btn--lg">Our Story</a>
+            </div>
+          </div>
+          <div class="hero-graphic" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Carousel dots -->
+    <div class="hero-dots">
+      <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
     </div>
   </section>
 

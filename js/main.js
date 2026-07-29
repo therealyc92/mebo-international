@@ -5,6 +5,53 @@
 (function () {
   'use strict';
 
+  /* ---------- Hero Carousel ---------- */
+  function initHeroCarousel() {
+    var slides = document.querySelectorAll('.hero-slide');
+    var dots = document.querySelectorAll('.hero-dot');
+    if (!slides.length || !dots.length) return;
+
+    var current = 0;
+    var total = slides.length;
+    var interval = 6000;
+    var timer = null;
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = index % total;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function next() { goTo(current + 1); }
+
+    function start() {
+      timer = setInterval(next, interval);
+    }
+
+    function stop() {
+      if (timer) { clearInterval(timer); timer = null; }
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        stop();
+        goTo(i);
+        start();
+      });
+    });
+
+    // Pause on hover
+    var hero = document.querySelector('.hero');
+    if (hero) {
+      hero.addEventListener('mouseenter', stop);
+      hero.addEventListener('mouseleave', start);
+    }
+
+    start();
+  }
+
   /* ---------- Navegación Móvil ---------- */
   function initMobileNav() {
     var toggle = document.querySelector('.nav-toggle');
@@ -305,6 +352,7 @@
 
   /* ---------- Inicialización ---------- */
   function init() {
+    initHeroCarousel();
     initMobileNav();
     initNavScroll();
     initScrollAnimations();
