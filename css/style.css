@@ -1259,18 +1259,15 @@ textarea.form-control {
 }
 
 .footer .footer-brand .logo-wrap {
-  background: #fff;
-  border-radius: var(--radius-sm);
-  padding: 5px 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .footer .footer-brand .logo-img {
-  height: 28px;
+  height: 26px;
   width: auto;
   display: block;
+  filter: brightness(0) saturate(0) invert(1);
 }
 
 .footer h5 {
