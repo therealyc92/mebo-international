@@ -562,6 +562,11 @@
         </div>
       </article>
       </div>
+      <div class="story-pager" id="story-pager">
+        <button type="button" class="pager-btn" id="pager-prev" aria-label="Previous page">&#8249;</button>
+        <span class="pager-label" id="pager-label"></span>
+        <button type="button" class="pager-btn" id="pager-next" aria-label="Next page">&#8250;</button>
+      </div>
       <noscript><p style="text-align:center;color:var(--color-text-muted)">Enable JavaScript to filter stories by topic.</p></noscript>
     </div>
   </section>
@@ -655,6 +660,7 @@
 
 
 
+
   </main>
 
   <footer class="footer">
@@ -708,19 +714,44 @@
 
   <script>
   (function(){
+    var PAGE_SIZE = 5;
     var btns = document.querySelectorAll('.news-filter button');
-    var items = document.querySelectorAll('.story-item');
-    function apply(cat){
-      items.forEach(function(it){ it.style.display = (cat==='all' || it.dataset.cat===cat) ? '' : 'none'; });
+    var items = Array.prototype.slice.call(document.querySelectorAll('.story-item'));
+    var pager = document.getElementById('story-pager');
+    var label = document.getElementById('pager-label');
+    var prev = document.getElementById('pager-prev');
+    var next = document.getElementById('pager-next');
+    var cat = 'all', page = 1;
+    var ofWord = 'of';
+    function apply(){
+      var visible = items.filter(function(it){ return cat==='all' || it.dataset.cat===cat; });
+      var pages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+      if (page > pages) page = pages;
+      items.forEach(function(it){ it.style.display = 'none'; });
+      visible.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE).forEach(function(it){ it.style.display = ''; });
       btns.forEach(function(b){ b.classList.toggle('active', b.dataset.cat===cat); });
+      if (visible.length > PAGE_SIZE) {
+        pager.style.display = 'flex';
+        label.textContent = page + ' ' + ofWord + ' ' + pages;
+        prev.disabled = (page === 1);
+        next.disabled = (page === pages);
+      } else {
+        pager.style.display = 'none';
+      }
+    }
+    function scrollTop(){
+      document.getElementById('stories').scrollIntoView({behavior:'smooth'});
     }
     btns.forEach(function(b){ b.addEventListener('click', function(){
-      apply(b.dataset.cat);
-      history.replaceState(null,'','#'+b.dataset.cat);
-      document.getElementById('stories').scrollIntoView({behavior:'smooth'});
+      cat = b.dataset.cat; page = 1; apply();
+      history.replaceState(null,'','#'+cat);
+      scrollTop();
     });});
+    prev.addEventListener('click', function(){ if (page > 1) { page--; apply(); scrollTop(); } });
+    next.addEventListener('click', function(){ page++; apply(); scrollTop(); });
     var h = location.hash.replace('#','');
-    if (['all','med','apec','gp','csr'].indexOf(h) > -1) apply(h);
+    if (['all','med','apec','gp','csr'].indexOf(h) > -1) cat = h;
+    apply();
   })();
   </script>
   <script src="../js/main.js"></script>
