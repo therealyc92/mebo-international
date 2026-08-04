@@ -2973,6 +2973,7 @@ body.no-js .fade-in {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center 25%;
   display: block;
   border-radius: 12px;
   transition: transform 0.35s ease;
@@ -3059,10 +3060,12 @@ body.no-js .fade-in {
 .article-figure { max-width: 960px; margin: 0 auto var(--space-xl); }
 .article-hero-img {
   width: 100%;
-  aspect-ratio: 21 / 9;
-  object-fit: cover;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
   border-radius: 16px;
   display: block;
+  background: var(--color-bg-alt);
 }
 .article-figure .story-thumb--ph { aspect-ratio: 21 / 9; border-radius: 16px; }
 .article-figure .story-thumb--ph img { width: 34%; }
@@ -3283,4 +3286,13 @@ body.no-js .fade-in {
   .tl-item:nth-child(odd) .tl-dot, .tl-item:nth-child(even) .tl-dot { left: 4px; right: auto; }
   .tl-item:nth-child(odd) .tl-year { text-align: left; }
   .tl-year { font-size: 1.45rem; }
+}
+
+/* Inline images inside article body: natural aspect, never cropped */
+.article-inline-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin: 0.4rem 0 1.6rem;
 }
