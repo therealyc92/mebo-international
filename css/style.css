@@ -3261,7 +3261,7 @@ body.no-js .fade-in {
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 .tl-card:hover { box-shadow: 0 12px 32px rgba(11,79,108,0.12); transform: translateY(-3px); }
-.tl-img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
+.tl-img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 25%; display: block; }
 .tl-body { padding: var(--space-lg); }
 .tl-body h4 { margin: 0 0 0.5rem; font-size: 1.08rem; }
 .tl-body p { margin: 0 0 0.4rem; font-size: 0.93rem; color: var(--color-text-light); line-height: 1.7; }
