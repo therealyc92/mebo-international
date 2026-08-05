@@ -3384,3 +3384,84 @@ body.no-js .fade-in {
 @media (max-width: 520px) {
   .gp-bars { grid-template-columns: 1fr; }
 }
+
+/* ---------- MEBO Journal showcase ---------- */
+.jn-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--space-2xl);
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+.jn-lead { color: var(--color-text-light); line-height: 1.75; font-size: 0.98rem; }
+.jn-stats { display: flex; gap: var(--space-lg); margin: var(--space-lg) 0; }
+.jn-stat strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  line-height: 1.1;
+}
+.jn-stat span { font-size: 0.8rem; color: var(--color-text-muted); }
+.jn-themes { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: var(--space-lg); }
+.jn-themes span {
+  background: var(--color-accent-pale);
+  color: var(--color-primary-dark);
+  border-radius: 999px;
+  padding: 0.32rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.jn-shelf { display: flex; flex-direction: column; gap: var(--space-sm); }
+.jn-row { display: grid; grid-template-columns: 64px 1fr; gap: var(--space-md); align-items: center; }
+.jn-year {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-primary);
+}
+.jn-issues { display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--space-sm); }
+.jn-issue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 3 / 4;
+  border-radius: 8px;
+  padding: 0.55rem 0.6rem;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(11,79,108,0.15);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.jn-issue:hover { transform: translateY(-4px); box-shadow: 0 10px 22px rgba(11,79,108,0.25); }
+.jn-issue-vol { font-size: 0.62rem; letter-spacing: 0.06em; opacity: 0.85; font-weight: 500; }
+.jn-issue-mon {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  align-self: center;
+  text-align: center;
+}
+.jn-issue-year { font-size: 0.62rem; opacity: 0.75; align-self: flex-end; }
+.jn-row:nth-child(odd) .jn-issues .jn-issue:nth-child(4),
+.jn-row:nth-child(odd) .jn-issues .jn-issue:nth-child(5),
+.jn-row:nth-child(odd) .jn-issues .jn-issue:nth-child(6) { visibility: visible; }
+.jn-note {
+  text-align: center;
+  margin: var(--space-xl) auto 0;
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+}
+.jn-note a { color: var(--color-primary-dark); font-weight: 600; }
+.jn-note a:hover { color: var(--color-accent); }
+@media (max-width: 980px) {
+  .jn-layout { grid-template-columns: 1fr; }
+  .jn-issues { grid-template-columns: repeat(6, 1fr); }
+}
+@media (max-width: 640px) {
+  .jn-row { grid-template-columns: 1fr; gap: 0.4rem; }
+  .jn-issues { grid-template-columns: repeat(3, 1fr); }
+}
