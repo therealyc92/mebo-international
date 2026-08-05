@@ -3297,112 +3297,90 @@ body.no-js .fade-in {
   margin: 0.4rem 0 1.6rem;
 }
 
-/* ---------- Global Presence map & cards ---------- */
-.gp-hq-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-lg);
-  max-width: 880px;
-  margin: 0 auto var(--space-xl);
-}
-.gp-hq-card {
-  display: block;
-  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
-  color: #fff;
-  border-radius: var(--radius-md);
-  padding: var(--space-lg) var(--space-xl);
-  text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.gp-hq-card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(11,79,108,0.25); }
-.gp-hq-card h3 { color: #fff; margin: 0.35rem 0 0.3rem; font-size: 1.15rem; }
-.gp-hq-card p { color: rgba(255,255,255,0.82); font-size: 0.9rem; margin: 0; }
-.gp-hq-tag {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-accent-light);
-}
+/* ---------- Global Presence map & country bars ---------- */
 .gp-mapwrap {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-lg);
-  max-width: 1060px;
+  max-width: 980px;
   margin: 0 auto var(--space-xl);
 }
 .gp-map { width: 100%; height: auto; display: block; }
-.gp-land path { fill: #DCE5E9; }
-.gp-ndl { fill: none; stroke: #B9C8CE; stroke-width: 1; stroke-dasharray: 3 3; }
-.gp-dot--mkt { fill: #A8BCC4; }
-.gp-dot--br { fill: var(--color-accent); stroke: #fff; stroke-width: 1.4; }
-.gp-dot--cn { fill: var(--color-primary-dark); stroke: #fff; stroke-width: 1.4; }
-.gp-pin-shape { fill: var(--color-primary-dark); stroke: #fff; stroke-width: 1.2; }
-.gp-pin-hole { fill: #fff; }
+.gp-land path { fill: #DDE7EA; }
+.gp-ndl { fill: none; stroke: #C3D2D8; stroke-width: 1; stroke-dasharray: 3 3; }
+.gp-dot--mkt { fill: #B4C7CE; }
+.gp-dot--br { fill: var(--color-accent); stroke: #fff; stroke-width: 1.6; }
+.gp-dot--cn { fill: var(--color-primary-dark); stroke: #fff; stroke-width: 1.6; }
+.gp-dot--hq { fill: var(--color-accent); stroke: #fff; stroke-width: 2.4; }
 .gp-pulse {
   fill: var(--color-accent);
-  opacity: 0.35;
+  opacity: 0.3;
   animation: gp-pulse 2.4s ease-out infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 @keyframes gp-pulse {
-  0% { transform: scale(0.4); opacity: 0.5; }
-  70% { transform: scale(1.6); opacity: 0; }
-  100% { transform: scale(1.6); opacity: 0; }
+  0% { transform: scale(0.4); opacity: 0.45; }
+  70% { transform: scale(1.7); opacity: 0; }
+  100% { transform: scale(1.7); opacity: 0; }
 }
-.gp-label {
-  font-family: var(--font-body);
-  font-size: 12.5px;
-  fill: var(--color-text);
-  font-weight: 500;
-}
-.gp-label--hq { font-weight: 700; fill: var(--color-primary-dark); font-size: 13.5px; }
-.gp-legend {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-lg);
-  padding-top: var(--space-md);
-  border-top: 1px solid var(--color-border);
-  margin-top: var(--space-md);
-  font-size: 0.85rem;
-  color: var(--color-text-light);
-}
-.gp-legend span { display: inline-flex; align-items: center; gap: 0.45rem; }
-.gp-lg { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
-.gp-lg--hq { background: var(--color-primary-dark); border-radius: 2px; transform: rotate(45deg); }
-.gp-lg--br { background: var(--color-accent); }
-.gp-lg--cn { background: var(--color-primary-dark); }
-.gp-lg--mkt { background: #A8BCC4; }
-.gp-grid {
+.gp-bars {
   display: grid;
-  grid-template-columns: 1fr 1.3fr 1fr;
-  gap: var(--space-lg);
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  max-width: 1060px;
+  margin: 0 auto var(--space-lg);
+}
+.gp-bar {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  box-shadow: 0 4px 14px rgba(11,79,108,0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.gp-bar:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(11,79,108,0.18); }
+.gp-bar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gp-bar-ol {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,79,108,0.18) 30%, rgba(11,79,108,0.72) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-md);
+  color: #fff;
+}
+.gp-bar-ol strong {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+.gp-bar-ol span { font-size: 0.78rem; color: rgba(255,255,255,0.85); line-height: 1.45; }
+.gp-bar--hq { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+.gp-mfg {
   max-width: 1060px;
   margin: 0 auto;
-}
-.gp-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--space-xl);
+  padding: var(--space-md) var(--space-xl);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 2rem;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
 }
-.gp-card--hl { border-top: 3px solid var(--color-accent); }
-.gp-card h4 { margin: 0 0 var(--space-md); color: var(--color-primary-dark); }
-.gp-card ul { margin: 0; padding-left: 1.1rem; color: var(--color-text-light); font-size: 0.92rem; line-height: 1.9; }
-.gp-chips { margin: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
-.gp-chips span {
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  padding: 0.32rem 0.85rem;
-  font-size: 0.84rem;
-  color: var(--color-text);
+.gp-mfg strong { color: var(--color-primary-dark); font-family: var(--font-heading); margin-right: 0.25rem; }
+@media (max-width: 980px) {
+  .gp-bars { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 900px) {
-  .gp-hq-grid { grid-template-columns: 1fr; }
-  .gp-grid { grid-template-columns: 1fr; }
-  .gp-label { font-size: 11px; }
+@media (max-width: 520px) {
+  .gp-bars { grid-template-columns: 1fr; }
 }
