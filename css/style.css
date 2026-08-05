@@ -3463,3 +3463,26 @@ body.no-js .fade-in {
   .jn-row { grid-template-columns: 1fr; gap: 0.4rem; }
   .jn-issues { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* ---------- APEC slide: Golden Gate scene ---------- */
+.gg-scene { width: 100%; max-width: 600px; height: auto; display: block; }
+.gg-cloud--a { animation: gg-drift-a 30s ease-in-out infinite alternate; }
+.gg-cloud--b { animation: gg-drift-b 38s ease-in-out infinite alternate; }
+.gg-water path { animation: gg-flow 7s ease-in-out infinite alternate; }
+.gg-water path:nth-child(2) { animation-duration: 9s; animation-delay: -2s; }
+.gg-water path:nth-child(3) { animation-duration: 11s; animation-delay: -4s; }
+@keyframes gg-drift-a {
+  from { transform: translateX(-14px); }
+  to { transform: translateX(26px); }
+}
+@keyframes gg-drift-b {
+  from { transform: translateX(18px); }
+  to { transform: translateX(-24px); }
+}
+@keyframes gg-flow {
+  from { transform: translateX(-10px); }
+  to { transform: translateX(12px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gg-cloud--a, .gg-cloud--b, .gg-water path { animation: none; }
+}
