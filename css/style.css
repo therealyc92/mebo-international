@@ -3486,3 +3486,167 @@ body.no-js .fade-in {
 @media (prefers-reduced-motion: reduce) {
   .gg-cloud--a, .gg-cloud--b, .gg-water path { animation: none; }
 }
+
+/* ---------- Product page (MEBO Wound Ointment) ---------- */
+.pw-chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: var(--space-md); }
+.pw-chips span {
+  background: var(--color-accent-pale);
+  color: var(--color-primary-dark);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.pw-patents { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+.pw-patent {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md) var(--space-lg);
+}
+.pw-patent-no { font-family: var(--font-heading); font-weight: 700; color: var(--color-primary-dark); font-size: 0.95rem; }
+.pw-patent-name { font-size: 0.8rem; color: var(--color-text-light); margin-top: 0.25rem; line-height: 1.5; }
+.pw-comp { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-2xl); align-items: start; max-width: 1020px; margin: 0 auto; }
+.pw-comp-base {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  text-align: center;
+}
+.pw-comp-base img { width: 100%; max-width: 340px; border-radius: var(--radius-sm); margin-bottom: var(--space-md); }
+.pw-comp-base h3 { font-size: 1.05rem; margin-bottom: var(--space-sm); }
+.pw-comp-base p { font-size: 0.9rem; color: var(--color-text-light); margin: 0; }
+.pw-ing {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 1.4fr;
+  gap: var(--space-md);
+  align-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+.pw-ing-src strong { display: block; font-family: var(--font-heading); font-size: 0.95rem; color: var(--color-primary-dark); }
+.pw-ing-src span { font-size: 0.78rem; color: var(--color-text-muted); }
+.pw-ing-act {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  text-align: center;
+}
+.pw-ing-props { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.pw-ing-props em {
+  font-style: normal;
+  font-size: 0.72rem;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+.pw-indic .card h3 { margin-bottom: var(--space-sm); }
+.pw-moa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  max-width: 900px;
+  margin: 0 auto var(--space-2xl);
+}
+.pw-moa-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md) var(--space-lg);
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+.pw-moa-item:last-child { grid-column: 1 / -1; }
+.pw-moa-no {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-accent);
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+.pw-video { text-align: center; }
+.pw-video h3 { font-size: 1.5rem; margin-bottom: var(--space-sm); }
+.pw-video p { color: var(--color-text-light); max-width: 560px; margin: 0 auto var(--space-lg); }
+.pw-dc { text-align: center; }
+.pw-dc-step {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--color-accent-pale);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto var(--space-md);
+}
+.pw-dc-for { color: var(--color-text-light); font-size: 0.9rem; margin-bottom: var(--space-sm); }
+.pw-dc-freq {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  color: var(--color-primary-dark); font-weight: 600; font-size: 0.88rem; margin: 0;
+}
+.pw-pl {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-md);
+}
+.pw-pl-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.pw-pl-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(11,79,108,0.15); }
+.pw-pl-img { position: relative; aspect-ratio: 4/3; background: var(--color-bg-alt); }
+.pw-pl-img > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pw-pl-ph {
+  width: 100%; height: 100%;
+  background: linear-gradient(150deg, var(--color-primary-dark), var(--color-accent));
+  display: flex; align-items: center; justify-content: center;
+}
+.pw-pl-flag {
+  position: absolute; top: 10px; left: 10px;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+.pw-pl-body { padding: var(--space-md) var(--space-lg); }
+.pw-pl-body h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+.pw-pl-body ul { margin: 0; padding-left: 1.1rem; color: var(--color-text-light); font-size: 0.83rem; line-height: 1.7; }
+.pw-refs {
+  columns: 2;
+  column-gap: var(--space-2xl);
+  max-width: 1020px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  padding-left: 1.2rem;
+}
+.pw-refs li { margin-bottom: 0.5rem; break-inside: avoid; }
+@media (max-width: 980px) {
+  .pw-comp { grid-template-columns: 1fr; }
+  .pw-pl { grid-template-columns: repeat(2, 1fr); }
+  .pw-refs { columns: 1; }
+}
+@media (max-width: 640px) {
+  .pw-moa { grid-template-columns: 1fr; }
+  .pw-patents { grid-template-columns: 1fr; }
+  .pw-ing { grid-template-columns: 1fr; text-align: left; }
+  .pw-ing-act { text-align: left; }
+  .pw-pl { grid-template-columns: 1fr; }
+}
