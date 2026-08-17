@@ -37,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260817c">
+  <link rel="stylesheet" href="css/style.css?v=20260817d">
 </head>
 <body>
 
@@ -149,6 +149,98 @@
   </script>
     </section>
 
+  <!-- Acute vs Chronic Wounds -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Las Heridas que Tratamos</span>
+        <h2>Heridas agudas vs. cr&oacute;nicas</h2>
+        <p>No todas las heridas cicatrizan igual. Entender la diferencia explica por qu&eacute; el apoyo regenerativo importa.</p>
+      </div>
+      <div class="w-cards">
+        <div class="w-card w-card--ac fade-in">
+          <div class="w-card-top"><h3>Heridas agudas</h3><span class="w-tag w-tag--ac">Cicatrizan a tiempo</span></div>
+          <p>Causadas por cirug&iacute;a, trauma o quemaduras, las heridas agudas siguen una secuencia ordenada de reparaci&oacute;n y suelen cerrar en <strong>2&ndash;4 semanas</strong>.</p>
+        </div>
+        <div class="w-card w-card--ch fade-in">
+          <div class="w-card-top"><h3>Heridas cr&oacute;nicas</h3><span class="w-tag w-tag--ch">Atrapadas en la inflamaci&oacute;n</span></div>
+          <p>Las heridas cr&oacute;nicas se estancan en un estado inflamatorio prolongado y no logran cerrar por <strong>m&aacute;s de 4 semanas</strong> — a veces meses o a&ntilde;os. Las m&aacute;s comunes: pie diab&eacute;tico, &uacute;lceras venosas y &uacute;lceras por presi&oacute;n.</p>
+        </div>
+      </div>
+      <div class="w-tl fade-in" id="wound-tl">
+        <h3>Dos recorridos muy distintos</h3>
+        <div class="wtl-weekwrap"><span class="wtl-week">0</span> semanas</div>
+        <div class="wtl-row">
+          <div class="wtl-name">Herida aguda</div>
+          <div class="wtl-track">
+            <div class="wtl-bar wtl-bar--ac"><i></i></div>
+            <div class="wtl-mark wtl-mark--ac"><em>Cerrada</em></div>
+          </div>
+          <div class="wtl-ph wtl-ph--ac"><span>Hemostasia</span><span>Inflamaci&oacute;n</span><span>Proliferaci&oacute;n</span><span>Remodelaci&oacute;n</span></div>
+        </div>
+        <div class="wtl-row">
+          <div class="wtl-name">Herida cr&oacute;nica</div>
+          <div class="wtl-track">
+            <div class="wtl-bar wtl-bar--ch"><i></i></div>
+            <div class="wtl-mark wtl-mark--ch"><em>Sigue abierta</em></div>
+          </div>
+          <div class="wtl-ph wtl-ph--ch"><span>Inflamaci&oacute;n</span><span>Inflamaci&oacute;n prolongada</span><span>Sigue abierta</span></div>
+        </div>
+        <input type="range" class="wtl-range" min="0" max="24" value="0" step="1" aria-label="Arrastre por las semanas tras la lesi&oacute;n">
+        <div class="wtl-hint">Arrastre por las semanas tras la lesi&oacute;n</div>
+      </div>
+      <div class="w-stats"><div class="w-stat fade-in"><strong>11 M</strong><span>quemaduras requieren atenci&oacute;n m&eacute;dica cada a&ntilde;o en el mundo (OMS)</span></div><div class="w-stat fade-in"><strong>1&ndash;2 %</strong><span>de las personas en pa&iacute;ses desarrollados vive con una herida cr&oacute;nica</span></div><div class="w-stat fade-in"><strong>15&ndash;25 %</strong><span>riesgo de &uacute;lcera de pie a lo largo de la vida en personas con diabetes</span></div><div class="w-stat fade-in"><strong>~85 %</strong><span>de las amputaciones por diabetes son precedidas por una &uacute;lcera de pie</span></div></div>
+    </div>
+  </section>
+
+
+  <script>
+  (function(){
+    var box = document.getElementById('wound-tl');
+    if (!box) return;
+    var range = box.querySelector('.wtl-range');
+    var barAc = box.querySelector('.wtl-bar--ac i');
+    var barCh = box.querySelector('.wtl-bar--ch i');
+    var markAc = box.querySelector('.wtl-mark--ac');
+    var markCh = box.querySelector('.wtl-mark--ch');
+    var wk = box.querySelector('.wtl-week');
+    var phAc = box.querySelectorAll('.wtl-ph--ac span');
+    var phCh = box.querySelectorAll('.wtl-ph--ch span');
+    function phase(list, idx){ list.forEach(function(s, i){ s.classList.toggle('on', i <= idx); }); }
+    function set(w){
+      wk.textContent = w;
+      // acute: completes by week 4 of 24
+      var ac = Math.min(100, w / 4 * 100);
+      barAc.style.width = ac + '%';
+      markAc.style.left = ac + '%';
+      markAc.classList.toggle('done', ac >= 100);
+      // chronic: stalls at ~32% by week 3, barely moves after
+      var ch = Math.min(38, w / 3 * 32 + Math.max(0, w - 3) * 0.3);
+      barCh.style.width = ch + '%';
+      markCh.style.left = ch + '%';
+      markCh.classList.toggle('stuck', w > 4);
+      phase(phAc, w < 1 ? 0 : w < 2 ? 1 : w < 4 ? 2 : 3);
+      phase(phCh, w < 3 ? 0 : w <= 8 ? 1 : 2);
+    }
+    range.addEventListener('input', function(){ set(+this.value); });
+    var played = false;
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting && !played){
+          played = true;
+          var w = 0;
+          var t = setInterval(function(){
+            w += 1;
+            if (w > 14){ clearInterval(t); }
+            range.value = w; set(w);
+          }, 90);
+        }
+      });
+    }, {threshold: 0.35});
+    io.observe(box);
+    set(0);
+  })();
+  </script>
   <!-- Cuatro Pilares -->
   <section class="section section--alt">
     <div class="container">

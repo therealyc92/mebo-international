@@ -3938,3 +3938,124 @@ body.no-js .fade-in {
   padding: var(--space-md) var(--space-lg);
 }
 .paradigm-strip p { font-size: 0.88rem; color: var(--color-primary-dark); margin: 0; text-align: center; }
+
+/* ---------- Acute vs Chronic wounds ---------- */
+.w-cards { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); max-width: 980px; margin: 0 auto var(--space-xl); }
+.w-card {
+  border-radius: var(--radius-md);
+  padding: var(--space-xl) var(--space-2xl);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.w-card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(11,79,108,0.12); }
+.w-card--ac { border-top: 3px solid var(--color-accent); }
+.w-card--ch { border-top: 3px solid #C46A5A; }
+.w-card-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); margin-bottom: var(--space-sm); flex-wrap: wrap; }
+.w-card-top h3 { margin: 0; font-size: 1.2rem; }
+.w-tag { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.28rem 0.7rem; border-radius: 999px; white-space: nowrap; }
+.w-tag--ac { background: var(--color-accent-pale); color: var(--color-primary-dark); }
+.w-tag--ch { background: #F7E4E0; color: #A34A3C; }
+.w-card p { color: var(--color-text-light); font-size: 0.95rem; margin: 0; line-height: 1.7; }
+
+.w-tl {
+  max-width: 980px;
+  margin: 0 auto var(--space-xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-2xl) var(--space-lg);
+  box-shadow: 0 8px 28px rgba(11,79,108,0.07);
+}
+.w-tl h3 { font-size: 1.15rem; text-align: center; margin-bottom: 0.3rem; }
+.wtl-weekwrap { text-align: center; font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: var(--space-lg); }
+.wtl-week {
+  display: inline-block;
+  min-width: 2.2em;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+}
+.wtl-row { display: grid; grid-template-columns: 120px 1fr; gap: var(--space-md); align-items: center; margin-bottom: 0.4rem; }
+.wtl-name { font-size: 0.85rem; font-weight: 600; color: var(--color-text-light); text-align: right; }
+.wtl-track { position: relative; height: 26px; background: var(--color-bg-alt); border-radius: 999px; overflow: visible; }
+.wtl-bar { position: absolute; inset: 0; border-radius: 999px; overflow: hidden; }
+.wtl-bar i { display: block; height: 100%; width: 0; border-radius: 999px; transition: width 0.25s ease; }
+.wtl-bar--ac i { background: linear-gradient(90deg, var(--color-accent), #5FC9BE); }
+.wtl-bar--ch i { background: linear-gradient(90deg, #D89A8D, #C46A5A); }
+.wtl-mark {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: left 0.25s ease;
+}
+.wtl-mark em {
+  display: none;
+  font-style: normal;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.wtl-mark::before {
+  content: '';
+  display: block;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 1px 5px rgba(11,79,108,0.25);
+}
+.wtl-mark--ch::before { border-color: #C46A5A; }
+.wtl-mark--ac.done::before { background: var(--color-accent); }
+.wtl-mark--ac.done em { display: block; position: absolute; left: 18px; top: 50%; transform: translateY(-50%); background: var(--color-accent); color: #fff; }
+.wtl-mark--ch.stuck::before { animation: wtl-pulse 1.6s ease-in-out infinite; }
+.wtl-mark--ch.stuck em { display: block; position: absolute; left: 18px; top: 50%; transform: translateY(-50%); background: #C46A5A; color: #fff; }
+@keyframes wtl-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(196,106,90,0.45); }
+  50% { box-shadow: 0 0 0 7px rgba(196,106,90,0); }
+}
+.wtl-ph { grid-column: 2; display: flex; gap: 0.4rem; margin: 0.3rem 0 0.9rem; flex-wrap: wrap; }
+.wtl-ph span {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg-alt);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.wtl-ph--ac span.on { background: var(--color-accent-pale); color: var(--color-primary-dark); font-weight: 600; }
+.wtl-ph--ch span.on { background: #F7E4E0; color: #A34A3C; font-weight: 600; }
+.wtl-range { width: 100%; margin-top: var(--space-sm); accent-color: var(--color-primary-dark); cursor: ew-resize; }
+.wtl-hint { text-align: center; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); margin-top: 0.2rem; }
+
+.w-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-md); max-width: 980px; margin: 0 auto; }
+.w-stat {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  text-align: center;
+}
+.w-stat strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+.w-stat span { font-size: 0.78rem; color: var(--color-text-light); line-height: 1.5; display: block; }
+@media (max-width: 860px) {
+  .w-cards { grid-template-columns: 1fr; }
+  .w-stats { grid-template-columns: repeat(2, 1fr); }
+  .wtl-row { grid-template-columns: 90px 1fr; }
+}
+@media (max-width: 520px) {
+  .w-stats { grid-template-columns: 1fr; }
+}

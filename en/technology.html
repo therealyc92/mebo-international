@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20260817c">
+  <link rel="stylesheet" href="../css/style.css?v=20260817d">
 </head>
 <body>
 
@@ -138,6 +138,98 @@
   </script>
     </section>
 
+  <!-- Acute vs Chronic Wounds -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The Wounds We Treat</span>
+        <h2>Acute vs. chronic wounds</h2>
+        <p>Not all wounds heal alike. Understanding the difference explains why regenerative support matters.</p>
+      </div>
+      <div class="w-cards">
+        <div class="w-card w-card--ac fade-in">
+          <div class="w-card-top"><h3>Acute wounds</h3><span class="w-tag w-tag--ac">Heals on schedule</span></div>
+          <p>Caused by surgery, trauma or burns, acute wounds follow an orderly repair sequence and typically close within <strong>2&ndash;4 weeks</strong>.</p>
+        </div>
+        <div class="w-card w-card--ch fade-in">
+          <div class="w-card-top"><h3>Chronic wounds</h3><span class="w-tag w-tag--ch">Stuck in inflammation</span></div>
+          <p>Chronic wounds stall in a prolonged inflammatory state and fail to close for <strong>more than 4 weeks</strong> — sometimes months or years. Most common: diabetic foot, venous leg and pressure ulcers.</p>
+        </div>
+      </div>
+      <div class="w-tl fade-in" id="wound-tl">
+        <h3>Two very different journeys</h3>
+        <div class="wtl-weekwrap"><span class="wtl-week">0</span> weeks</div>
+        <div class="wtl-row">
+          <div class="wtl-name">Acute wound</div>
+          <div class="wtl-track">
+            <div class="wtl-bar wtl-bar--ac"><i></i></div>
+            <div class="wtl-mark wtl-mark--ac"><em>Closed</em></div>
+          </div>
+          <div class="wtl-ph wtl-ph--ac"><span>Hemostasis</span><span>Inflammation</span><span>Proliferation</span><span>Remodeling</span></div>
+        </div>
+        <div class="wtl-row">
+          <div class="wtl-name">Chronic wound</div>
+          <div class="wtl-track">
+            <div class="wtl-bar wtl-bar--ch"><i></i></div>
+            <div class="wtl-mark wtl-mark--ch"><em>Still open</em></div>
+          </div>
+          <div class="wtl-ph wtl-ph--ch"><span>Inflammation</span><span>Prolonged inflammation</span><span>Still open</span></div>
+        </div>
+        <input type="range" class="wtl-range" min="0" max="24" value="0" step="1" aria-label="Drag along the weeks after injury">
+        <div class="wtl-hint">Drag along the weeks after injury</div>
+      </div>
+      <div class="w-stats"><div class="w-stat fade-in"><strong>11M</strong><span>burns require medical care every year worldwide (WHO)</span></div><div class="w-stat fade-in"><strong>1&ndash;2%</strong><span>of people in developed countries live with a chronic wound</span></div><div class="w-stat fade-in"><strong>15&ndash;25%</strong><span>lifetime risk of a foot ulcer for people with diabetes</span></div><div class="w-stat fade-in"><strong>~85%</strong><span>of diabetes-related amputations are preceded by a foot ulcer</span></div></div>
+    </div>
+  </section>
+
+
+  <script>
+  (function(){
+    var box = document.getElementById('wound-tl');
+    if (!box) return;
+    var range = box.querySelector('.wtl-range');
+    var barAc = box.querySelector('.wtl-bar--ac i');
+    var barCh = box.querySelector('.wtl-bar--ch i');
+    var markAc = box.querySelector('.wtl-mark--ac');
+    var markCh = box.querySelector('.wtl-mark--ch');
+    var wk = box.querySelector('.wtl-week');
+    var phAc = box.querySelectorAll('.wtl-ph--ac span');
+    var phCh = box.querySelectorAll('.wtl-ph--ch span');
+    function phase(list, idx){ list.forEach(function(s, i){ s.classList.toggle('on', i <= idx); }); }
+    function set(w){
+      wk.textContent = w;
+      // acute: completes by week 4 of 24
+      var ac = Math.min(100, w / 4 * 100);
+      barAc.style.width = ac + '%';
+      markAc.style.left = ac + '%';
+      markAc.classList.toggle('done', ac >= 100);
+      // chronic: stalls at ~32% by week 3, barely moves after
+      var ch = Math.min(38, w / 3 * 32 + Math.max(0, w - 3) * 0.3);
+      barCh.style.width = ch + '%';
+      markCh.style.left = ch + '%';
+      markCh.classList.toggle('stuck', w > 4);
+      phase(phAc, w < 1 ? 0 : w < 2 ? 1 : w < 4 ? 2 : 3);
+      phase(phCh, w < 3 ? 0 : w <= 8 ? 1 : 2);
+    }
+    range.addEventListener('input', function(){ set(+this.value); });
+    var played = false;
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting && !played){
+          played = true;
+          var w = 0;
+          var t = setInterval(function(){
+            w += 1;
+            if (w > 14){ clearInterval(t); }
+            range.value = w; set(w);
+          }, 90);
+        }
+      });
+    }, {threshold: 0.35});
+    io.observe(box);
+    set(0);
+  })();
+  </script>
   <!-- Four Pillars -->
   <section class="section section--alt">
     <div class="container">
