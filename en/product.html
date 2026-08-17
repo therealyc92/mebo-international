@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20260817">
+  <link rel="stylesheet" href="../css/style.css?v=20260817b">
 </head>
 <body>
 
@@ -91,8 +91,8 @@
             </div></div>
         </div>
         <div class="fade-in">
-          <div class="product-visual" style="aspect-ratio:auto;padding:var(--space-lg);">
-            <img src="../assets/products/wound-ointment-au.png" alt="MEBO Wound Ointment 40g" style="position:relative;z-index:1;width:100%;max-width:420px;border-radius:var(--radius-md);box-shadow:var(--shadow-md);">
+          <div class="ov-photo">
+            <img src="../assets/products/au-hero.jpg" alt="MEBO Wound Ointment 40g" loading="lazy">
           </div>
         </div>
       </div>
@@ -107,25 +107,47 @@
         <h2>What is inside</h2>
       </div>
       <div class="pw-comp">
-        <div class="pw-comp-base fade-in">
-          <img src="../assets/products/composition-base.png" alt="Beeswax frame structure with sesame oil droplets" loading="lazy">
+        <div class="base-card fade-in">
+          <div class="base-imgwrap">
+            <img src="../assets/products/composition-base.png" alt="Beeswax frame structure with sesame oil droplets" loading="lazy">
+          </div>
           <h3>The base: a frame that carries the actives</h3>
-          <p>Beeswax forms a frame structure that holds sesame-oil droplets — average diameter 19&thinsp;&mu;m — containing all active constituents.</p>
+          <div class="base-btns">
+            <button class="base-btn active" data-part="frame">Beeswax frame</button>
+            <button class="base-btn" data-part="drop">Sesame-oil droplets</button>
+          </div>
+          <div class="base-fact active" id="fact-frame">
+            <strong>Frame structure — beeswax</strong>
+            <p>Beeswax builds a honeycomb-like frame that holds the oil phase in place, so the ointment stays on the wound and releases actives steadily.</p>
+          </div>
+          <div class="base-fact" id="fact-drop">
+            <strong>Droplets — sesame oil, avg. 19&thinsp;&mu;m</strong>
+            <p>Micro-droplets of sesame oil carry all active constituents and help maintain the physiological moist environment the wound needs.</p>
+          </div>
         </div>
         <div class="pw-comp-ings">
-          <h3 style="font-size:1.05rem;margin-bottom:var(--space-md);">Active constituents</h3>
-          <div class="pw-ing fade-in">
-              <div class="pw-ing-src"><strong>Rhizoma Coptidis</strong><span>Golden Thread rhizome</span></div>
-              <div class="pw-ing-act">Berberine</div>
-              <div class="pw-ing-props"><em>Anti-microbial</em><em>Anti-inflammatory</em></div>
-            </div><div class="pw-ing fade-in">
-              <div class="pw-ing-src"><strong>Cortex Phellodendri</strong><span>Amur Corktree bark</span></div>
-              <div class="pw-ing-act">Berberine</div>
-              <div class="pw-ing-props"><em>Anti-microbial</em><em>Anti-inflammatory</em></div>
-            </div><div class="pw-ing fade-in">
-              <div class="pw-ing-src"><strong>Radix Scutellariae</strong><span>Baikal Skullcap root</span></div>
-              <div class="pw-ing-act">Baicalin</div>
-              <div class="pw-ing-props"><em>Anti-microbial</em><em>Anti-inflammatory</em><em>Analgesic</em><em>Nerve-protective</em><em>Antioxidant</em></div>
+          <h3 style="font-size:1.05rem;margin-bottom:var(--space-md);">Active constituents — from botanicals</h3>
+          <div class="ing-card fade-in">
+              <div class="ing-photo"><img src="../assets/products/plant-coptis.jpg" alt="Rhizoma Coptidis" loading="lazy"></div>
+              <div class="ing-text">
+                <div class="ing-head"><strong>Rhizoma Coptidis</strong><span class="ing-act">Berberine</span></div>
+                <div class="ing-common">Golden Thread rhizome</div>
+                <div class="ing-props"><em>Anti-microbial</em><em>Anti-inflammatory</em></div>
+              </div>
+            </div><div class="ing-card fade-in">
+              <div class="ing-photo"><img src="../assets/products/plant-phellodendron.jpg" alt="Cortex Phellodendri" loading="lazy"></div>
+              <div class="ing-text">
+                <div class="ing-head"><strong>Cortex Phellodendri</strong><span class="ing-act">Berberine</span></div>
+                <div class="ing-common">Amur Corktree bark</div>
+                <div class="ing-props"><em>Anti-microbial</em><em>Anti-inflammatory</em></div>
+              </div>
+            </div><div class="ing-card fade-in">
+              <div class="ing-photo"><img src="../assets/products/plant-scutellaria.jpg" alt="Radix Scutellariae" loading="lazy"></div>
+              <div class="ing-text">
+                <div class="ing-head"><strong>Radix Scutellariae</strong><span class="ing-act">Baicalin</span></div>
+                <div class="ing-common">Baikal Skullcap root</div>
+                <div class="ing-props"><em>Anti-microbial</em><em>Anti-inflammatory</em><em>Analgesic</em><em>Nerve-protective</em><em>Antioxidant</em></div>
+              </div>
             </div>
         </div>
       </div>
@@ -139,7 +161,7 @@
         <span class="eyebrow">Indications</span>
         <h2>What it is used for</h2>
       </div>
-      <div class="grid grid-4 pw-indic"><div class="card fade-in"><h3>Burns</h3><p>First-, second- and third-degree burns — thermal, chemical and electrical.</p></div><div class="card fade-in"><h3>Chronic Wounds</h3><p>Diabetic foot ulcers, pressure ulcers, venous ulcers and skin diseases.</p></div><div class="card fade-in"><h3>Traumatic Wounds</h3><p>Abrasions, lacerations and animal bites.</p></div><div class="card fade-in"><h3>Surgical Wounds</h3><p>General and plastic surgery wounds, graft sites and donor sites.</p></div></div>
+      <div class="ind-grid"><div class="ind-card fade-in"><h3>Burns</h3><p>First-, second- and third-degree burns — thermal, chemical and electrical.</p></div><div class="ind-card fade-in"><h3>Chronic Wounds</h3><p>Diabetic foot ulcers, pressure ulcers, venous ulcers and skin diseases.</p></div><div class="ind-card fade-in"><h3>Traumatic Wounds</h3><p>Abrasions, lacerations and animal bites.</p></div><div class="ind-card fade-in"><h3>Surgical Wounds</h3><p>General and plastic surgery wounds, graft sites and donor sites.</p></div></div>
     </div>
   </section>
 
@@ -169,25 +191,79 @@
     <div class="container">
       <div class="section-header">
         <span class="eyebrow">Dressing Change Pathway</span>
-        <h2>Three application methods</h2>
-        <p>The method is chosen according to the wound type and condition.</p>
+        <h2>How to apply MEBO</h2>
+        <p>Three application methods, chosen according to the wound type and condition. Clean the wound gently — never use sterile solutions or antiseptics.</p>
       </div>
-      <div class="grid grid-3"><div class="card fade-in pw-dc">
-              <div class="pw-dc-step">1</div>
-              <h3>Exposed Method</h3>
-              <p class="pw-dc-for">1st-degree burns</p>
-              <p class="pw-dc-freq"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Reapply every 4&ndash;6 hours</p>
-            </div><div class="card fade-in pw-dc">
-              <div class="pw-dc-step">2</div>
-              <h3>Semi-exposed Method</h3>
-              <p class="pw-dc-for">2nd-degree burns</p>
-              <p class="pw-dc-freq"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Every 8&ndash;12 hours</p>
-            </div><div class="card fade-in pw-dc">
-              <div class="pw-dc-step">3</div>
-              <h3>Bandage Method</h3>
-              <p class="pw-dc-for">3rd-degree burns &amp; chronic wounds</p>
-              <p class="pw-dc-freq"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Every 12&ndash;24 hours</p>
-            </div></div>
+      <div class="dc-tabs fade-in"><button class="dc-tab active" data-method="exposed">Exposed Method</button><button class="dc-tab" data-method="semi">Semi-exposed Method</button><button class="dc-tab" data-method="bandage">Bandage Method</button></div>
+        <div class="dc-panel active" id="dc-exposed">
+          <div class="dc-meta">
+            <span class="dc-target">1st-degree burns</span>
+            <span class="dc-freq">Every 4&ndash;6 hours</span>
+          </div>
+          <div class="dc-steps"><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-clean.jpg" alt="Clean wound" loading="lazy"></div>
+                  <div class="dc-step-label">Step 1: <strong>Clean wound</strong></div>
+                  <p>Gently remove liquefied necrotic tissue and exudate with gauze or forceps.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-apply.jpg" alt="Apply MEBO" loading="lazy"></div>
+                  <div class="dc-step-label">Step 2: <strong>Apply MEBO</strong></div>
+                  <p>Cover the wound with a ~1&thinsp;mm layer of MEBO.</p>
+                </div></div>
+        </div>
+        <div class="dc-panel" id="dc-semi">
+          <div class="dc-meta">
+            <span class="dc-target">2nd-degree burns</span>
+            <span class="dc-freq">Every 8&ndash;12 hours</span>
+          </div>
+          <div class="dc-steps"><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-prepare.jpg" alt="Prepare impregnated gauze" loading="lazy"></div>
+                  <div class="dc-step-label">Step 1: <strong>Prepare impregnated gauze</strong></div>
+                  <p>Mix sterile gauze with MEBO until fully impregnated.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-remove.jpg" alt="Remove old dressing" loading="lazy"></div>
+                  <div class="dc-step-label">Step 2: <strong>Remove old dressing</strong></div>
+                  <p>Gently lift the used gauze off the wound.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-clean.jpg" alt="Clean wound" loading="lazy"></div>
+                  <div class="dc-step-label">Step 3: <strong>Clean wound</strong></div>
+                  <p>Remove liquefied necrotic tissue and exudate.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-cover.jpg" alt="Apply &amp; cover" loading="lazy"></div>
+                  <div class="dc-step-label">Step 4: <strong>Apply &amp; cover</strong></div>
+                  <p>Apply 1&ndash;2&thinsp;mm of MEBO, then cover with 1&ndash;2 layers of impregnated gauze.</p>
+                </div></div>
+        </div>
+        <div class="dc-panel" id="dc-bandage">
+          <div class="dc-meta">
+            <span class="dc-target">3rd-degree burns &amp; chronic wounds</span>
+            <span class="dc-freq">Every 12&ndash;24 hours</span>
+          </div>
+          <div class="dc-steps"><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-prepare.jpg" alt="Prepare impregnated gauze" loading="lazy"></div>
+                  <div class="dc-step-label">Step 1: <strong>Prepare impregnated gauze</strong></div>
+                  <p>Mix sterile gauze with MEBO until fully impregnated.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-remove.jpg" alt="Remove old dressing" loading="lazy"></div>
+                  <div class="dc-step-label">Step 2: <strong>Remove old dressing</strong></div>
+                  <p>Gently lift the used gauze off the wound.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-clean.jpg" alt="Clean wound" loading="lazy"></div>
+                  <div class="dc-step-label">Step 3: <strong>Clean wound</strong></div>
+                  <p>Remove liquefied necrotic tissue and exudate.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-apply.jpg" alt="Apply MEBO" loading="lazy"></div>
+                  <div class="dc-step-label">Step 4: <strong>Apply MEBO</strong></div>
+                  <p>Cover the wound with 2&ndash;3&thinsp;mm of MEBO.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-cover.jpg" alt="Cover layers" loading="lazy"></div>
+                  <div class="dc-step-label">Step 5: <strong>Cover layers</strong></div>
+                  <p>Apply 2&ndash;4 layers of MEBO-impregnated gauze.</p>
+                </div><div class="dc-step fade-in">
+                  <div class="dc-step-img"><img src="../assets/products/step-bandage.jpg" alt="Pad &amp; secure" loading="lazy"></div>
+                  <div class="dc-step-label">Step 6: <strong>Pad &amp; secure</strong></div>
+                  <p>Add a 1&ndash;3&thinsp;cm cotton pad and bandage with light pressure.</p>
+                </div></div>
+        </div>
     </div>
   </section>
 
@@ -201,41 +277,52 @@
       </div>
       <div class="pw-pl">
         <div class="pw-pl-card fade-in">
-          <div class="pw-pl-img"><img src="../assets/products/wound-ointment-au.png" alt="Medication" loading="lazy"><span class="pw-pl-flag">Flagship</span></div>
+          <div class="pw-pl-img"><img src="../assets/products/pl-medication.jpg" alt="Medication" loading="lazy"><span class="pw-pl-flag">Flagship</span></div>
           <div class="pw-pl-body"><h3>Medication</h3><ul><li>Moist Exposed Burn Ointment</li><li>MEBO Wound Ointment</li></ul></div>
         </div>
         <div class="pw-pl-card fade-in">
-          <div class="pw-pl-img"><img src="../assets/products/anti-itch.jpg" alt="Skincare" loading="lazy"></div>
+          <div class="pw-pl-img"><img src="../assets/products/pl-skincare.jpg" alt="Skincare" loading="lazy"></div>
           <div class="pw-pl-body"><h3>Skincare</h3><ul><li>Anti-Scar</li><li>Anti-Itch</li><li>Anti-Acne</li></ul></div>
         </div>
         <div class="pw-pl-card fade-in">
-          <div class="pw-pl-img"><img src="../assets/products/gi-capsule.jpg" alt="Healthcare" loading="lazy"></div>
+          <div class="pw-pl-img"><img src="../assets/products/pl-healthcare.jpg" alt="Healthcare" loading="lazy"></div>
           <div class="pw-pl-body"><h3>Healthcare</h3><ul><li>GI Regenerate Capsules</li><li>Sugar Balance</li></ul></div>
         </div>
         <div class="pw-pl-card fade-in">
-          <div class="pw-pl-img"><div class="pw-pl-ph"><img src="../assets/logo-mebo.png" alt="" style="filter:brightness(0) invert(1);opacity:0.9;width:60%;"></div></div>
+          <div class="pw-pl-img"><img src="../assets/products/pl-devices.jpg" alt="Medical Devices" loading="lazy"></div>
           <div class="pw-pl-body"><h3>Medical Devices</h3><ul><li>Wound Dressing</li><li>Cooling Patch</li><li>Cold &amp; Hot Patch</li><li>Sponge</li><li>Scar Dressing</li></ul></div>
         </div>
         <div class="pw-pl-card fade-in">
-          <div class="pw-pl-img"><img src="../assets/products/facial-mask.jpg" alt="Cosmetics" loading="lazy"></div>
+          <div class="pw-pl-img"><img src="../assets/products/pl-cosmetics.jpg" alt="Cosmetics" loading="lazy"></div>
           <div class="pw-pl-body"><h3>Cosmetics</h3><ul><li>Skin Rejuvenation Series</li></ul></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- References -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">References</span>
-        <h2>Scientific references</h2>
-        <p>Key publications behind the formulation and its mechanisms.</p>
-      </div>
-      <ol class="pw-refs"><li>WHO monographs on selected medicinal plants. VOLUM1 P:105-114.</li><li>Chu M, et al. (2016) Role of berberine in the treatment of methicillin-resistant staphylococcus aureus infections. Sci Rep. 6:24748.</li><li>Xie Y., et al. (2020) In vitro antifungal effects of berberine against candida spp. Drug Des Devel Ther. 14:87-101.</li><li>Varghese F.S., et al. (2016) The antiviral alkaloid berberine reduces chikungunya virus-induced MAPK signaling. J Virol. 90(21):9743-9757.</li><li>Jeong H.W., et al. (2009) Berberine suppresses proinflammatory responses through AMPK activation in macrophages. Am J Physiol Endocrinol Metab 296: E955-64.</li><li>Choi B.K., et al. (2006) Berberine reduces the expression of adipogenic enzymes and inflammatory molecules of 3T3-L1 adipocyte. Exp Mol Med 38, 599-605.</li><li>Zhang Q.W., et al. (2017) Antimycobacterial and anti-inflammatory mechanisms of baicalin via induced autophagy. Front Microbiol, 8, 2142.</li><li>Jia Y, et al. (2016) Anti-NDV activity of baicalin from a traditional Chinese medicine in vitro. J Vet Med Sci. 78:819-824.</li><li>Dinda B, et al. (2017) Therapeutic potentials of baicalin and its aglycone, baicalein against inflammatory disorders. Eur J Med Chem. 131:68-80.</li><li>Paniagua-Pérez R., et al. (2016) Evaluation of the anti-inflammatory capacity of beta-sitosterol in rodent assays. Afr J Tradit Complement Altern Med. 14(1):123-130.</li><li>Valerio M., Awad A.B. (2011) &beta;-sitosterol down-regulates pro-inflammatory signal transduction pathways. Int Immunopharmacol. 11, 1012-1017.</li><li>Li P, et al. (2018) Effects of baicalin on diabetic neuropathic pain. Neuroreport. 29(17):1492-1498.</li><li>Villaseñor IM, et al. (2002) Bioactivity studies on beta-sitosterol and its glucoside. Phytother Res. 16(5):417-21.</li><li>Gupta R., et al. (2011) Antidiabetic and antioxidant potential of &beta;-sitosterol in streptozotocin-induced experimental hyperglycemia. J Diabetes, 3, 29-37.</li><li>Jurjus A, et al. (2007) Pharmacological modulation of wound healing in experimental burns. Burns, 10.406.</li><li>Carayanni V.J., et al. (2011) Comparing oil based ointment versus standard practice for moderate burns in Greece. BMC Complement Altern Med 11:122.</li><li>Kahi CGE, et al. Modulation of wound contracture &alpha;-SMA and integrin &alpha;v&beta;3 in the rabbit model. Int Wound J 2009; 6:214-224.</li><li>Xu R.X. (2008) Burns Treatment Book.</li><li>Xu R.X. (2004) Comparative study of MEBO, Silver Sulfadiazine, and Hot Dry-exposed Therapy on controlling burn wound infection. Burns Regenerative Medicine and Therapy (pp.70-74). Karger.</li><li>Xu R.X. (2004) Primary exploration on the mechanism of the anti-infection of BRT with MEBT/MEBO. Burns Regenerative Medicine and Therapy (pp.77-82). Karger.</li><li>Ji C.S., et al. (2007) Scar quality and hand function after MEBO and skin graft treatment in full thickness hand burn. Ann Rehabil Med, 31(5), 582-589.</li><li>Xu R.X. (2004) Pathomorphological change of deep burns wounds treated with MEBO. Burns.</li></ol>
-    </div>
-  </section>
 
+  <script>
+  (function(){
+    // Dressing change method tabs
+    var tabs = document.querySelectorAll('.dc-tab');
+    var panels = document.querySelectorAll('.dc-panel');
+    tabs.forEach(function(tab){
+      tab.addEventListener('click', function(){
+        tabs.forEach(function(t){ t.classList.toggle('active', t===tab); });
+        panels.forEach(function(p){ p.classList.toggle('active', p.id === 'dc-' + tab.dataset.method); });
+      });
+    });
+    // Composition base toggle
+    var btns = document.querySelectorAll('.base-btn');
+    var facts = document.querySelectorAll('.base-fact');
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){
+        btns.forEach(function(x){ x.classList.toggle('active', x===b); });
+        facts.forEach(function(f){ f.classList.toggle('active', f.id === 'fact-' + b.dataset.part); });
+      });
+    });
+  })();
+  </script>
   <!-- CTA -->
   <section class="section" style="padding-top:0;">
     <div class="container">
