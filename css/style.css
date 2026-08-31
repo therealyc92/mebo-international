@@ -5003,3 +5003,166 @@ body.no-js .fade-in {
 @media (max-width: 860px) {
   .next-steps { grid-template-columns: 1fr; }
 }
+
+/* ---------- Paradigm: era toggle panes ---------- */
+.era-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.3rem;
+  margin: 0 auto var(--space-lg);
+  width: max-content;
+  max-width: 100%;
+}
+.era-btn {
+  border: none;
+  background: transparent;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.era-btn:hover:not(.active) { color: var(--color-primary-dark); }
+.era-btn.active { background: var(--color-primary-dark); color: #fff; }
+.era-panes { display: grid; margin-bottom: var(--space-md); }
+.era-pane {
+  grid-area: 1 / 1;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl) var(--space-2xl);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.era-pane.active { opacity: 1; transform: none; pointer-events: auto; }
+.era-pane .cmp-era {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+  background: var(--color-accent);
+  color: #fff;
+}
+.era-pane h3 { font-size: 1.15rem; margin-bottom: 0.15rem; color: var(--color-primary-dark); }
+.era-pane .cmp-head p { font-size: 0.8rem; color: var(--color-text-muted); margin: 0 0 var(--space-md); }
+.era-pane ul { list-style: none; margin: 0; padding: 0; }
+.era-pane li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(11,79,108,0.12);
+  color: var(--color-text);
+  line-height: 1.55;
+}
+.era-pane li:last-child { border-bottom: none; }
+.era-pane li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  margin-top: 0.45rem;
+}
+
+/* ---------- MoA list polish ---------- */
+.moa-no {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--color-accent-pale);
+  color: var(--color-accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+}
+.moa-line {
+  gap: 0.9rem;
+  padding: 0.75rem 0.35rem;
+  border-radius: 10px;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.25s ease, padding-left 0.25s ease;
+}
+.moa-line:hover {
+  background: var(--color-accent-pale);
+  padding-left: 0.75rem;
+  border-color: transparent;
+}
+
+/* ---------- Wounds: MEBO edge callout ---------- */
+.w-edge {
+  margin-top: var(--space-md);
+  background: var(--color-accent-pale);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.65rem 0.9rem;
+}
+.w-edge span {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.15rem;
+}
+.w-edge p { font-size: 0.85rem; color: var(--color-primary-dark); margin: 0; line-height: 1.6; }
+
+/* ---------- Botanical legend (illustrated) ---------- */
+.str-plant--icon {
+  background: #EAF4EC;
+  border: 1px solid #D3E6D8;
+  border-radius: var(--radius-sm);
+  padding: var(--space-md) var(--space-sm);
+  text-align: center;
+  color: #2E6B3E;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.str-plant--icon:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(46,107,62,0.12); }
+.str-plant--icon svg { width: 42px; height: 42px; display: block; margin: 0 auto 0.4rem; }
+.str-plant--icon span {
+  display: block;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: #4A7A57;
+  line-height: 1.3;
+}
+.str-plant--icon em {
+  display: block;
+  font-style: normal;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6B9A78;
+  margin-top: 0.25rem;
+}
+
+/* ---------- Milestone org logos ---------- */
+.era-org img {
+  width: 20px;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+}
+.era-org {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
