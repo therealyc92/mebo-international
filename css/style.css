@@ -453,6 +453,8 @@ li { margin-bottom: 0.3rem; }
 
 .hero-slide.active {
   position: relative;
+  height: 100%;
+  min-height: calc(100vh - var(--nav-height));
   opacity: 1;
   visibility: visible;
 }
@@ -5257,3 +5259,10 @@ body.no-js .fade-in {
       rgba(11, 79, 108, 0.55) 100%);
   }
 }
+
+/* ---------- Photo slides: bigger type, stronger presence ---------- */
+.hero-slide--photo .hero-content { max-width: 780px; }
+.hero-slide--photo h1 { font-size: clamp(2.6rem, 4.6vw, 3.9rem); line-height: 1.12; }
+.hero-slide--photo .hero-subtitle { font-size: 1.12rem; line-height: 1.7; max-width: 640px; }
+.hero-slide--photo .hero-chip { font-size: 0.84rem; padding: 0.5rem 1.15rem; margin-bottom: 1.4rem; }
+.hero-slide--photo .apec-badge { transform: scale(1.12); transform-origin: left center; margin-bottom: 1.2rem; }
