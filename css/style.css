@@ -5292,7 +5292,7 @@ body.no-js .fade-in {
 .hero-badge-icon svg { width: 28px; height: 28px; }
 
 /* ---------- Webinar collage slide: lighter tint (image pre-dimmed) ---------- */
-.hero-slide--collage .hero-overlay { background: none; }
+.hero-slide--collage .hero-overlay { background: rgba(11, 79, 108, 0.22); }
 @media (max-width: 768px) {
   .hero-slide--collage .hero-overlay { background: rgba(11, 79, 108, 0.3); }
 }
