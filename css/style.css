@@ -5216,3 +5216,44 @@ body.no-js .fade-in {
 
 /* ---------- Concept: title-body spacing ---------- */
 .product-hero h2 { margin-bottom: var(--space-md); }
+
+/* ---------- Hero carousel: photo slides ---------- */
+.hero-slide--photo {
+  background-size: cover;
+  background-position: center right;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+    rgba(11, 79, 108, 0.95) 0%,
+    rgba(11, 79, 108, 0.82) 38%,
+    rgba(11, 79, 108, 0.45) 62%,
+    rgba(11, 79, 108, 0.12) 100%);
+  pointer-events: none;
+}
+.hero-slide--photo .container { position: relative; z-index: 2; }
+.hero-chip {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(43, 168, 159, 0.32);
+  border: 1px solid rgba(94, 234, 212, 0.5);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.1rem;
+  backdrop-filter: blur(4px);
+}
+@media (max-width: 768px) {
+  .hero-slide--photo { background-position: center; }
+  .hero-overlay {
+    background: linear-gradient(180deg,
+      rgba(11, 79, 108, 0.92) 0%,
+      rgba(11, 79, 108, 0.75) 60%,
+      rgba(11, 79, 108, 0.55) 100%);
+  }
+}
