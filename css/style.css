@@ -5228,11 +5228,7 @@ body.no-js .fade-in {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg,
-    rgba(11, 79, 108, 0.95) 0%,
-    rgba(11, 79, 108, 0.82) 38%,
-    rgba(11, 79, 108, 0.45) 62%,
-    rgba(11, 79, 108, 0.12) 100%);
+  background: rgba(11, 79, 108, 0.34);
   pointer-events: none;
 }
 .hero-slide--photo .container { position: relative; z-index: 2; }
@@ -5253,12 +5249,7 @@ body.no-js .fade-in {
 }
 @media (max-width: 768px) {
   .hero-slide--photo { background-position: center; }
-  .hero-overlay {
-    background: linear-gradient(180deg,
-      rgba(11, 79, 108, 0.92) 0%,
-      rgba(11, 79, 108, 0.75) 60%,
-      rgba(11, 79, 108, 0.55) 100%);
-  }
+  .hero-overlay { background: rgba(11, 79, 108, 0.42); }
 }
 
 /* ---------- Photo slides: bigger type, stronger presence ---------- */
@@ -5276,3 +5267,26 @@ body.no-js .fade-in {
   white-space: nowrap;
   font-size: 0.66rem;
 }
+
+/* ---------- Hero: badge with logo tile (ISBI / Webinar) ---------- */
+.hero-badge--img { gap: 0.9rem; }
+.hero-badge-logo {
+  height: 54px;
+  width: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+.hero-badge-icon {
+  height: 54px;
+  width: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  color: var(--color-primary-dark);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+.hero-badge-icon svg { width: 28px; height: 28px; }
