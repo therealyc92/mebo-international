@@ -37,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260902b">
+  <link rel="stylesheet" href="css/style.css?v=20260902c">
 </head>
 <body>
 
@@ -87,14 +87,11 @@
   <!-- Concepto -->
   <section class="section">
     <div class="container">
-        <!-- Concept -->
-  <section class="section">
-    <div class="container">
       <div class="product-hero">
         <div class="fade-in">
           <span class="eyebrow" style="display:block;color:var(--color-accent);font-family:var(--font-heading);font-size:0.8rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:var(--space-md);">Core Technology</span>
           <h2>De MEBT a la Tecnolog&iacute;a M&eacute;dica Regenerativa</h2>
-          <p>En la d&eacute;cada de 1980, el profesor Rongxiang Xu introdujo la <strong>Terapia H&uacute;meda Expuesta para Quemaduras (MEBT)</strong> y el <strong>Ungu&uuml;ento H&uacute;medo Expuesto para Quemaduras (MEBO)</strong>, transformando el tratamiento de quemaduras en China. El avance recibi&oacute; el Premio Estatal de Invenci&oacute;n Tecnol&oacute;gica de China en 1988. En las d&eacute;cadas siguientes, MEBT evolucion&oacute; hasta convertirse en una plataforma regenerativa completa, hoy reconocida como la <strong>Tecnolog&iacute;a M&eacute;dica Regenerativa (RMT)</strong>.</p>
+          <p>En la d&eacute;cada de 1980, el profesor Rongxiang Xu introdujo la <strong>Terapia H&uacute;meda Expuesta para Quemaduras (MEBT)</strong>, con el <strong>Ungu&uuml;ento H&uacute;medo Expuesto para Quemaduras (MEBO)</strong> como su agente terap&eacute;utico principal, transformando el tratamiento de quemaduras en China. El avance recibi&oacute; el Premio Estatal de Invenci&oacute;n Tecnol&oacute;gica de China en 1988. En las d&eacute;cadas siguientes, MEBT evolucion&oacute; hasta convertirse en una plataforma regenerativa completa, hoy reconocida como la <strong>Tecnolog&iacute;a M&eacute;dica Regenerativa (RMT)</strong>.</p>
           <p>Lo que empez&oacute; como una innovaci&oacute;n cl&iacute;nica para quemaduras se ha convertido en un sistema regenerativo reproducible. Los mismos principios restauran hoy el tejido en <strong>heridas cr&oacute;nicas, traum&aacute;ticas y quir&uacute;rgicas, y enfermedades dermatol&oacute;gicas</strong>: una alternativa real a los cuidados convencionales.</p>
         </div>
         <div class="fade-in">
@@ -268,64 +265,50 @@
         <span class="eyebrow">Mecanismo en Acci&oacute;n</span>
         <h2>De la Curaci&oacute;n Pasiva a la Regeneraci&oacute;n Activa</h2>
       </div>
-      <div class="mia-calls fade-in">
-        <div class="mia-call">
-          <span class="mia-tag">Agudas</span>
-          <p>En las heridas agudas, la RMT proporciona las condiciones fisiol&oacute;gicas que mantienen la cascada de reparaci&oacute;n en curso.</p>
+      <div class="mia-switch" id="mia-switch">
+        <div class="era-toggle">
+          <button class="era-btn active" data-pane="acute">Agudas</button>
+          <button class="era-btn" data-pane="chronic">Cr&oacute;nicas</button>
         </div>
-        <div class="mia-call">
-          <span class="mia-tag">Cr&oacute;nicas</span>
-          <p>En las heridas cr&oacute;nicas, reactiva el programa detenido estimulando las c&eacute;lulas madre y restaurando el microambiente de la herida.</p>
-        </div>
-      </div>
-      <figure class="mia-fig fade-in">
-        <img src="assets/technology/mechanism-passive-active.png" alt="Paso de la curaci&oacute;n pasiva a la regeneraci&oacute;n activa: aumento de factores de crecimiento y activaci&oacute;n de c&eacute;lulas madre epid&eacute;rmicas tras el tratamiento con MEBO" loading="lazy">
+        <div class="mia-panes">
+          <div class="mia-pane active" data-pane="acute">
+            <div class="mia-call"><svg class="mia-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10.729v2.025a1.37 1.37 0 0 1-1.37 1.37h-2.025"/><path d="M14 13.271v-2.025a1.37 1.37 0 0 1 1.37-1.37h2.025"/><rect x="2" y="8" width="20" height="8" rx="2"/></svg><div class="mia-call-body"><span class="mia-tag">Agudas</span><p>En las heridas agudas, la RMT proporciona las condiciones fisiol&oacute;gicas que mantienen la cascada de reparaci&oacute;n en curso.</p></div></div>
+      <figure class="mia-fig">
+        <img src="assets/technology/mechanism-passive-active.png" alt="Shifting from passive healing to active regeneration — growth factors increase and epidermal stem cell activation after MEBO treatment" loading="lazy">
       </figure>
-      <figure class="mia-fig fade-in">
-        <img src="assets/technology/k19-stem-cells.png" alt="Cambio de las c&eacute;lulas madre epid&eacute;rmicas con Queratina 19 en la herida por quemadura durante el tratamiento con MEBO" loading="lazy">
+      <figure class="mia-fig">
+        <img src="assets/technology/k19-stem-cells.png" alt="Change of epidermal stem cells containing Keratin 19 in burn wound during MEBO treatment" loading="lazy">
       </figure>
-    </div>
-  </section>
-
-  <!-- Technical Strengths -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Fortalezas T&eacute;cnicas</span>
-        <h2>Cinco razones por las que la curaci&oacute;n aqu&iacute; es distinta</h2>
-        <p>Cuatro mecanismos terap&eacute;uticos m&aacute;s una formulaci&oacute;n bot&aacute;nica: los pilares detr&aacute;s de la tecnolog&iacute;a MEBO.</p>
-      </div>
-      <div class="str-grid">
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
-          <h3>Ambiente h&uacute;medo fisiol&oacute;gico</h3>
-          <p>Una capa semipermeable retiene la humedad natural y protege la actividad celular: sin da&ntilde;o por desecaci&oacute;n.</p>
-        </div>
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-          <h3>Desbridamiento Autol&iacute;tico</h3>
-          <p>Facilita el desbridamiento autol&iacute;tico mediante una serie de reacciones bioqu&iacute;micas.</p>
-        </div>
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Analg&eacute;sico, antiinflamatorio y antimicrobiano</h3>
-          <p>Una triple acci&oacute;n sin&eacute;rgica alivia el dolor, calma la inflamaci&oacute;n y reduce el riesgo de infecci&oacute;n.</p>
-        </div>
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-          <h3>Menos cicatrices</h3>
-          <p>La regeneraci&oacute;n fisiol&oacute;gica por encima de la reparaci&oacute;n fibrosa mejora la textura, el color y la elasticidad de la piel curada.</p>
-        </div>
-        <div class="str-card str-card--bot fade-in">
-          <div class="str-bot-head">
-            <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-            <h3>Formulaci&oacute;n bot&aacute;nica</h3>
           </div>
-          <p>Los ingredientes activos provienen de <strong>plantas medicinales</strong> y se transportan en una base natural de <strong>cera de abejas y aceite de s&eacute;samo</strong>: suave con el tejido en regeneraci&oacute;n.</p>
-          <div class="str-plants"><div class="str-plant str-plant--icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6-3 9-9 8-19C11 4 5 7 4 13c-.8 4.6 2.2 8 8 9z"/><path d="M12 22C12 15 15 10 20 5"/></svg><span>Rhizoma Coptidis</span></div><div class="str-plant str-plant--icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6-3 9-9 8-19C11 4 5 7 4 13c-.8 4.6 2.2 8 8 9z"/><path d="M12 22C12 15 15 10 20 5"/></svg><span>Cortex Phellodendri</span></div><div class="str-plant str-plant--icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6-3 9-9 8-19C11 4 5 7 4 13c-.8 4.6 2.2 8 8 9z"/><path d="M12 22C12 15 15 10 20 5"/></svg><span>Radix Scutellariae</span></div></div></div></div>
+          <div class="mia-pane" data-pane="chronic">
+            <div class="mia-call"><svg class="mia-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg><div class="mia-call-body"><span class="mia-tag">Cr&oacute;nicas</span><p>En las heridas cr&oacute;nicas, reactiva el programa detenido estimulando las c&eacute;lulas madre y restaurando el microambiente de la herida.</p></div></div>
+      <figure class="mia-fig">
+        <img src="assets/technology/mechanism-passive-active.png" alt="Shifting from passive healing to active regeneration — growth factors increase and epidermal stem cell activation after MEBO treatment" loading="lazy">
+      </figure>
+      <figure class="mia-fig">
+        <img src="assets/technology/k19-stem-cells.png" alt="Change of epidermal stem cells containing Keratin 19 in burn wound during MEBO treatment" loading="lazy">
+      </figure>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+
+  <script>
+  (function(){
+    var box = document.getElementById('mia-switch');
+    if (!box) return;
+    var btns = box.querySelectorAll('.era-btn');
+    var panes = box.querySelectorAll('.mia-pane');
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){
+        btns.forEach(function(x){ x.classList.toggle('active', x === b); });
+        panes.forEach(function(p){ p.classList.toggle('active', p.dataset.pane === b.dataset.pane); });
+      });
+    });
+  })();
+  </script>
   <!-- CTA -->
   <section class="section">
     <div class="container">

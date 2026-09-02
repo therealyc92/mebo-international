@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20260902b">
+  <link rel="stylesheet" href="../css/style.css?v=20260902c">
 </head>
 <body>
 
@@ -74,9 +74,6 @@
   </section>
 
   <!-- Concept -->
-  <section class="section">
-    <div class="container">
-        <!-- Concept -->
   <section class="section">
     <div class="container">
       <div class="product-hero">
@@ -257,64 +254,50 @@
         <span class="eyebrow">Mechanism in Action</span>
         <h2>From Passive Healing to Active Regeneration</h2>
       </div>
-      <div class="mia-calls fade-in">
-        <div class="mia-call">
-          <span class="mia-tag">Acute</span>
-          <p>In acute wounds, RMT provides the physiological conditions that keep the repair cascade on track.</p>
+      <div class="mia-switch" id="mia-switch">
+        <div class="era-toggle">
+          <button class="era-btn active" data-pane="acute">Acute</button>
+          <button class="era-btn" data-pane="chronic">Chronic</button>
         </div>
-        <div class="mia-call">
-          <span class="mia-tag">Chronic</span>
-          <p>In chronic wounds, it reactivates the stalled programme by stimulating stem cells and restoring the wound microenvironment.</p>
-        </div>
-      </div>
-      <figure class="mia-fig fade-in">
+        <div class="mia-panes">
+          <div class="mia-pane active" data-pane="acute">
+            <div class="mia-call"><svg class="mia-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10.729v2.025a1.37 1.37 0 0 1-1.37 1.37h-2.025"/><path d="M14 13.271v-2.025a1.37 1.37 0 0 1 1.37-1.37h2.025"/><rect x="2" y="8" width="20" height="8" rx="2"/></svg><div class="mia-call-body"><span class="mia-tag">Acute</span><p>In acute wounds, RMT provides the physiological conditions that keep the repair cascade on track.</p></div></div>
+      <figure class="mia-fig">
         <img src="../assets/technology/mechanism-passive-active.png" alt="Shifting from passive healing to active regeneration — growth factors increase and epidermal stem cell activation after MEBO treatment" loading="lazy">
       </figure>
-      <figure class="mia-fig fade-in">
+      <figure class="mia-fig">
         <img src="../assets/technology/k19-stem-cells.png" alt="Change of epidermal stem cells containing Keratin 19 in burn wound during MEBO treatment" loading="lazy">
       </figure>
-    </div>
-  </section>
-
-  <!-- Technical Strengths -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Technical Strengths</span>
-        <h2>Five Reasons Healing Is Different Here</h2>
-        <p>Four therapeutic mechanisms plus a botanical formulation — the pillars behind MEBO technology.</p>
-      </div>
-      <div class="str-grid">
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
-          <h3>Physiological Moist Environment</h3>
-          <p>A semi-permeable layer retains natural moisture and protects cellular activity — no desiccation damage.</p>
-        </div>
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-          <h3>Autolytic Debridement</h3>
-          <p>Facilitate autolytic debridement through a series of biochemical reactions.</p>
-        </div>
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Analgesic, Anti-Inflammatory &amp; Antimicrobial</h3>
-          <p>A synergistic triple action relieves pain, calms inflammation and reduces infection risk.</p>
-        </div>
-        <div class="str-card fade-in">
-          <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-          <h3>Reduced Scarring</h3>
-          <p>Physiological regeneration over fibrous repair means better texture, color and elasticity of the healed skin.</p>
-        </div>
-        <div class="str-card str-card--bot fade-in">
-          <div class="str-bot-head">
-            <div class="str-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-            <h3>Botanical Formulation</h3>
           </div>
-          <p>The active ingredients are derived from <strong>medicinal botanicals</strong> and carried in a natural base of <strong>beeswax and sesame oil</strong> — gentle on regenerating tissue.</p>
-          <div class="str-plants"><div class="str-plant str-plant--icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6-3 9-9 8-19C11 4 5 7 4 13c-.8 4.6 2.2 8 8 9z"/><path d="M12 22C12 15 15 10 20 5"/></svg><span>Rhizoma Coptidis</span></div><div class="str-plant str-plant--icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6-3 9-9 8-19C11 4 5 7 4 13c-.8 4.6 2.2 8 8 9z"/><path d="M12 22C12 15 15 10 20 5"/></svg><span>Cortex Phellodendri</span></div><div class="str-plant str-plant--icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6-3 9-9 8-19C11 4 5 7 4 13c-.8 4.6 2.2 8 8 9z"/><path d="M12 22C12 15 15 10 20 5"/></svg><span>Radix Scutellariae</span></div></div></div></div>
+          <div class="mia-pane" data-pane="chronic">
+            <div class="mia-call"><svg class="mia-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg><div class="mia-call-body"><span class="mia-tag">Chronic</span><p>In chronic wounds, it reactivates the stalled programme by stimulating stem cells and restoring the wound microenvironment.</p></div></div>
+      <figure class="mia-fig">
+        <img src="../assets/technology/mechanism-passive-active.png" alt="Shifting from passive healing to active regeneration — growth factors increase and epidermal stem cell activation after MEBO treatment" loading="lazy">
+      </figure>
+      <figure class="mia-fig">
+        <img src="../assets/technology/k19-stem-cells.png" alt="Change of epidermal stem cells containing Keratin 19 in burn wound during MEBO treatment" loading="lazy">
+      </figure>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+
+  <script>
+  (function(){
+    var box = document.getElementById('mia-switch');
+    if (!box) return;
+    var btns = box.querySelectorAll('.era-btn');
+    var panes = box.querySelectorAll('.mia-pane');
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){
+        btns.forEach(function(x){ x.classList.toggle('active', x === b); });
+        panes.forEach(function(p){ p.classList.toggle('active', p.dataset.pane === b.dataset.pane); });
+      });
+    });
+  })();
+  </script>
   <!-- CTA -->
   <section class="section">
     <div class="container">
