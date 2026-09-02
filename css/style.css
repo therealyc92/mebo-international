@@ -5319,7 +5319,7 @@ body.no-js .fade-in {
 }
 
 /* ---------- Slide 4 (DNA): slightly lighter tint, image already dark ---------- */
-.hero-slide[data-slide="3"] .hero-overlay { background: rgba(11, 79, 108, 0.22); }
+.hero-slide[data-slide="3"] .hero-overlay { background: rgba(9, 60, 84, 0.46); }
 
 /* ---------- Wounds: left header, emphasised warning, 3 stats ---------- */
 .section-header--left { text-align: left; }
@@ -5367,3 +5367,8 @@ body.no-js .fade-in {
 @media (max-width: 768px) {
   .mia-calls, .w-stats, .str-grid { grid-template-columns: 1fr !important; }
 }
+
+/* ---------- Photo slides: subtle text shadow for clarity ---------- */
+.hero-slide--photo h1,
+.hero-slide--photo .hero-subtitle { text-shadow: 0 2px 14px rgba(5, 30, 45, 0.45); }
+.hero-slide--photo .apec-badge-text { text-shadow: 0 1px 8px rgba(5, 30, 45, 0.35); }
