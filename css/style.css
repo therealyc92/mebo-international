@@ -5320,3 +5320,50 @@ body.no-js .fade-in {
 
 /* ---------- Slide 4 (DNA): slightly lighter tint, image already dark ---------- */
 .hero-slide[data-slide="3"] .hero-overlay { background: rgba(11, 79, 108, 0.22); }
+
+/* ---------- Wounds: left header, emphasised warning, 3 stats ---------- */
+.section-header--left { text-align: left; }
+.section-header--left p { margin-left: 0; }
+.w-em { color: var(--color-accent); font-weight: 700; }
+.w-stats { grid-template-columns: repeat(3, 1fr) !important; max-width: 900px; margin-left: auto; margin-right: auto; }
+
+/* ---------- Mechanism in Action ---------- */
+.mia-calls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin: var(--space-xl) auto var(--space-lg);
+  max-width: 1000px;
+}
+.mia-call {
+  background: var(--color-accent-pale);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1rem 1.3rem;
+}
+.mia-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+}
+.mia-call p { font-size: 0.98rem; line-height: 1.65; color: var(--color-primary-dark); margin: 0; font-weight: 500; }
+.mia-fig {
+  margin: var(--space-lg) auto;
+  max-width: 980px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+.mia-fig img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); }
+
+/* ---------- Strengths: 2x2 grid ---------- */
+.str-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 980px; margin-left: auto; margin-right: auto; }
+@media (max-width: 768px) {
+  .mia-calls, .w-stats, .str-grid { grid-template-columns: 1fr !important; }
+}
