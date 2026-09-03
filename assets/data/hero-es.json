@@ -1,7 +1,6 @@
 {
   "slides": [
     {
-      "extra_class": "hero-slide--photo",
       "background": "assets/hero/isbi-santiago.jpg",
       "badge": {
         "type": "image",
@@ -12,22 +11,22 @@
       },
       "title_html": "Encuéntrenos en<br><span class=\"apec-highlight\">ISBI 2026</span>",
       "title_class": "",
+      "extra_class": "hero-slide--photo",
       "subtitle": "MEBO International participará en el Congreso de la Sociedad Internacional de Quemaduras (ISBI), en Santiago, Chile, del 11 al 15 de octubre de 2026, compartiendo medicina regenerativa con la comunidad global de atención de quemaduras.",
       "actions": [
         {
+          "label": "Contactar al Equipo",
           "href": "contact.html",
-          "style": "accent",
-          "label": "Contactar al Equipo"
+          "style": "accent"
         },
         {
+          "label": "Nuestra Historia",
           "href": "about.html",
-          "style": "light",
-          "label": "Nuestra Historia"
+          "style": "light"
         }
       ]
     },
     {
-      "extra_class": "hero-slide--photo",
       "background": "assets/hero/apec-goldengate.jpg",
       "badge": {
         "type": "icon",
@@ -37,22 +36,22 @@
       },
       "title_html": "Socio Empresarial<br><span class=\"apec-highlight\">de APEC 2023</span>",
       "title_class": "",
+      "extra_class": "hero-slide--photo",
       "subtitle": "MEBO International fue socio empresarial oficial de APEC 2023 en San Francisco, impulsando la colaboración global en medicina regenerativa e innovación en salud.",
       "actions": [
         {
+          "label": "Nuestro Camino en APEC",
           "href": "news.html#apec",
-          "style": "accent",
-          "label": "Nuestro Camino en APEC"
+          "style": "accent"
         },
         {
+          "label": "Nuestra Historia",
           "href": "about.html",
-          "style": "light",
-          "label": "Nuestra Historia"
+          "style": "light"
         }
       ]
     },
     {
-      "extra_class": "hero-slide--photo hero-slide--collage",
       "background": "assets/hero/webinar-collage.jpg",
       "badge": {
         "type": "icon",
@@ -62,23 +61,23 @@
       },
       "title_html": "Webinars para<br><span class=\"apec-highlight\">América Latina</span>",
       "title_class": "",
+      "extra_class": "hero-slide--photo hero-slide--collage",
       "subtitle": "Una serie continua de seminarios en línea que acerca la tecnología médica regenerativa a los equipos clínicos de América Latina: sesiones prácticas sobre heridas crónicas bajo el marco de cooperación de APEC.",
       "actions": [
         {
+          "label": "Leer las Novedades",
           "href": "news.html",
-          "style": "accent",
-          "label": "Leer las Novedades"
+          "style": "accent"
         },
         {
+          "label": "Nuestra Historia",
           "href": "about.html",
-          "style": "light",
-          "label": "Nuestra Historia"
+          "style": "light"
         }
       ]
     },
     {
-      "extra_class": "hero-slide--photo",
-      "background": "assets/hero/regeneration-dna.jpg?v=20260902",
+      "background": "/assets/uploads/微信图片_20260903150232_820_772.png",
       "badge": {
         "type": "icon",
         "icon": "dna",
@@ -87,17 +86,18 @@
       },
       "title_html": "Un pionero y precursor<br>en el campo de la ciencia<br><span class=\"apec-highlight\">de la vida regenerativa.</span>",
       "title_class": "hero-h1--long",
+      "extra_class": "hero-slide--photo",
       "subtitle": "Desde las úlceras de pie diabético y las lesiones por presión hasta las quemaduras, MEBO acompaña la fisiología de la reparación tisular: más de 40 años de medicina regenerativa en más de 70 países.",
       "actions": [
         {
+          "label": "Descubrir Nuestros Productos",
           "href": "product.html",
-          "style": "accent",
-          "label": "Descubrir Nuestros Productos"
+          "style": "accent"
         },
         {
+          "label": "Explorar Nuestra Tecnología",
           "href": "technology.html",
-          "style": "light",
-          "label": "Explorar Nuestra Tecnología"
+          "style": "light"
         }
       ]
     }
