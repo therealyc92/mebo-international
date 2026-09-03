@@ -7,8 +7,8 @@ backend:
   name: github
   repo: therealyc92/mebo-international
   branch: main
-  # 云端登录网关(一次性部署,步骤见 docs/CMS-GUIDE.md 第 3 节)
-  base_url: https://mebo-cms-auth.workers.dev
+  # 云端登录网关(2026-09-03 已部署,Cloudflare Workers)
+  base_url: https://sveltia-cms-auth.the-yichuan-li.workers.dev
   auth_endpoint: /auth
 
 # 本地调试: npx decap-server 后可改为 true

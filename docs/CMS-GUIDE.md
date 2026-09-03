@@ -25,31 +25,20 @@
 
 **重要:西语和英语是两套内容,改了一边记得改另一边**(标识 slug 保持一致即可)。
 
-## 3. 第一次使用:开通登录(一次性,约 10 分钟)
+## 3. 登录方式(已于 2026-09-03 开通)
 
-后台用 **GitHub 账号**登录。第一次用之前,需要做一次性的"登录网关"设置
-(因为 GitHub 的登录验证需要一个小中转服务,部署在免费的 Cloudflare 上):
+后台用 **GitHub 账号**登录:
 
-1. **创建 GitHub OAuth 应用**(2 分钟)
-   - 打开 https://github.com/settings/applications/new
-   - Application name: `MEBO 官网后台`
-   - Homepage URL: `https://therealyc92.github.io/mebo-international/`
-   - Authorization callback URL: 暂时填 `https://therealyc92.github.io/mebo-international/admin/`(下一步部署完网关后改成网关地址)
-   - 创建后记下 **Client ID**,并生成一个 **Client Secret**
+1. 打开后台地址,点 **「Sign In with GitHub」**
+2. 跳转到 GitHub 授权页(首次会显示 MEBO ES Website Admin 申请授权),点 **Authorize**
+3. 自动跳回后台,即可开始编辑
 
-2. **部署登录网关**(5 分钟,免费)
-   - 用 Cloudflare Workers 部署开源的 `sveltia-cms-auth`
-     (仓库:https://github.com/sveltia/sveltia-cms-auth,按 README 操作:
-     注册 Cloudflare → 安装 wrangler → 填入 Client ID/Secret → `wrangler deploy`)
-   - 部署完得到一个地址,形如 `https://xxx.workers.dev`
+> 只有对 `therealyc92/mebo-international` 仓库**有写权限**的 GitHub 账号才能登录成功。
+> 要加新编辑:让 TA 注册 GitHub 账号,然后在仓库 Settings → Collaborators 里加为协作者即可。
 
-3. **回填两个配置**(3 分钟)
-   - 把 GitHub OAuth 应用的 callback URL 改成 `https://xxx.workers.dev/callback`
-   - 把仓库里 `admin/config.yml` 中 `base_url` 改成 `https://xxx.workers.dev`
-
-做完这三步,任何有仓库写权限的 GitHub 账号都能从浏览器登录后台。
-
-> 这一步需要技术同事协助一次,之后永远不用再管。
+技术备忘(交接用):登录网关为 Cloudflare Workers 上的 sveltia-cms-auth
+(`https://sveltia-cms-auth.the-yichuan-li.workers.dev`,账户 the.yichuan.li@gmail.com),
+GitHub OAuth App 名为 MEBO ES Website Admin,密钥以加密变量存于 Worker。
 
 ## 4. 日常操作
 
