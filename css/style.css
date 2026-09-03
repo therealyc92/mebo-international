@@ -5375,6 +5375,13 @@ body.no-js .fade-in {
   padding: var(--space-md);
 }
 .mia-fig img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); }
+.k19-lead {
+  margin: 0 0 var(--space-md);
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
 
 /* ---------- Strengths: 2x2 grid ---------- */
 .str-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 980px; margin-left: auto; margin-right: auto; }
