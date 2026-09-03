@@ -1,0 +1,105 @@
+{
+  "slides": [
+    {
+      "extra_class": "hero-slide--photo",
+      "background": "../assets/hero/isbi-santiago.jpg",
+      "badge": {
+        "type": "image",
+        "image": "../assets/partners/isbi.png",
+        "alt": "ISBI",
+        "title": "ISBI 2026 Congress",
+        "subtitle": "Santiago, Chile · Oct 11–15"
+      },
+      "title_html": "Meet Us at<br><span class=\"apec-highlight\">ISBI 2026</span>",
+      "title_class": "",
+      "subtitle": "MEBO International will join the International Society for Burn Injuries Congress in Santiago, Chile, October 11–15, 2026 — sharing regenerative medicine with the global burn-care community.",
+      "actions": [
+        {
+          "href": "contact.html",
+          "style": "accent",
+          "label": "Contact the Team"
+        },
+        {
+          "href": "about.html",
+          "style": "light",
+          "label": "Our Story"
+        }
+      ]
+    },
+    {
+      "extra_class": "hero-slide--photo",
+      "background": "../assets/hero/apec-goldengate.jpg",
+      "badge": {
+        "type": "icon",
+        "icon": "apec",
+        "title": "APEC",
+        "subtitle": "United States"
+      },
+      "title_html": "APEC 2023<br><span class=\"apec-highlight\">Enterprise Partner</span>",
+      "title_class": "",
+      "subtitle": "MEBO International served as an official enterprise partner of APEC 2023 in San Francisco — advancing global collaboration in regenerative medicine and healthcare innovation.",
+      "actions": [
+        {
+          "href": "news.html#apec",
+          "style": "accent",
+          "label": "Our APEC Journey"
+        },
+        {
+          "href": "about.html",
+          "style": "light",
+          "label": "Our Story"
+        }
+      ]
+    },
+    {
+      "extra_class": "hero-slide--photo hero-slide--collage",
+      "background": "../assets/hero/webinar-collage.jpg",
+      "badge": {
+        "type": "icon",
+        "icon": "webinar",
+        "title": "Regenerative Medicine Webinar Series",
+        "subtitle": "Latin America · Online"
+      },
+      "title_html": "Webinars for<br><span class=\"apec-highlight\">Latin America</span>",
+      "title_class": "",
+      "subtitle": "An ongoing online seminar series bringing regenerative medical technology to clinical teams across Latin America — practical sessions on chronic wound care under the APEC cooperation framework.",
+      "actions": [
+        {
+          "href": "news.html",
+          "style": "accent",
+          "label": "Read the Latest"
+        },
+        {
+          "href": "about.html",
+          "style": "light",
+          "label": "Our Story"
+        }
+      ]
+    },
+    {
+      "extra_class": "hero-slide--photo",
+      "background": "../assets/hero/regeneration-dna.jpg?v=20260902",
+      "badge": {
+        "type": "icon",
+        "icon": "dna",
+        "title": "40+ Years of Regenerative Medicine",
+        "subtitle": "MEBO International · 70+ Countries"
+      },
+      "title_html": "A Pioneer and Forerunner<br>in the Field of<br><span class=\"apec-highlight\">Regenerative Life Science.</span>",
+      "title_class": "hero-h1--long",
+      "subtitle": "From diabetic foot ulcers and pressure injuries to burns, MEBO supports the physiology of tissue repair — 40+ years of regenerative medicine across 70+ countries.",
+      "actions": [
+        {
+          "href": "product.html",
+          "style": "accent",
+          "label": "Discover Our Products"
+        },
+        {
+          "href": "technology.html",
+          "style": "light",
+          "label": "Explore Our Technology"
+        }
+      ]
+    }
+  ]
+}

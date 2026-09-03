@@ -1,0 +1,64 @@
+{
+  "product": {
+    "hero": {
+      "title": "MEBO Wound Ointment",
+      "lead": "Our flagship topical regenerative medicine for burn and wounds."
+    },
+    "s1": {
+      "eyebrow": "Overview",
+      "h2": "Topical Ointment for Burn &amp; Wounds",
+      "p1": "MEBO Wound Ointment is a topical medicine for treating burns and wounds. It combines multiple naturally-derived active ingredients with a patented dosage form.",
+      "p2": "The ointment provides a physiological moist environment, liquefies and removes necrotic tissues, reduces pain, prevents and controls infection, prevents and minimizes scar formation, and promotes in situ skin regeneration."
+    },
+    "s2": {
+      "eyebrow": "Composition",
+      "h2": "What Is Inside"
+    },
+    "s3": {
+      "eyebrow": "Indications",
+      "h2": "What It Is Used For"
+    },
+    "s4": {
+      "eyebrow": "Mechanism of Action",
+      "h2": "The Optimal Environment for Healing",
+      "lead": "Seven complementary actions support the wound from protection to regeneration."
+    },
+    "s5": {
+      "eyebrow": "Visual",
+      "h2": "Regenerative Medicine in Action",
+      "lead": "An animated explanation of how regenerative medicine technology works at the cellular level."
+    },
+    "s6": {
+      "eyebrow": "Dressing Change Pathway",
+      "h2": "How to Apply MEBO",
+      "lead": "Three application methods, chosen according to the wound type and condition. Clean the wound gently — never use sterile solutions or antiseptics."
+    },
+    "s7": {
+      "eyebrow": "Product Lines",
+      "h2": "More from MEBO",
+      "lead": "Beyond our flagship ointment, MEBO extends regenerative science across five product categories."
+    },
+    "cta": {
+      "h2": "Need More Information?",
+      "p": "Access professional resources, complete clinical data, and technical documentation for healthcare professionals."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "lead": "Find our headquarters in Beijing and Brea, California, and reach our team directly by phone, fax, or email."
+    },
+    "s1": {
+      "eyebrow": "Contact",
+      "h2": "Contact Information",
+      "lead": "Find our headquarters and reach our team directly — we will route your inquiry to the right office."
+    },
+    "s2": {
+      "eyebrow": "Frequently Asked Questions",
+      "h2": "Common Inquiries"
+    },
+    "phone": "(86) 10-58700001",
+    "email": "inter@mebo.com",
+    "distributor": "Interested in distributing MEBO products in your market? Write to <a href=\"mailto:inter@mebo.com?subject=Distribution%20Inquiry\">inter@mebo.com</a> to explore collaboration opportunities."
+  }
+}

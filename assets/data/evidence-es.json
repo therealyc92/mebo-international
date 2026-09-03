@@ -1,0 +1,169 @@
+{
+  "facts": [
+    {
+      "value": "45+",
+      "label": "Publicaciones revisadas por pares",
+      "source": "Indexadas en más de 70 países"
+    },
+    {
+      "value": "70+",
+      "label": "Países con experiencia clínica",
+      "source": "En América Latina y cuatro continentes"
+    }
+  ],
+  "rct_cards": [
+    {
+      "badge": "PU",
+      "title": "Úlceras por Presión — Estadios III y IV",
+      "metrics": [
+        {
+          "label": "Tasa de Cicatrización",
+          "unit": "%",
+          "mebo_label": "MEBO",
+          "mebo_width": "98.3",
+          "mebo_value": "98.3",
+          "ctrl_label": "Alginato de Plata",
+          "ctrl_width": "92.2",
+          "ctrl_value": "92.2",
+          "note": "Mayor es mejor"
+        },
+        {
+          "label": "Tiempo de Cicatrización",
+          "unit": "días",
+          "mebo_label": "MEBO",
+          "mebo_width": "76.7",
+          "mebo_value": "46",
+          "ctrl_label": "Alginato de Plata",
+          "ctrl_width": "80.5",
+          "ctrl_value": "48.29",
+          "note": "Menor es mejor"
+        },
+        {
+          "label": "Cambios de Apósito",
+          "unit": "número de cambios",
+          "mebo_label": "MEBO",
+          "mebo_width": "78.3",
+          "mebo_value": "43.05",
+          "ctrl_label": "Alginato de Plata",
+          "ctrl_width": "86.2",
+          "ctrl_value": "47.39",
+          "note": "Menor es mejor"
+        },
+        {
+          "label": "Costo del Tratamiento",
+          "unit": "USD por caso",
+          "mebo_label": "MEBO",
+          "mebo_width": "37.4",
+          "mebo_value": "157.09",
+          "ctrl_label": "Alginato de Plata",
+          "ctrl_width": "93.2",
+          "ctrl_value": "391.48",
+          "note": "Menor es mejor"
+        }
+      ],
+      "cite_html": "<div class=\"data-metrics\">\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Tasa de Cicatrización</span><span class=\"data-metric-unit\">%</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:98.3%;\">98.3</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Alginato de Plata</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:92.2%;\">92.2</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Mayor es mejor</div>\n      </div>\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Tiempo de Cicatrización</span><span class=\"data-metric-unit\">días</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:76.7%;\">46</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Alginato de Plata</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:80.5%;\">48.29</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Menor es mejor</div>\n      </div>\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Cambios de Apósito</span><span class=\"data-metric-unit\">número de cambios</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:78.3%;\">43.05</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Alginato de Plata</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:86.2%;\">47.39</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Menor es mejor</div>\n      </div>\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Costo del Tratamiento</span><span class=\"data-metric-unit\">USD por caso</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:37.4%;\">157.09</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Alginato de Plata</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:93.2%;\">391.48</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Menor es mejor</div>\n      </div>\n        </div>\n        <div class=\"data-foot\">"
+    },
+    {
+      "badge": "DFU",
+      "title": "Úlceras de Pie Diabético — Wagner 1 a 4",
+      "metrics": [
+        {
+          "label": "Tasa de Eficacia Total a 60 días",
+          "unit": "%",
+          "mebo_label": "MEBO",
+          "mebo_width": "100.0",
+          "mebo_value": "100",
+          "ctrl_label": "Silicona Blanda",
+          "ctrl_width": "81.7",
+          "ctrl_value": "81.67",
+          "note": "Mayor es mejor"
+        },
+        {
+          "label": "Área de la Herida al Día 30",
+          "unit": "cm²",
+          "mebo_label": "MEBO",
+          "mebo_width": "59.0",
+          "mebo_value": "0.59",
+          "ctrl_label": "Silicona Blanda",
+          "ctrl_width": "84.0",
+          "ctrl_value": "0.84",
+          "note": "Menor es mejor"
+        },
+        {
+          "label": "Tiempo de Cicatrización",
+          "unit": "días",
+          "mebo_label": "MEBO",
+          "mebo_width": "86.7",
+          "mebo_value": "56.35",
+          "ctrl_label": "Silicona Blanda",
+          "ctrl_width": "89.6",
+          "ctrl_value": "58.24",
+          "note": "Menor es mejor"
+        },
+        {
+          "label": "Puntuación de Cicatriz (Vancouver)",
+          "unit": "puntos — menor es mejor",
+          "mebo_label": "MEBO",
+          "mebo_width": "65.3",
+          "mebo_value": "5.88",
+          "ctrl_label": "Silicona Blanda",
+          "ctrl_width": "84.2",
+          "ctrl_value": "7.58",
+          "note": "Menor es mejor"
+        }
+      ],
+      "cite_html": "<div class=\"data-metrics\">\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Tasa de Eficacia Total a 60 días</span><span class=\"data-metric-unit\">%</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:100.0%;\">100</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Silicona Blanda</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:81.7%;\">81.67</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Mayor es mejor</div>\n      </div>\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Área de la Herida al Día 30</span><span class=\"data-metric-unit\">cm²</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:59.0%;\">0.59</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Silicona Blanda</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:84.0%;\">0.84</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Menor es mejor</div>\n      </div>\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Tiempo de Cicatrización</span><span class=\"data-metric-unit\">días</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:86.7%;\">56.35</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Silicona Blanda</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:89.6%;\">58.24</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Menor es mejor</div>\n      </div>\n      <div class=\"data-metric\">\n        <div class=\"data-metric-head\"><span class=\"data-metric-label\">Puntuación de Cicatriz (Vancouver)</span><span class=\"data-metric-unit\">puntos — menor es mejor</span></div>\n        <div class=\"data-bars\">\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--mebo\">MEBO</span><div class=\"data-track\"><div class=\"data-fill data-fill--mebo\" style=\"width:65.3%;\">5.88</div></div></div>\n          <div class=\"data-row\"><span class=\"data-row-name data-row-name--ctrl\">Silicona Blanda</span><div class=\"data-track\"><div class=\"data-fill data-fill--ctrl\" style=\"width:84.2%;\">7.58</div></div></div>\n        </div>\n        <div class=\"data-metric-note\">Menor es mejor</div>\n      </div>\n        </div>\n        <div class=\"data-foot\">"
+    }
+  ],
+  "studies": [
+    {
+      "title": "A Comparative Study of the Wound Healing Properties of Moist Exposed Burn Ointment (MEBO) and Silver Sulphadiazine",
+      "summary": "Propiedades comparativas de cicatrización de MEBO frente a sulfadiazina de plata en quemaduras.",
+      "source": "J Wound Care / PMC3188221",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3188221/",
+      "link_label": "View"
+    },
+    {
+      "title": "Moist Exposed Burn Ointment Accelerates Diabetes-related Wound Healing by Promoting Re-epithelialization",
+      "summary": "MEBO promueve la reepitelización en heridas relacionadas con la diabetes.",
+      "source": "Frontiers in Medicine, 2022",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2022.1042015/full",
+      "link_label": "View"
+    },
+    {
+      "title": "A Controlled Randomized Trial Assessing Regenerative Therapy in Healing of Chronic Pressure Ulcers",
+      "summary": "Terapia regenerativa en la curación de úlceras crónicas por presión.",
+      "source": "Randomised Controlled Trial (PDF)",
+      "url": "https://d1wqtxts1xzle7.cloudfront.net/79174492/a-controlled-randomized-trial-assessing-regenerative-therapy-in-healing-ofchronic-pressure-ulcers-libre.pdf?1642698021=&response-content-disposition=inline%3B+filename%3DA_Controlled_Randomized_Trial_Assessing.pdf&Expires=1787906177&Signature=crghJ-a3QdUR5NzwS8gNzLunmhD368fmkOljI1g8Af-ev1zOqNBTAqfxoBdCpFh~I0dsOjeoKr05-Rsm1QEmzAX0e1uQJjFU1uO6caMwnlXvpUM1MzM6jbCo1mVMONzfmZlw8PcaME~zwKidakT7ml1BCXaSHnkidu0RTj0Bqf0j~0MMsD98f1Hp7nKPQxTBNNeeA9G9iBaHb-K84~aO3cLDU52Z6bRA7S063mNbfHXW4zIeA89mJTM1Uo7dcE~WOJdhHiJIrroPajHyyQW2CtZLjRgxca1OypCJbW7uOYDh4mrfmvU9D06IFGz0bsJ2QUv5blyngUM1LljZnDySiQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+      "link_label": "View"
+    },
+    {
+      "title": "Moist Occlusive Dressing (Aquacel® Ag) versus Moist Open Dressing (MEBO®) in the Management of Partial-thickness Facial Burns: A Comparative Study in Ain Shams University",
+      "summary": "Apósito abierto húmedo (MEBO) frente a oclusivo húmedo Aquacel Ag en quemaduras faciales.",
+      "source": "Burns, 2011",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0305417911003081?via%3Dihub",
+      "link_label": "View"
+    },
+    {
+      "title": "The Effect of Moist and Moist Exposed Dressings on Healing and Barrier Function Restoration of Partial Thickness Wounds",
+      "summary": "Apósitos húmedos frente a exposición húmeda en la curación y la restauración de la función barrera.",
+      "source": "European Journal of Plastic Surgery, 2002",
+      "url": "https://link.springer.com/article/10.1007/s00238-002-0460-y",
+      "link_label": "View"
+    },
+    {
+      "title": "Benefit–Cost Analysis of Moist Exposed Burn Ointment",
+      "summary": "Evaluación económico-sanitaria del ungüento de exposición húmeda.",
+      "source": "Burns, 2002",
+      "url": "https://www.sciencedirect.com/science/article/pii/S030541790200075X",
+      "link_label": "View"
+    },
+    {
+      "title": "Moist Exposed Burn Ointment for Treating Pressure Ulcers",
+      "summary": "Revisión de la evidencia del ungüento de exposición húmeda en el cuidado de úlceras por presión.",
+      "source": "PMC5521936",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5521936/",
+      "link_label": "View"
+    }
+  ]
+}

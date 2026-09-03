@@ -366,9 +366,18 @@
     initLanguageSwitcher();
   }
 
+  // content.js(CMS 渲染层)先渲染动态内容,再执行本站初始化
+  function boot() {
+    if (window.MEBO_READY && typeof window.MEBO_READY.then === 'function') {
+      window.MEBO_READY.then(init, init);
+    } else {
+      init();
+    }
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', boot);
   } else {
-    init();
+    boot();
   }
 })();

@@ -1,0 +1,253 @@
+# ============================================================
+# MEBO International 官网内容管理后台配置 (Sveltia CMS)
+# 市场人员使用说明见 docs/CMS-GUIDE.md
+# ============================================================
+
+backend:
+  name: github
+  repo: therealyc92/mebo-international
+  branch: main
+  # 云端登录网关(一次性部署,步骤见 docs/CMS-GUIDE.md 第 3 节)
+  base_url: https://mebo-cms-auth.workers.dev
+  auth_endpoint: /auth
+
+# 本地调试: npx decap-server 后可改为 true
+local_backend: false
+
+media_folder: assets/uploads
+public_folder: assets/uploads
+
+site_url: https://therealyc92.github.io/mebo-international/
+logo_url: https://therealyc92.github.io/mebo-international/assets/logo-mebo.png
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  # ---------------- 首页轮播 ----------------
+  - label: "首页轮播(西语)"
+    name: hero_es
+    files:
+      - label: "轮播内容"
+        name: hero_es_file
+        file: assets/data/hero-es.json
+        fields:
+          - &hero_slides
+            label: "轮播项"
+            name: slides
+            label_singular: "轮播项"
+            widget: list
+            summary: "{{fields.title_html}} ({{fields.background}})"
+            minimize_collapsed: true
+            fields:
+              - { label: "背景图", name: background, widget: image }
+              - label: "角标"
+                name: badge
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: "类型", name: type, widget: select, options: [{ label: "图片 Logo", value: image }, { label: "内置图标", value: icon }, { label: "不显示", value: none }] }
+                  - { label: "内置图标", name: icon, widget: select, required: false, options: [{ label: "APEC", value: apec }, { label: "研讨会", value: webinar }, { label: "DNA", value: dna }], hint: "类型选「内置图标」时生效" }
+                  - { label: "Logo 图片", name: image, widget: image, required: false, hint: "类型选「图片 Logo」时生效" }
+                  - { label: "Logo 替代文字", name: alt, widget: string, required: false }
+                  - { label: "主行文字", name: title, widget: string, required: false }
+                  - { label: "次行文字", name: subtitle, widget: string, required: false }
+              - { label: "标题", name: title_html, widget: text, hint: "换行用 <br>;重点词用 <span class=\"apec-highlight\">词</span> 包裹" }
+              - { label: "标题样式类", name: title_class, widget: string, required: false, hint: "长标题填 hero-h1--long,一般留空" }
+              - { label: "附加样式类", name: extra_class, widget: string, required: false, hint: "默认 hero-slide--photo;拼图版式加 hero-slide--collage" }
+              - { label: "副标题", name: subtitle, widget: text }
+              - label: "按钮"
+                name: actions
+                widget: list
+                minimize_collapsed: true
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "文字", name: label, widget: string }
+                  - { label: "链接", name: href, widget: string, hint: "站内相对链接,如 contacto.html" }
+                  - { label: "样式", name: style, widget: select, options: [{ label: "主按钮(高亮)", value: accent }, { label: "次按钮(浅色)", value: light }] }
+
+  - label: "首页轮播(英语)"
+    name: hero_en
+    files:
+      - label: "轮播内容"
+        name: hero_en_file
+        file: assets/data/hero-en.json
+        fields:
+          - *hero_slides
+
+  # ---------------- 新闻 ----------------
+  - label: "新闻(西语)"
+    name: news_es
+    files:
+      - label: "新闻列表"
+        name: news_es_file
+        file: assets/data/news-es.json
+        fields:
+          - label: "新闻条目"
+            name: items
+            label_singular: "条目"
+            widget: list
+            summary: "{{fields.date}} — {{fields.title}}"
+            minimize_collapsed: true
+            fields: &news_fields
+              - { label: "标识(slug)", name: slug, widget: string, hint: "唯一英文小写短横线标识,如 med-2026-xxxx;不要与其他条目重复" }
+              - { label: "分类", name: cat, widget: select, options: [{ label: "APEC", value: apec }, { label: "医学", value: med }, { label: "全球项目", value: gp }, { label: "社会责任", value: csr }] }
+              - { label: "分类显示名", name: cat_label, widget: string, hint: "如 APEC / Medicina / Programas Globales / RSC" }
+              - { label: "日期(显示)", name: date, widget: string, hint: "按页面语言写,如 2 de junio de 2026" }
+              - { label: "标题", name: title, widget: string }
+              - { label: "摘要", name: excerpt, widget: text }
+              - { label: "封面图", name: image, widget: image }
+              - { label: "封面图替代文字", name: image_alt, widget: string }
+              - { label: "旧文章静态链接", name: url, widget: string, required: false, hint: "仅历史文章有值;新文章留空" }
+              - { label: "正文(新文章)", name: body, widget: markdown, required: false, hint: "新文章在此写正文;留空则按旧文章处理(跳转静态页)" }
+              - { label: "标签(逗号分隔)", name: tags, widget: string, required: false }
+              - { label: "来源说明", name: source_label, widget: string, required: false, hint: "如:本文改编自原文,发表于" }
+              - { label: "来源链接文字", name: source_name, widget: string, required: false }
+              - { label: "来源链接", name: source_url, widget: string, required: false }
+
+  - label: "新闻(英语)"
+    name: news_en
+    files:
+      - label: "新闻列表"
+        name: news_en_file
+        file: assets/data/news-en.json
+        fields:
+          - label: "新闻条目"
+            name: items
+            label_singular: "条目"
+            widget: list
+            summary: "{{fields.date}} — {{fields.title}}"
+            minimize_collapsed: true
+            fields: *news_fields
+
+  # ---------------- 临床证据 ----------------
+  - label: "临床证据(西语)"
+    name: evidence_es
+    files:
+      - label: "证据页内容"
+        name: evidence_es_file
+        file: assets/data/evidence-es.json
+        fields: &evidence_fields
+          - label: "顶部数据条"
+            name: facts
+            widget: list
+            minimize_collapsed: true
+            summary: "{{fields.value}} {{fields.label}}"
+            fields:
+              - { label: "数值", name: value, widget: string }
+              - { label: "说明", name: label, widget: string }
+              - { label: "来源注释", name: source, widget: string }
+          - label: "RCT 数据卡"
+            name: rct_cards
+            widget: list
+            minimize_collapsed: true
+            summary: "{{fields.badge}} — {{fields.title}}"
+            fields:
+              - { label: "角标", name: badge, widget: string }
+              - { label: "标题", name: title, widget: string }
+              - label: "指标"
+                name: metrics
+                widget: list
+                minimize_collapsed: true
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "指标名", name: label, widget: string }
+                  - { label: "单位", name: unit, widget: string }
+                  - { label: "MEBO 组名称", name: mebo_label, widget: string }
+                  - { label: "MEBO 条宽(%)", name: mebo_width, widget: string }
+                  - { label: "MEBO 数值(显示)", name: mebo_value, widget: string }
+                  - { label: "对照组名称", name: ctrl_label, widget: string }
+                  - { label: "对照条宽(%)", name: ctrl_width, widget: string }
+                  - { label: "对照数值(显示)", name: ctrl_value, widget: string }
+                  - { label: "注释", name: note, widget: string, hint: "如 Mayor es mejor / Menor es mejor" }
+              - { label: "引用(HTML)", name: cite_html, widget: text, hint: "文献引用,期刊名用 <em>…</em> 斜体" }
+          - label: "研究卡片"
+            name: studies
+            widget: list
+            minimize_collapsed: true
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "标题", name: title, widget: string }
+              - { label: "摘要", name: summary, widget: text }
+              - { label: "来源", name: source, widget: string }
+              - { label: "链接", name: url, widget: string }
+              - { label: "链接文字", name: link_label, widget: string, default: "View" }
+
+  - label: "临床证据(英语)"
+    name: evidence_en
+    files:
+      - label: "证据页内容"
+        name: evidence_en_file
+        file: assets/data/evidence-en.json
+        fields: *evidence_fields
+
+  # ---------------- 产品与页面文案 ----------------
+  - label: "产品/联系页文案(西语)"
+    name: copy_es
+    files:
+      - label: "文案内容"
+        name: copy_es_file
+        file: assets/data/copy-es.json
+        fields: &copy_fields
+          - label: "产品页"
+            name: product
+            widget: object
+            fields: &product_copy
+              - label: "页头"
+                name: hero
+                widget: object
+                collapsed: true
+                fields: &hero_copy
+                  - { label: "标题", name: title, widget: string }
+                  - { label: "导语", name: lead, widget: text }
+              - &copy_s1
+                label: "第 1 节(概览)"
+                name: s1
+                widget: object
+                collapsed: true
+                fields: &copy_s1_fields
+                  - { label: "眉题", name: eyebrow, widget: string }
+                  - { label: "标题", name: h2, widget: string }
+                  - { label: "正文第 1 段", name: p1, widget: text, required: false }
+                  - { label: "正文第 2 段", name: p2, widget: text, required: false }
+              - &copy_s2
+                label: "第 2 节"
+                name: s2
+                widget: object
+                collapsed: true
+                fields: &copy_s_fields
+                  - { label: "眉题", name: eyebrow, widget: string }
+                  - { label: "标题", name: h2, widget: string }
+                  - { label: "导语", name: lead, widget: text, required: false }
+              - { label: "第 3 节", name: s3, widget: object, collapsed: true, fields: *copy_s_fields }
+              - { label: "第 4 节", name: s4, widget: object, collapsed: true, fields: *copy_s_fields }
+              - { label: "第 5 节", name: s5, widget: object, collapsed: true, fields: *copy_s_fields }
+              - { label: "第 6 节", name: s6, widget: object, collapsed: true, fields: *copy_s_fields }
+              - { label: "第 7 节", name: s7, widget: object, collapsed: true, fields: *copy_s_fields }
+              - label: "底部行动召唤"
+                name: cta
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: "标题", name: h2, widget: string }
+                  - { label: "正文", name: p, widget: text }
+          - label: "联系页"
+            name: contact
+            widget: object
+            fields:
+              - { label: "页头", name: hero, widget: object, collapsed: true, fields: *hero_copy }
+              - { label: "第 1 节(联系信息)", name: s1, widget: object, collapsed: true, fields: *copy_s_fields }
+              - { label: "第 2 节(常见问题)", name: s2, widget: object, collapsed: true, fields: *copy_s_fields }
+              - { label: "电话(显示文字)", name: phone, widget: string }
+              - { label: "邮箱(显示文字)", name: email, widget: string }
+              - { label: "分销合作提示", name: distributor, widget: text, hint: "可含 <a href=\"mailto:…\">…</a> 链接" }
+
+  - label: "产品/联系页文案(英语)"
+    name: copy_en
+    files:
+      - label: "文案内容"
+        name: copy_en_file
+        file: assets/data/copy-en.json
+        fields: *copy_fields

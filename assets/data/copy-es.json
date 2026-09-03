@@ -1,0 +1,64 @@
+{
+  "product": {
+    "hero": {
+      "title": "MEBO Wound Ointment",
+      "lead": "Nuestro producto insignia de medicina regenerativa tópica para quemaduras y heridas."
+    },
+    "s1": {
+      "eyebrow": "Descripción general",
+      "h2": "Ungüento Tópico para Quemaduras y Heridas",
+      "p1": "MEBO Wound Ointment es un medicamento tópico para el tratamiento de quemaduras y heridas, que combina múltiples ingredientes activos de origen natural con una forma farmacéutica patentada.",
+      "p2": "El ungüento proporciona un ambiente húmedo fisiológico, licúa y elimina los tejidos necróticos, reduce el dolor, previene y controla la infección, previene y minimiza la formación de cicatrices y promueve la regeneración cutánea in situ."
+    },
+    "s2": {
+      "eyebrow": "Composición",
+      "h2": "Qué contiene"
+    },
+    "s3": {
+      "eyebrow": "Indicaciones",
+      "h2": "Para qué se utiliza"
+    },
+    "s4": {
+      "eyebrow": "Mecanismo de Acción",
+      "h2": "El ambiente &oacute;ptimo para la curaci&oacute;n",
+      "lead": "Siete acciones complementarias acompañan la herida desde la protección hasta la regeneración."
+    },
+    "s5": {
+      "eyebrow": "Visual",
+      "h2": "La Medicina Regenerativa en acción",
+      "lead": "Una explicaci&oacute;n animada de c&oacute;mo funciona la tecnolog&iacute;a de medicina regenerativa a nivel celular."
+    },
+    "s6": {
+      "eyebrow": "Protocolo de Cambio de Apósito",
+      "h2": "Cómo aplicar MEBO",
+      "lead": "Tres métodos de aplicación, elegidos según el tipo y la condición de la herida. Limpie la herida con suavidad: nunca use soluciones estériles ni antisépticos."
+    },
+    "s7": {
+      "eyebrow": "Líneas de Productos",
+      "h2": "Más de MEBO",
+      "lead": "Más allá de nuestro ungüento insignia, MEBO extiende la ciencia regenerativa a cinco categorías de productos."
+    },
+    "cta": {
+      "h2": "¿Necesita más información?",
+      "p": "Acceda a recursos profesionales, datos clínicos completos y documentación técnica para profesionales de la salud."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contáctenos",
+      "lead": "Conozca nuestras sedes en Pekín y Brea, California, y contacte directamente con nuestro equipo por teléfono, fax o correo electrónico."
+    },
+    "s1": {
+      "eyebrow": "Contacto",
+      "h2": "Informaci&oacute;n de contacto",
+      "lead": "Encuentre nuestras sedes y contacte directamente con nuestro equipo; dirigiremos su consulta a la oficina correspondiente."
+    },
+    "s2": {
+      "eyebrow": "Preguntas Frecuentes",
+      "h2": "Consultas comunes"
+    },
+    "phone": "(86) 10-58700001",
+    "email": "inter@mebo.com",
+    "distributor": "&iquest;Le interesa distribuir los productos MEBO en su mercado? Escriba a <a href=\"mailto:inter@mebo.com?subject=Consulta%20de%20distribuci%C3%B3n\">inter@mebo.com</a> para explorar oportunidades de colaboraci&oacute;n."
+  }
+}

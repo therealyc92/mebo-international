@@ -73,7 +73,7 @@
       <div class="news-filter" role="tablist" aria-label="Categories">
         <button type="button" data-cat="all" class="active">Todos</button><button type="button" data-cat="med" class="">Medicina</button><button type="button" data-cat="apec" class="">APEC</button><button type="button" data-cat="gp" class="">Programas Globales</button><button type="button" data-cat="csr" class="">RSC</button>
       </div>
-      <div class="story-list" id="story-list">
+      <div class="story-list" id="story-list" data-src="assets/data/news-es.json" data-base="" data-article-href="noticias/articulo.html?slug={slug}" data-read-more="Leer la historia">
       <article class="story-item" data-cat="apec">
         <a class="story-thumb-link" href="noticias/apec-2026-0602.html" aria-label="La 4.ª Cumbre APEC Silicon Valley concluye en Hong Kong impulsando la colaboración Asia-Pacífico"><img class="story-thumb" src="assets/news/apec-2026-0602.jpg" alt="4th APEC Silicon Valley Summit Concludes in Hong Kong, Empowering Asia-Pacific Collaboration" loading="lazy"></a>
         <div class="story-content">
@@ -649,23 +649,23 @@
   </footer>
 
   <script>
-  (function(){
+  window.initNewsPager = (function () {
     var PAGE_SIZE = 5;
-    var btns = document.querySelectorAll('.news-filter button');
-    var items = Array.prototype.slice.call(document.querySelectorAll('.story-item'));
-    var pager = document.getElementById('story-pager');
-    var label = document.getElementById('pager-label');
-    var prev = document.getElementById('pager-prev');
-    var next = document.getElementById('pager-next');
-    var cat = 'all', page = 1;
+    var cat = 'all', page = 1, bound = false;
     var ofWord = 'de';
-    function apply(){
-      var visible = items.filter(function(it){ return cat==='all' || it.dataset.cat===cat; });
+    function apply() {
+      var btns = document.querySelectorAll('.news-filter button');
+      var items = Array.prototype.slice.call(document.querySelectorAll('.story-item'));
+      var pager = document.getElementById('story-pager');
+      var label = document.getElementById('pager-label');
+      var prev = document.getElementById('pager-prev');
+      var next = document.getElementById('pager-next');
+      var visible = items.filter(function (it) { return cat === 'all' || it.dataset.cat === cat; });
       var pages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
       if (page > pages) page = pages;
-      items.forEach(function(it){ it.style.display = 'none'; });
-      visible.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE).forEach(function(it){ it.style.display = ''; });
-      btns.forEach(function(b){ b.classList.toggle('active', b.dataset.cat===cat); });
+      items.forEach(function (it) { it.style.display = 'none'; });
+      visible.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE).forEach(function (it) { it.style.display = ''; });
+      btns.forEach(function (b) { b.classList.toggle('active', b.dataset.cat === cat); });
       if (visible.length > PAGE_SIZE) {
         pager.style.display = 'flex';
         label.textContent = page + ' ' + ofWord + ' ' + pages;
@@ -675,21 +675,30 @@
         pager.style.display = 'none';
       }
     }
-    function scrollTop(){
-      document.getElementById('stories').scrollIntoView({behavior:'smooth'});
+    function scrollTop() {
+      document.getElementById('stories').scrollIntoView({ behavior: 'smooth' });
     }
-    btns.forEach(function(b){ b.addEventListener('click', function(){
-      cat = b.dataset.cat; page = 1; apply();
-      history.replaceState(null,'','#'+cat);
-      scrollTop();
-    });});
-    prev.addEventListener('click', function(){ if (page > 1) { page--; apply(); scrollTop(); } });
-    next.addEventListener('click', function(){ page++; apply(); scrollTop(); });
-    var h = location.hash.replace('#','');
-    if (['all','med','apec','gp','csr'].indexOf(h) > -1) cat = h;
-    apply();
+    return function init() {
+      if (!bound) {
+        bound = true;
+        document.querySelectorAll('.news-filter button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            cat = b.dataset.cat; page = 1; apply();
+            history.replaceState(null, '', '#' + cat);
+            scrollTop();
+          });
+        });
+        document.getElementById('pager-prev').addEventListener('click', function () { if (page > 1) { page--; apply(); scrollTop(); } });
+        document.getElementById('pager-next').addEventListener('click', function () { page++; apply(); scrollTop(); });
+        var h = location.hash.replace('#', '');
+        if (['all', 'med', 'apec', 'gp', 'csr'].indexOf(h) > -1) cat = h;
+      }
+      apply();
+    };
   })();
+  window.initNewsPager();
   </script>
+  <script src="js/content.js?v=20260903" defer></script>
   <script src="js/main.js?v=20260901"></script>
   <script src="js/search.js?v=20260827"></script>
   <script src="js/analytics.js"></script>
