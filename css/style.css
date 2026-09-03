@@ -3387,12 +3387,10 @@ body.no-js .fade-in {
 
 /* ---------- MEBO Journal showcase ---------- */
 .jn-layout {
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: var(--space-2xl);
-  max-width: 1100px;
+  display: block;
+  max-width: 680px;
   margin: 0 auto;
-  align-items: start;
+  text-align: center;
 }
 .jn-lead { color: var(--color-text-light); line-height: 1.75; font-size: 0.98rem; }
 .jn-stats { display: flex; gap: var(--space-lg); margin: var(--space-lg) 0; }
@@ -3405,7 +3403,7 @@ body.no-js .fade-in {
   line-height: 1.1;
 }
 .jn-stat span { font-size: 0.8rem; color: var(--color-text-muted); }
-.jn-themes { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: var(--space-lg); }
+.jn-themes { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: var(--space-lg); justify-content: center; }
 .jn-themes span {
   background: var(--color-accent-pale);
   color: var(--color-primary-dark);
