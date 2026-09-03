@@ -77,7 +77,7 @@
       ]
     },
     {
-      "background": "/assets/uploads/微信图片_20260903150232_820_772.png",
+      "background": "assets/uploads/微信图片_20260903150232_820_772.png",
       "badge": {
         "type": "icon",
         "icon": "dna",

@@ -16,7 +16,9 @@
   function resolve(base, p) {
     if (!p) return p;
     if (/^(https?:)?\/\//.test(p) || p.charAt(0) === '#') return p;
-    return (base || '') + p.replace(/^(\.\.\/)+/, '');
+    // 统一成"相对站点根目录"形式,再按页面层级补前缀;
+    // 兼容 CMS 写出的根绝对路径(/assets/...)和 ../ 前缀
+    return (base || '') + p.replace(/^(\.\.\/)+/, '').replace(/^\//, '');
   }
 
   function loadJSON(src) {

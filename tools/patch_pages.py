@@ -38,13 +38,13 @@ def add_content_js(prefix):
     return fn
 
 
-def hero_attrs(json_path):
+def hero_attrs(json_path, base=""):
     def fn(src):
         if 'hero-slides" data-src' in src:
             return src
         return src.replace(
             '<div class="hero-slides">',
-            '<div class="hero-slides" data-src="%s" data-base="">' % json_path,
+            '<div class="hero-slides" data-src="%s" data-base="%s">' % (json_path, base),
             1,
         )
     return fn
@@ -120,13 +120,13 @@ def news_page(json_path, base, article_href, read_more, of_word):
     return fn
 
 
-def evidence_attrs(json_path):
+def evidence_attrs(json_path, base=""):
     def fn(src):
         if 'fact-strip" data-src' in src:
             return src
         return src.replace(
             '<div class="fact-strip">',
-            '<div class="fact-strip" data-src="%s" data-base="">' % json_path,
+            '<div class="fact-strip" data-src="%s" data-base="%s">' % (json_path, base),
             1,
         )
     return fn
@@ -139,9 +139,9 @@ patch("noticias.html", lambda s: add_content_js("")(
 patch("evidencia.html", lambda s: add_content_js("")(evidence_attrs("assets/data/evidence-es.json")(s)))
 
 # 英语页
-patch("en/index.html", lambda s: add_content_js("../")(hero_attrs("../assets/data/hero-en.json")(s)))
+patch("en/index.html", lambda s: add_content_js("../")(hero_attrs("../assets/data/hero-en.json", "../")(s)))
 patch("en/news.html", lambda s: add_content_js("../")(
     news_page("../assets/data/news-en.json", "../", "news/article.html?slug={slug}", "Read Story", "of")(s)))
-patch("en/evidence.html", lambda s: add_content_js("../")(evidence_attrs("../assets/data/evidence-en.json")(s)))
+patch("en/evidence.html", lambda s: add_content_js("../")(evidence_attrs("../assets/data/evidence-en.json", "../")(s)))
 
 print("done")
