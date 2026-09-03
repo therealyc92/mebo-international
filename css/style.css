@@ -3834,6 +3834,20 @@ body.no-js .fade-in {
 }
 .dc-step-label strong { color: var(--color-primary); }
 .dc-step p { padding: 0.3rem var(--space-md) var(--space-md); font-size: 0.83rem; color: var(--color-text-light); margin: 0; line-height: 1.6; }
+.dc-warn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 1060px;
+  margin: var(--space-md) auto 0;
+  padding: 0.7rem 1rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 4px solid #dc2626;
+  border-radius: var(--radius-sm);
+}
+.dc-warn svg { width: 18px; height: 18px; flex: 0 0 auto; color: #dc2626; }
+.dc-warn p { margin: 0; font-size: 0.85rem; font-weight: 600; color: #b91c1c; line-height: 1.5; }
 
 @media (max-width: 980px) {
   .ind-grid { grid-template-columns: repeat(2, 1fr); }

@@ -292,65 +292,6 @@
     </div>
   </section>
 
-  <!-- Clinical Focus -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Clinical Focus</span>
-        <h2>Chronic Wounds First</h2>
-        <p>In Latin America our clinical focus starts where the daily burden is highest — diabetic foot ulcers and pressure injuries — with burn care as the founding indication.</p>
-      </div>
-      <div class="cf-tabs fade-in"><button class="cf-tab active" data-cf="0">Diabetic Foot Ulcers</button><button class="cf-tab" data-cf="1">Pressure Ulcers</button><button class="cf-tab" data-cf="2">Acute Wounds & Burns</button></div>
-      <div class="cf-panel active" id="cf-0">
-        <div class="cf-grid">
-          <div class="cf-main">
-            <p class="cf-lead">Diabetic foot ulcers precede roughly 85% of diabetes-related amputations, and 15–25% of people with diabetes will develop one in their lifetime.</p>
-            <ul class="cf-role"><li>Maintains a physiological moist environment for repair</li><li>Supports autolytic debridement without damaging viable tissue</li><li>Topical, easy to integrate into an individualised plan</li></ul>
-          </div>
-          <div class="cf-evidence">
-            <div class="cf-ev-head">Evidence at a glance</div>
-            <div class="cf-ev-title">MEBT/MEBO in the treatment of diabetic foot — randomised, controlled (n = 120)</div>
-            <div class="cf-stats"><div class="cf-stat"><strong>100%</strong><span>Total effective rate at day 60 (vs 81.67%)</span></div><div class="cf-stat"><strong>56.4 d</strong><span>Mean healing time (vs 58.2 d)</span></div><div class="cf-stat"><strong>5.88</strong><span>Scar score after healing (vs 7.58)</span><em>lower is better</em></div></div>
-            <p class="cf-src">Liu Y, Wang Y, Shan P. The Chinese Journal of Burns Wounds & Surface Ulcers 2019;31(3).</p>
-            <p class="cf-note">Comparator: soft silicone dressing; Wagner grade 1–4; p < 0.05 on all outcomes.</p>
-            <a href="evidence.html" class="cf-cta">View the full evidence base &rarr;</a>
-          </div>
-        </div>
-      </div>
-      <div class="cf-panel" id="cf-1">
-        <div class="cf-grid">
-          <div class="cf-main">
-            <p class="cf-lead">Stage III–IV pressure injuries are chronic refractory wounds with high recurrence, long healing times and a heavy cost burden for bedridden and elderly patients.</p>
-            <ul class="cf-role"><li>Promotes granulation and re-epithelialisation</li><li>Fewer dressing changes than silver alginate in the study below</li><li>Substantially lower treatment cost per case</li></ul>
-          </div>
-          <div class="cf-evidence">
-            <div class="cf-ev-head">Evidence at a glance</div>
-            <div class="cf-ev-title">MEBO + MEBO Wound & Ulcer Dressing in stage III & IV pressure ulcers — randomised (n = 124)</div>
-            <div class="cf-stats"><div class="cf-stat"><strong>98.3%</strong><span>Healing rate at 2 months (vs 92.2%)</span></div><div class="cf-stat"><strong>43 vs 47</strong><span>Mean number of dressing changes</span></div><div class="cf-stat"><strong>$157</strong><span>Mean treatment cost (vs $391)</span><em>USD per case</em></div></div>
-            <p class="cf-src">Chen X, Tao S, Xu H, Ji X. The Chinese Journal of Burns Wounds & Surface Ulcers 2017;29(5).</p>
-            <p class="cf-note">Comparator: silver alginate dressing; healing time 46.0 vs 48.3 days; p < 0.05.</p>
-            <a href="evidence.html" class="cf-cta">View the full evidence base &rarr;</a>
-          </div>
-        </div>
-      </div>
-      <div class="cf-panel" id="cf-2">
-        <div class="cf-grid">
-          <div class="cf-main">
-            <p class="cf-lead">Burns remain our founding indication, where MEBO has been compared with silver sulphadiazine for decades and is used across partial- and deep-thickness injuries.</p>
-            <ul class="cf-role"><li>Immediate analgesic effect during dressing changes</li><li>Physiological moist environment instead of dry exposure</li><li>Reduced scar formation versus conventional dressings</li></ul>
-          </div>
-          <div class="cf-evidence">
-            <div class="cf-ev-head">Evidence at a glance</div>
-            <div class="cf-ev-title">MEBO versus silver sulphadiazine and moist-exposed therapy research programme</div>
-            <div class="cf-stats"><div class="cf-stat"><strong>Frontiers 2022</strong><span>Re-epithelialisation mechanism in diabetes-related wounds</span></div><div class="cf-stat"><strong>Cochrane review</strong><span>Moist exposed burn ointment for treating pressure ulcers</span></div><div class="cf-stat"><strong>Benefit–cost</strong><span>Health-economic analysis of moist exposed burn ointment</span></div></div>
-            <p class="cf-src">Comparative wound-healing study (PMC3188221); Frontiers in Medicine 2022 — MEBO accelerates diabetes-related wound healing by promoting re-epithelialisation.</p>
-            <p class="cf-note">Acute wounds also include abrasions, lacerations, surgical and donor sites.</p>
-            <a href="evidence.html" class="cf-cta">View the full evidence base &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Comprehensive Wound Care Program -->
   <section class="section">
@@ -378,19 +319,6 @@
     </div>
   </section>
 
-
-  <script>
-  (function(){
-    var tabs = document.querySelectorAll('.cf-tab');
-    var panels = document.querySelectorAll('.cf-panel');
-    tabs.forEach(function(tab){
-      tab.addEventListener('click', function(){
-        tabs.forEach(function(t){ t.classList.toggle('active', t === tab); });
-        panels.forEach(function(p){ p.classList.toggle('active', p.id === 'cf-' + tab.dataset.cf); });
-      });
-    });
-  })();
-  </script>
   <!-- Statistics -->
   <section class="section stats-section">
     <div class="container">
