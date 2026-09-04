@@ -104,16 +104,16 @@
     {
       "background": "/assets/uploads/images (1).jpg",
       "badge": {
-        "type": "image",
-        "icon": "",
-        "image": "",
-        "alt": "",
-        "title": "",
-        "subtitle": ""
+        "type": "icon",
+        "icon": "apec",
+        "image": "/assets/uploads/images.jpg",
+        "alt": "妈妈，牛来",
+        "title": "\"Animación china · Hecha a mano\" / \"Fenómeno",
+        "subtitle": "de internet · 2026\""
       },
-      "title_html": "牛来！！",
-      "title_class": "",
-      "extra_class": "",
+      "title_html": "牛来！！<br><span class=\"apec-highlight\">《Niu Lai》</span>",
+      "title_class": "一句话西语简介：母子俩五年手搓的动画、怯懦小牛变勇敢的故事、2026 网络现象",
+      "extra_class": "hero-slide--photo",
       "subtitle": "妈妈，牛来",
       "actions": [
         {
