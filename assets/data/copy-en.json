@@ -2,7 +2,7 @@
   "product": {
     "hero": {
       "title": "MEBO Wound Ointment",
-      "lead": "Our flagship topical regenerative medicine for burn and wounds."
+      "lead": "Our flagship topical regenerative medicine for burns and wounds."
     },
     "s1": {
       "eyebrow": "Overview",
@@ -55,7 +55,8 @@
     },
     "s2": {
       "eyebrow": "Frequently Asked Questions",
-      "h2": "Common Inquiries"
+      "h2": "Common Inquiries",
+      "lead": ""
     },
     "phone": "(86) 10-58700001",
     "email": "inter@mebo.com",
