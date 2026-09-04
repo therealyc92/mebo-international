@@ -86,7 +86,11 @@
       "image": "../assets/news/med-2025-peru-apec.png",
       "image_alt": "Regenerative Medical Technology Exchange in Peru Under the APEC Framework",
       "url": "news/med-2025-peru-apec.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2025-argentina",
@@ -98,7 +102,8 @@
       "image": "../assets/news/med-2025-argentina.png",
       "image_alt": "MEBO International Participates in Argentina Wound Conference, Promoting Regenerative Medical Technology Across Latin America",
       "url": "news/med-2025-argentina.html",
-      "body": ""
+      "body": "",
+      "tags": ""
     },
     {
       "slug": "apec-2025-gyeongju-opening",
@@ -187,6 +192,9 @@
       "image_alt": "Silicon Valley Meets APEC Again: 2025 Forum to Be Held in Gyeongju, South Korea",
       "url": "news/apec-2025-1010.html",
       "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
       "source_url": ""
     },
     {
@@ -215,7 +223,9 @@
       "image": "../assets/news/apec-2025-0923.png",
       "image_alt": "Former APEC Host Committee Chair Kevin Xu Joins Panama Government Roundtable on Inter-American Connectivity and Innovation",
       "url": "news/apec-2025-0923.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": ""
     },
     {
       "slug": "gp-2025-0706",
@@ -356,7 +366,10 @@
       "image_alt": "MEBO APEC 2024 in Action: In-Depth Hospital Visit in Peru Builds Consensus for a Healthier Future",
       "url": "news/csr-2024-1020.html",
       "body": "",
-      "tags": ""
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2024-latam-forum",
@@ -368,7 +381,11 @@
       "image": "../assets/news/med-2024-latam-forum.jpg",
       "image_alt": "MEBO APEC 2024 in Action: Latin America Forum Strengthens Regional Medical Cooperation",
       "url": "news/med-2024-latam-forum.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "csr-2024-1016",
@@ -480,7 +497,11 @@
       "image": "../assets/news/apec-2023-0708.jpg",
       "image_alt": "APEC 2023 Official Website Launches, with MEBO International Listed as a Key Partner",
       "url": "news/apec-2023-0708.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2023-0622",
@@ -536,7 +557,11 @@
       "image": "../assets/news/med-2022-0920.jpg",
       "image_alt": "Regenerative Wave MEBT Training Delivers Results: Ecuadorian President Joins CGI 2022 Annual Meeting",
       "url": "news/med-2022-0920.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-mending-europe",
@@ -560,7 +585,11 @@
       "image": "../assets/news/med-2022-0913.jpg",
       "image_alt": "Business and Academic Exchange in Ecuador: MEBO International Sets Sail Again in Latin America",
       "url": "news/med-2022-0913.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2022-0912",
@@ -572,7 +601,11 @@
       "image": "../assets/news/med-2022-0912.jpg",
       "image_alt": "MEBO International Restarts the Regenerative Wave in Latin America",
       "url": "news/med-2022-0912.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2022-0831",
@@ -584,7 +617,11 @@
       "image": "../assets/news/gp-2022-0831.jpg",
       "image_alt": "The 21st ISBI Congress: Vibrant Mexico, an Academic Feast, and a Journey of Original Aspiration",
       "url": "news/gp-2022-0831.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2022-0518",
@@ -596,7 +633,11 @@
       "image": "../assets/news/med-2022-0518.jpg",
       "image_alt": "MEBO Chairman Kevin Xu Meets Former Mexican President Ernesto Zedillo",
       "url": "news/med-2022-0518.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2021-1111",
@@ -608,7 +649,11 @@
       "image": "../assets/news/apec-2021-1111.jpg",
       "image_alt": "MEBO Chairman Kevin Xu Attends the APEC CEO Summit",
       "url": "news/apec-2021-1111.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2019-0605",
@@ -620,7 +665,11 @@
       "image": "../assets/news/med-2019-0605.jpg",
       "image_alt": "Regenerative Wave: MEBO International Launches a New Initiative for Latin America",
       "url": "news/med-2019-0605.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2019-0208",
