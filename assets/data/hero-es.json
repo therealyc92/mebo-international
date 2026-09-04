@@ -102,29 +102,24 @@
       ]
     },
     {
-      "background": "assets/uploads/images.jpg",
+      "background": "/assets/uploads/images (1).jpg",
       "badge": {
-        "type": "icon",
-        "icon": "webinar",
+        "type": "image",
+        "icon": "",
         "image": "",
         "alt": "",
-        "title": "Animación china · Hecha a mano",
-        "subtitle": "Fenómeno de internet · 2026"
+        "title": "",
+        "subtitle": ""
       },
-      "title_html": "牛来！！<br><span class=\"apec-highlight\">《Niu Lai》</span>",
+      "title_html": "牛来！！",
       "title_class": "",
-      "extra_class": "hero-slide--photo",
-      "subtitle": "Una película de animación creada a mano durante cinco años por un director y su madre: la historia de un ternero tímido que aprende a ser valiente. De proyecto casero a fenómeno cultural de internet en 2026.",
+      "extra_class": "",
+      "subtitle": "妈妈，牛来",
       "actions": [
         {
-          "label": "Leer las Novedades",
-          "href": "noticias.html",
+          "label": "点击牛走",
+          "href": "https://www.google.com/search?q=%E7%89%9B%E6%9D%A5&sca_esv=5c00d576545a6f81&udm=2&sxsrf=APpeQnsQwOI_dx-gTlIa4ou1jG3M7cIvGQ:1788490491878&source=lnt&tbs=isz:l&sa=X&ved=2ahUKEwjS986j9tOWAxV9r1YBHQhpE70QpwV6BAgKEAY&biw=1707&bih=898&dpr=1.5#ip=1&sv=CAMSURoyKhBlLW12YXF3b1BYYmtqY3FNMg5tdmFxd29QWGJramNxTToOWEgxd21NVC1DaTNqTk0gBCoXCgFzEhBlLW12YXF3b1BYYmtqY3FNGAEwARgHILCWuIkKSggQARgBIAEoAQ",
           "style": "accent"
-        },
-        {
-          "label": "Nuestra Historia",
-          "href": "sobre-mebo.html",
-          "style": "light"
         }
       ]
     }
