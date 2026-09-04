@@ -10,7 +10,11 @@
       "image": "../assets/news/apec-2026-0602.jpg",
       "image_alt": "4th APEC Silicon Valley Summit Concludes in Hong Kong, Empowering Asia-Pacific Collaboration",
       "url": "news/apec-2026-0602.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2026-hospitalar",
@@ -22,7 +26,11 @@
       "image": "../assets/news/med-2026-hospitalar.png",
       "image_alt": "MEBO International at Hospitalar 2026 Brazil: Expanding Regenerative Medical Technology into Latin America",
       "url": "news/med-2026-hospitalar.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2026-silver-healing",
@@ -34,7 +42,11 @@
       "image": "../assets/news/med-2026-silver-healing.png",
       "image_alt": "MEBO International Continues to Promote Regional Medical Exchanges, Focusing on Silver Healing",
       "url": "news/med-2026-silver-healing.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2026-aba-orlando",
@@ -46,7 +58,11 @@
       "image": "../assets/news/gp-2026-aba-orlando.png",
       "image_alt": "Regenerative Medical Technology Empowers Burn Care: MEBO International Shines at the 2026 ABA Orlando Conference",
       "url": "news/gp-2026-aba-orlando.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2025-chile-expo",
@@ -94,7 +110,11 @@
       "image": "../assets/news/apec-2025-gyeongju-opening.jpg",
       "image_alt": "Kevin Xu's APEC Keynote: Building a People-Centered Digital Healthcare Future",
       "url": "news/apec-2025-gyeongju-opening.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2025-delegation-gyeongju",
@@ -106,7 +126,11 @@
       "image": "../assets/news/apec-2025-delegation-gyeongju.png",
       "image_alt": "MEBO Group Delegation Attends APEC 2025 Opening in Gyeongju, South Korea",
       "url": "news/apec-2025-delegation-gyeongju.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2025-1029",
@@ -130,7 +154,11 @@
       "image": "../assets/news/gp-2025-diabetic-symposium.png",
       "image_alt": "2025 International Diabetic Lower Extremity Symposium: Global Experts Lead Innovation in Diabetic Foot Ulcer Care",
       "url": "news/gp-2025-diabetic-symposium.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2025-1022",
@@ -142,7 +170,11 @@
       "image": "../assets/news/gp-2025-1022.jpg",
       "image_alt": "MEBO Group Board Representative Attends 58th Latin America and Caribbean Annual Conference",
       "url": "news/gp-2025-1022.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2025-1010",
@@ -154,7 +186,8 @@
       "image": "../assets/news/apec-2025-1010.jpg",
       "image_alt": "Silicon Valley Meets APEC Again: 2025 Forum to Be Held in Gyeongju, South Korea",
       "url": "news/apec-2025-1010.html",
-      "body": ""
+      "body": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2025-cgi-kevin-xu",
@@ -166,7 +199,11 @@
       "image": "../assets/news/gp-2025-cgi-kevin-xu.png",
       "image_alt": "MEBO Group Chairman Kevin Xu Announces New Global Health Initiative at CGI Health Working Group",
       "url": "news/gp-2025-cgi-kevin-xu.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2025-0923",
@@ -238,7 +275,11 @@
       "image": "../assets/news/gp-2025-0328.jpg",
       "image_alt": "The 35th EWMA Conference Convenes in Barcelona",
       "url": "news/gp-2025-0328.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2024-1112a",
@@ -298,7 +339,11 @@
       "image": "../assets/news/gp-2024-1108.jpg",
       "image_alt": "PAPER Magazine Celebrates Its 40th Anniversary in Peru",
       "url": "news/gp-2024-1108.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "csr-2024-1020",
@@ -310,7 +355,8 @@
       "image": "../assets/news/csr-2024-1020.jpg",
       "image_alt": "MEBO APEC 2024 in Action: In-Depth Hospital Visit in Peru Builds Consensus for a Healthier Future",
       "url": "news/csr-2024-1020.html",
-      "body": ""
+      "body": "",
+      "tags": ""
     },
     {
       "slug": "med-2024-latam-forum",
@@ -370,7 +416,11 @@
       "image": "../assets/news/csr-2024-0422.jpg",
       "image_alt": "First Stop of APEC 2024 Activities: MEBO Group Visits ANIQUEM, Peru's Burned Children Rehabilitation Association",
       "url": "news/csr-2024-0422.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2024-0112",
@@ -442,7 +492,11 @@
       "image": "../assets/news/apec-2023-0622.jpg",
       "image_alt": "MEBO International Joins Bay Area Council Working Session with U.S. Ambassadors to ASEAN",
       "url": "news/apec-2023-0622.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2023-0523",
@@ -454,7 +508,11 @@
       "image": "../assets/news/apec-2023-0523.jpg",
       "image_alt": "MEBO Chairman Kevin Xu Meets Mexico's Ambassador to the United States",
       "url": "news/apec-2023-0523.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2023-0425",
@@ -574,7 +632,11 @@
       "image": "../assets/news/med-2019-0208.jpg",
       "image_alt": "MEBO Chairman Kevin Xu Concludes Productive Working Visit to Panama",
       "url": "news/med-2019-0208.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2019-0130",
@@ -586,7 +648,27 @@
       "image": "../assets/news/med-2019-0130.jpg",
       "image_alt": "MEBO Chairman Kevin Xu Makes His First Official Visit to Panama",
       "url": "news/med-2019-0130.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
+    },
+    {
+      "slug": "gp-2026-b20-nasdaq",
+      "cat": "gp",
+      "cat_label": "Global Programs",
+      "date": "September 3, 2026",
+      "title": "Kevin Xu, Chairman of MEBO Group, Featured on the Nasdaq Screen as a Member of the B20 Economic Growth Action Group",
+      "excerpt": "On September 1, 2026, the B20 organizers held a bell-ringing warm-up ceremony at Nasdaq in New York ahead of the main summit in Washington; Kevin Xu, Chairman of MEBO Group and Chairman of the APEC 2023 Host Committee, was featured on the giant screen as a core member of the B20 Economic Growth Action Group.",
+      "image": "/assets/uploads/260904-b20-nasdaq-cover.png",
+      "image_alt": "Kevin Xu, Chairman of MEBO Group, Featured on the Nasdaq Screen as a B20 Economic Growth Action Group Member",
+      "url": "",
+      "body": "On September 1, 2026, the organizer of the B20 (Business 20, the G20 business summit) held a bell-ringing warm-up ceremony at the Nasdaq exchange in New York, in preparation for the main B20 summit to be held in Washington, D.C., from November 9 to 11. Attendees included organizations of the U.S. Chamber of Commerce, Nasdaq executives, ambassadors of multiple countries to China, leaders of multinational corporations, and representatives of the B20 secretariat; financial media outlets, including CNBC, reported on the ceremony.\n\nThe ceremony featured a special showcase of core members of the B20 task forces: portraits of action group members from around the world and across different fields rotated on the giant Nasdaq screen. Kevin Xu, Chairman of MEBO Group and Chairman of the APEC 2023 Host Committee, appeared on the screen as a core member of the B20 Economic Growth Action Group.\n\nAs the first B20 summit hosted by the United States, the event also coincides with the 250th anniversary of the nation. By bringing the B20 business agenda into the heart of global finance, the organizers highlighted the vital role of the private sector in driving investment, strengthening economic and trade ties, and fueling global economic growth.\n\nEarlier, on July 13, Xu attended the first plenary working session of the B20 Economic Growth Action Group, joining leading global corporations, financial institutions, business representatives, and top think tanks to explore pathways for global economic growth. Echoing the G20 theme of \"getting back to economic basics,\" this year's B20 focuses on slowing growth, debt pressure, AI-driven transformation, labor mismatches, and energy innovation, with a clear work orientation of \"moving from paper reports to substantive progress.\" The Economic Growth Action Group concentrates on lowering cross-border trade barriers and solicits input on SME financing, cross-border capital flows, supply chain stability, data compliance, and university-industry collaboration. Its outcomes will be submitted to the G20 as a reference for government decision-making, covering approximately 85% of global GDP and 75% of international trade.\n\nFrom the APEC platform to the B20 mechanism, Xu has long been active in multilateral international business platforms, deeply engaged in global economic governance.\n\nAs a member of the B20 Economic Growth Action Group, Xu advocates accelerating multilateralism and globalization. He proposed fully activating the African Continental Free Trade Area framework championed by the African Union, using it as a key hub to rapidly connect and formalize economic and trade cooperation between G20 members and the African region. In his view, leveraging Africa's own integrated free trade framework can remove intra-regional trade barriers and build an efficient, pragmatic channel between G20 economies and the African market, unlocking the continent's enormous growth potential and injecting new momentum into global economic recovery.\n\nThe 2026 APEC Economic Leaders' Meeting, scheduled for November, will take place after the B20 main summit in Washington, creating synergy between the two major international platforms. It is hoped that the B20 multilateral platform will bring together diverse perspectives and contribute constructive ideas to global economic and trade cooperation and recovery. Going forward, Xu will continue to participate in the task force's series of discussions, working with global business leaders to refine policy proposals and bring the voice of the business community to the G20.",
+      "tags": "B20, NASDAQ, KEVIN XU, G20",
+      "source_label": "This story is adapted from the original article published on",
+      "source_name": "mebo.com",
+      "source_url": "https://www.mebo.com/Detail/index/sign/5835402a720d752127b9ca137d321148.html"
     }
   ]
 }
