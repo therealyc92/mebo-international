@@ -74,7 +74,11 @@
       "image": "../assets/news/med-2025-chile-expo.png",
       "image_alt": "MEBO International Debuts at Chile National Wound Foundation's First Wound Expo",
       "url": "news/med-2025-chile-expo.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2025-peru-apec",
@@ -103,7 +107,10 @@
       "image_alt": "MEBO International Participates in Argentina Wound Conference, Promoting Regenerative Medical Technology Across Latin America",
       "url": "news/med-2025-argentina.html",
       "body": "",
-      "tags": ""
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2025-gyeongju-opening",
@@ -147,7 +154,11 @@
       "image": "../assets/news/apec-2025-1029.jpg",
       "image_alt": "APEC 2025 Opens in Gyeongju: MEBO Group's 20-Member Delegation Takes the Stage",
       "url": "news/apec-2025-1029.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2025-diabetic-symposium",
@@ -225,7 +236,9 @@
       "url": "news/apec-2025-0923.html",
       "body": "",
       "tags": "",
-      "source_label": ""
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2025-0706",
@@ -237,7 +250,11 @@
       "image": "../assets/news/gp-2025-0706.jpg",
       "image_alt": "MEBO Chairman Kevin Xu Attends the 2025 BRICS Business Forum",
       "url": "news/gp-2025-0706.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2025-0630",
@@ -249,7 +266,11 @@
       "image": "../assets/news/apec-2025-0630.jpg",
       "image_alt": "MEBO Reopens the APEC 2025 Moment",
       "url": "news/apec-2025-0630.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2025-0627",
@@ -261,7 +282,11 @@
       "image": "../assets/news/gp-2025-0627.png",
       "image_alt": "MEBO Group Becomes Strategic Partner of the BRICS Business Forum",
       "url": "news/gp-2025-0627.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2025-diabetic-foot-latam",
@@ -273,7 +298,11 @@
       "image": "../assets/news/med-2025-diabetic-foot-latam.png",
       "image_alt": "A New Chapter for Regenerative Medical Technology in Latin America: Diabetic Foot Symposium Successfully Held",
       "url": "news/med-2025-diabetic-foot-latam.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2025-0328",
@@ -313,7 +342,11 @@
       "image": "../assets/news/apec-2024-1112b.jpg",
       "image_alt": "Inside the APEC 2024 Official Gift Bag: Unique Design, Rich Culture",
       "url": "news/apec-2024-1112b.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2024-1111",
@@ -397,7 +430,11 @@
       "image": "../assets/news/csr-2024-1016.jpg",
       "image_alt": "MEBO APEC 2024 in Action: Partnering with ANIQUEM to Build a Bridge of Care for Children",
       "url": "news/csr-2024-1016.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2024-isbi-birmingham",
@@ -409,7 +446,11 @@
       "image": "../assets/news/gp-2024-isbi-birmingham.jpeg",
       "image_alt": "22nd ISBI Congress Successfully Held in Birmingham",
       "url": "news/gp-2024-isbi-birmingham.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2024-0623",
@@ -449,7 +490,8 @@
       "image": "../assets/news/apec-2024-0112.jpg",
       "image_alt": "U.S. State Department Releases 2023 APEC Outcomes Report, Bay Area Council Activities Listed as Key Results",
       "url": "news/apec-2024-0112.html",
-      "body": ""
+      "body": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2023-1117",
@@ -461,7 +503,11 @@
       "image": "../assets/news/apec-2023-1117.jpg",
       "image_alt": "APEC 2023 Co-Chair Kevin Xu Attends Peruvian President's Private Dinner to Discuss Peru's Upcoming APEC Host Year",
       "url": "news/apec-2023-1117.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "gp-2023-phuket",
@@ -473,7 +519,11 @@
       "image": "../assets/news/gp-2023-phuket.png",
       "image_alt": "2023 International Diabetic Lower Extremity Symposium Held in Phuket, Thailand",
       "url": "news/gp-2023-phuket.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2023-0922",
@@ -485,7 +535,11 @@
       "image": "../assets/news/apec-2023-0922.png",
       "image_alt": "City of San Francisco Officially Announces Kevin Xu as APEC 2023 Host Committee Co-Chair",
       "url": "news/apec-2023-0922.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2023-0708",
