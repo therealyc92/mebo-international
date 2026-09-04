@@ -1,6 +1,22 @@
 {
   "items": [
     {
+      "slug": "gp-2026-b20-nasdaq",
+      "cat": "gp",
+      "cat_label": "Programas Globales",
+      "date": "3 de septiembre de 2026",
+      "title": "Kevin Xu, presidente de MEBO Group, aparece en la pantalla del Nasdaq como miembro del Grupo de Acción de Crecimiento Económico del B20",
+      "excerpt": "El 1 de septiembre de 2026, los organizadores del B20 celebraron en el Nasdaq de Nueva York la ceremonia de calentamiento rumbo a la cumbre principal de Washington; Kevin Xu, presidente de MEBO Group y presidente del Comité Anfitrión de APEC 2023, fue presentado en la gran pantalla como miembro central del Grupo de Acción de Crecimiento Económico.",
+      "image": "/assets/uploads/260904-b20-nasdaq-cover.png",
+      "image_alt": "Kevin Xu, Chairman of MEBO Group, Featured on the Nasdaq Screen as a B20 Economic Growth Action Group Member",
+      "url": "",
+      "body": "El 1 de septiembre de 2026, el organizador del B20 (Cumbre Empresarial del G20) celebró en la bolsa Nasdaq de Nueva York una ceremonia de campanazo de calentamiento, en preparación de la cumbre principal del B20 que se celebrará en Washington del 9 al 11 de noviembre. Asistieron organizaciones de la Cámara de Comercio de Estados Unidos, ejecutivos del Nasdaq, embajadores de varios países acreditados en China, directivos de empresas multinacionales y representantes de la secretaría del B20; medios financieros como CNBC informaron simultáneamente.\n\nLa ceremonia incluyó una exhibición especial de los miembros centrales de los grupos de trabajo del B20: los retratos de los miembros de grupos de acción de todo el mundo y de distintos ámbitos se proyectaron de forma rotativa en la gran pantalla del Nasdaq. Kevin Xu, presidente de MEBO Group y presidente del Comité Anfitrión de APEC 2023, apareció en la gran pantalla como miembro central del Grupo de Acción de Crecimiento Económico del B20.\n\nAl ser la primera cumbre del B20 organizada por Estados Unidos, el evento coincide además con el 250.º aniversario del país; los organizadores llevaron la agenda empresarial del B20 al corazón financiero mundial, destacando el papel del sector privado en la atracción de inversión, el fortalecimiento de los lazos económicos y comerciales y el impulso del crecimiento global.\n\nAnteriormente, el 13 de julio, Xu participó en línea en la primera reunión plenaria del Grupo de Acción de Crecimiento Económico del B20 2026, junto a grandes empresas, instituciones financieras, representantes empresariales y centros de pensamiento de primer nivel, para debatir las vías del crecimiento económico mundial. En sintonía con el lema del G20 de «volver a los fundamentos económicos», esta edición del B20 se centra en la desaceleración del crecimiento, la presión de la deuda, la transformación de la inteligencia artificial, el desajuste laboral y la innovación energética, con una orientación clara: «pasar de los informes sobre el papel a avances sustantivos». El grupo se enfoca en reducir las barreras al comercio transfronterizo y recaba opiniones sobre financiación de pymes, flujos transfronterizos de capital, estabilidad de cadenas de suministro, cumplimiento de datos y colaboración universidad-empresa; sus resultados se presentarán al G20 como referencia para decisiones gubernamentales, cubriendo cerca del 85 % del PIB mundial y el 75 % del comercio internacional.\n\nDesde la plataforma de APEC hasta el mecanismo del B20, Xu lleva años participando activamente en plataformas empresariales multilaterales, profundamente involucrado en la gobernanza económica global.\n\nComo miembro del Grupo de Acción de Crecimiento Económico del B20, Xu aboga por acelerar el multilateralismo y la globalización. Propuso activar plenamente el mecanismo de libre comercio continental africano impulsado por la Unión Africana y utilizarlo como eje para conectar rápidamente la cooperación económica y comercial entre los miembros del G20 y la región africana. En su opinión, el marco africano de integración permite eliminar las barreras comerciales intrarregionales y construir un canal de colaboración eficiente entre las economías del G20 y el mercado africano, liberando el enorme potencial del continente e inyectando nuevo impulso a la recuperación mundial.\n\nLa reunión de líderes de APEC 2026, prevista para noviembre, se celebrará después de la cumbre principal del B20 en Washington, de modo que las dos grandes plataformas formarán un efecto sinérgico. Se espera que, a través de la plataforma multilateral del B20, se reúnan perspectivas diversas y se aporten ideas constructivas para la cooperación económica global y la recuperación. Xu seguirá participando en la serie de debates del grupo de trabajo, elaborando propuestas políticas junto a líderes empresariales de todo el mundo y transmitiendo la voz del sector empresarial al G20.",
+      "tags": "B20, NASDAQ, KEVIN XU, G20",
+      "source_label": "Esta historia es una adaptación del artículo original publicado en",
+      "source_name": "mebo.com",
+      "source_url": "https://www.mebo.com/Detail/index/sign/5835402a720d752127b9ca137d321148.html"
+    },
+    {
       "slug": "apec-2026-0602",
       "cat": "apec",
       "cat_label": "APEC",
@@ -10,7 +26,8 @@
       "image": "assets/news/apec-2026-0602.jpg",
       "image_alt": "4th APEC Silicon Valley Summit Concludes in Hong Kong, Empowering Asia-Pacific Collaboration",
       "url": "noticias/apec-2026-0602.html",
-      "body": ""
+      "body": "",
+      "tags": ""
     },
     {
       "slug": "med-2026-hospitalar",
