@@ -4217,7 +4217,7 @@ body.no-js .fade-in {
 }
 .latam-h { font-size: 1.3rem; margin-bottom: 0.3rem; }
 .latam-sub { color: var(--color-text-light); font-size: 0.92rem; margin: 0 0 var(--space-lg); }
-.latam-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+.latam-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 400px)); gap: var(--space-md); justify-content: center; }
 .latam-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
