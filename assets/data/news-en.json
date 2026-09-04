@@ -330,7 +330,11 @@
       "image": "../assets/news/apec-2024-1112a.jpg",
       "image_alt": "Preview: The 2024 APEC CEO Summit Agenda",
       "url": "news/apec-2024-1112a.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2024-1112b",
@@ -358,7 +362,11 @@
       "image": "../assets/news/apec-2024-1111.jpg",
       "image_alt": "2024 APEC Silicon Valley Summit and Regenerative Life Action Global Tour Launch in Peru, Opening APEC Leaders' Week",
       "url": "news/apec-2024-1111.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "apec-2024-1109",
@@ -462,7 +470,11 @@
       "image": "../assets/news/apec-2024-0623.jpg",
       "image_alt": "Former APEC Host Committee Chair Kevin Xu Holds In-Depth Talks with Peru's APEC SOM Chair Carlos Vásquez",
       "url": "news/apec-2024-0623.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "csr-2024-0422",
@@ -599,7 +611,11 @@
       "image": "../assets/news/apec-2023-0425.jpg",
       "image_alt": "MEBO Chairman Kevin Xu Meets Chile's Ambassador to the United States",
       "url": "news/apec-2023-0425.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2022-0920",
@@ -627,7 +643,11 @@
       "image": "../assets/news/gp-mending-europe.png",
       "image_alt": "ISBI and ABA Join 'Mending Europe: Empowering the Establishment of a Regeneration Network' Initiative",
       "url": "news/gp-mending-europe.html",
-      "body": ""
+      "body": "",
+      "tags": "",
+      "source_label": "",
+      "source_name": "",
+      "source_url": ""
     },
     {
       "slug": "med-2022-0913",
