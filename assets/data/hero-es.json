@@ -102,20 +102,31 @@
       ]
     },
     {
-      "background": "/assets/uploads/images.jpg",
+      "background": "assets/uploads/images.jpg",
       "badge": {
-        "type": "image",
-        "icon": "",
+        "type": "icon",
+        "icon": "webinar",
         "image": "",
         "alt": "",
-        "title": "",
-        "subtitle": ""
+        "title": "Animación china · Hecha a mano",
+        "subtitle": "Fenómeno de internet · 2026"
       },
-      "title_html": "牛来！！",
+      "title_html": "牛来！！<br><span class=\"apec-highlight\">《Niu Lai》</span>",
       "title_class": "",
-      "extra_class": "",
-      "subtitle": "妈妈，牛来",
-      "actions": []
+      "extra_class": "hero-slide--photo",
+      "subtitle": "Una película de animación creada a mano durante cinco años por un director y su madre: la historia de un ternero tímido que aprende a ser valiente. De proyecto casero a fenómeno cultural de internet en 2026.",
+      "actions": [
+        {
+          "label": "Leer las Novedades",
+          "href": "noticias.html",
+          "style": "accent"
+        },
+        {
+          "label": "Nuestra Historia",
+          "href": "sobre-mebo.html",
+          "style": "light"
+        }
+      ]
     }
   ]
 }
