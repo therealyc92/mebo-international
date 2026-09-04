@@ -150,7 +150,7 @@ def extract_evidence(page, out):
                 "note": clean(mm.group(4)),
             })
         rct.append({"badge": clean(card.group(1)), "title": clean(card.group(2)),
-                    "metrics": metrics, "cite_html": clean(card.group(3))})
+                    "metrics": metrics, "cite_html": clean(card.group(4))})
 
     studies = []
     for m in re.finditer(
