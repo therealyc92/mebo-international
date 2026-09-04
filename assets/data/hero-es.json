@@ -100,6 +100,22 @@
           "style": "light"
         }
       ]
+    },
+    {
+      "background": "/assets/uploads/images.jpg",
+      "badge": {
+        "type": "image",
+        "icon": "",
+        "image": "",
+        "alt": "",
+        "title": "",
+        "subtitle": ""
+      },
+      "title_html": "牛来！！",
+      "title_class": "",
+      "extra_class": "",
+      "subtitle": "妈妈，牛来",
+      "actions": []
     }
   ]
 }
