@@ -31,6 +31,7 @@
       "badge": {
         "type": "icon",
         "icon": "apec",
+        "alt": "",
         "title": "APEC",
         "subtitle": "United States"
       },
@@ -56,6 +57,7 @@
       "badge": {
         "type": "icon",
         "icon": "webinar",
+        "alt": "",
         "title": "Serie de Webinars de Medicina Regenerativa",
         "subtitle": "América Latina · En línea"
       },
@@ -98,28 +100,6 @@
           "label": "Explorar Nuestra Tecnología",
           "href": "technology.html",
           "style": "light"
-        }
-      ]
-    },
-    {
-      "background": "/assets/uploads/images (1).jpg",
-      "badge": {
-        "type": "icon",
-        "icon": "apec",
-        "image": "/assets/uploads/images.jpg",
-        "alt": "妈妈，牛来",
-        "title": "\"Animación china · Hecha a mano\" / \"Fenómeno",
-        "subtitle": "de internet · 2026\""
-      },
-      "title_html": "牛来！！<br><span class=\"apec-highlight\">《Niu Lai》</span>",
-      "title_class": "一句话西语简介：母子俩五年手搓的动画、怯懦小牛变勇敢的故事、2026 网络现象",
-      "extra_class": "hero-slide--photo",
-      "subtitle": "妈妈，牛来",
-      "actions": [
-        {
-          "label": "点击牛走",
-          "href": "https://www.google.com/search?q=%E7%89%9B%E6%9D%A5&sca_esv=5c00d576545a6f81&udm=2&sxsrf=APpeQnsQwOI_dx-gTlIa4ou1jG3M7cIvGQ:1788490491878&source=lnt&tbs=isz:l&sa=X&ved=2ahUKEwjS986j9tOWAxV9r1YBHQhpE70QpwV6BAgKEAY&biw=1707&bih=898&dpr=1.5#ip=1&sv=CAMSURoyKhBlLW12YXF3b1BYYmtqY3FNMg5tdmFxd29QWGJramNxTToOWEgxd21NVC1DaTNqTk0gBCoXCgFzEhBlLW12YXF3b1BYYmtqY3FNGAEwARgHILCWuIkKSggQARgBIAEoAQ",
-          "style": "accent"
         }
       ]
     }
