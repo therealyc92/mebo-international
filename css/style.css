@@ -620,7 +620,7 @@ li { margin-bottom: 0.3rem; }
 .trust-bar {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
-  padding: var(--space-lg) 0;
+  padding: var(--space-xl) 0;
 }
 
 .trust-bar .container {
@@ -628,7 +628,7 @@ li { margin-bottom: 0.3rem; }
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--space-lg);
+  gap: var(--space-xl) 4.5rem;
 }
 
 .trust-item {
@@ -638,15 +638,15 @@ li { margin-bottom: 0.3rem; }
 .trust-item .trust-value {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.45rem;
   color: var(--color-primary-dark);
   line-height: 1;
 }
 
 .trust-item .trust-label {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--color-text-light);
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
 }
 
 /* ---------- Cards ---------- */
@@ -2855,14 +2855,12 @@ body.no-js .fade-in {
   height: 56px;
   width: 100%;
   max-width: 160px;
-  opacity: 0.45;
-  filter: grayscale(100%);
-  transition: opacity 0.3s ease, filter 0.3s ease;
+  opacity: 1;
+  transition: transform 0.3s ease;
 }
 
 .partner-logo:hover {
-  opacity: 0.85;
-  filter: grayscale(0%);
+  transform: translateY(-2px);
 }
 
 .partner-logo img {
@@ -5267,7 +5265,6 @@ body.no-js .fade-in {
 /* ---------- Photo slides: bigger type, stronger presence ---------- */
 .hero-slide--photo .hero-content { max-width: 780px; }
 .hero-slide--photo h1 { font-size: clamp(2.6rem, 4.6vw, 3.9rem); line-height: 1.12; }
-.hero-slide--photo h1.hero-h1--long { font-size: clamp(2.1rem, 3.4vw, 3.0rem); line-height: 1.18; }
 .hero-slide--photo .hero-subtitle { font-size: 1.12rem; line-height: 1.7; max-width: 640px; }
 .hero-slide--photo .hero-chip { font-size: 0.84rem; padding: 0.5rem 1.15rem; margin-bottom: 1.4rem; }
 .hero-slide--photo .apec-badge { transform: scale(1.12); transform-origin: left center; margin-bottom: 1.2rem; }
@@ -5310,13 +5307,8 @@ body.no-js .fade-in {
   .hero-slide--collage .hero-overlay { background: rgba(11, 79, 108, 0.3); }
 }
 
-/* ---------- Collage slide: compact reference-style text ---------- */
+/* ---------- Collage slide: same type scale as other slides ---------- */
 .hero-slide--collage .hero-content { max-width: 440px; }
-.hero-slide--collage .apec-badge { transform: scale(0.82); transform-origin: left center; margin-bottom: 0.9rem; }
-.hero-slide--collage .apec-badge-year { font-size: 1.15rem; }
-.hero-slide--collage h1 { font-size: clamp(2.0rem, 3.2vw, 2.6rem); }
-.hero-slide--collage .hero-subtitle { font-size: 0.92rem; max-width: 400px; }
-.hero-slide--collage .hero-actions .btn--lg { padding: 0.7rem 1.5rem; font-size: 0.9rem; }
 
 /* ---------- Collage slide: frosted text panel over bright wall ---------- */
 .hero-slide--collage .hero-content {
@@ -5392,3 +5384,87 @@ body.no-js .fade-in {
 .hero-slide--photo h1,
 .hero-slide--photo .hero-subtitle { text-shadow: 0 2px 14px rgba(5, 30, 45, 0.45); }
 .hero-slide--photo .apec-badge-text { text-shadow: 0 1px 8px rgba(5, 30, 45, 0.35); }
+
+/* ---------- APEC 2023 official logo badge: white logo, no white chip ---------- */
+.hero-badge-logo[src*="apec-2023-logo"] {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  height: 62px;
+  filter: drop-shadow(0 2px 8px rgba(5, 30, 45, 0.55));
+}
+
+/* ---------- Mechanism in Action: reordered layout ---------- */
+.mia-subtitle {
+  max-width: 760px;
+  margin: var(--space-2xl) auto var(--space-lg);
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--color-primary-dark);
+}
+.mia-fig--merged {
+  margin-top: 0;
+}
+.mia-fig--merged .k19-lead {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+.mia-calls--below {
+  margin: var(--space-lg) auto 0;
+}
+
+/* ---------- Floating contact buttons (WhatsApp / Email) ---------- */
+.contact-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cf-btn {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(5, 30, 45, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cf-btn svg { width: 26px; height: 26px; }
+.cf-btn--wa { background: #25d366; }
+.cf-btn--mail { background: var(--color-primary-dark, #0b4f6c); }
+.cf-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(5, 30, 45, 0.36);
+}
+.cf-tip {
+  position: absolute;
+  right: 62px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(11, 79, 108, 0.95);
+  color: #fff;
+  font-size: 0.78rem;
+  font-family: var(--font-heading, 'Poppins', sans-serif);
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.cf-btn:hover .cf-tip { opacity: 1; }
+@media (max-width: 768px) {
+  .cf-btn { width: 46px; height: 46px; }
+  .cf-tip { display: none; }
+}

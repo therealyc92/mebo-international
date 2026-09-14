@@ -16,12 +16,12 @@
       "actions": [
         {
           "label": "Contactar al Equipo",
-          "href": "contact.html",
+          "href": "contacto.html",
           "style": "accent"
         },
         {
           "label": "Nuestra Historia",
-          "href": "about.html",
+          "href": "sobre-mebo.html",
           "style": "light"
         }
       ]
@@ -29,10 +29,10 @@
     {
       "background": "assets/hero/apec-goldengate.jpg",
       "badge": {
-        "type": "icon",
-        "icon": "apec",
-        "alt": "",
-        "title": "APEC",
+        "type": "image",
+        "image": "assets/hero/apec-2023-logo.png",
+        "alt": "APEC 2023",
+        "title": "APEC 2023",
         "subtitle": "United States"
       },
       "title_html": "Socio Empresarial<br><span class=\"apec-highlight\">de APEC 2023</span>",
@@ -42,12 +42,12 @@
       "actions": [
         {
           "label": "Nuestro Camino en APEC",
-          "href": "news.html#apec",
+          "href": "noticias.html",
           "style": "accent"
         },
         {
           "label": "Nuestra Historia",
-          "href": "about.html",
+          "href": "sobre-mebo.html",
           "style": "light"
         }
       ]
@@ -68,12 +68,12 @@
       "actions": [
         {
           "label": "Leer las Novedades",
-          "href": "news.html",
+          "href": "noticias.html",
           "style": "accent"
         },
         {
           "label": "Nuestra Historia",
-          "href": "about.html",
+          "href": "sobre-mebo.html",
           "style": "light"
         }
       ]
@@ -93,12 +93,12 @@
       "actions": [
         {
           "label": "Descubrir Nuestros Productos",
-          "href": "product.html",
+          "href": "producto.html",
           "style": "accent"
         },
         {
           "label": "Explorar Nuestra Tecnología",
-          "href": "technology.html",
+          "href": "tecnologia.html",
           "style": "light"
         }
       ]

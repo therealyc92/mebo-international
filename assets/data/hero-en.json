@@ -29,9 +29,10 @@
     {
       "background": "../assets/hero/apec-goldengate.jpg",
       "badge": {
-        "type": "icon",
-        "icon": "apec",
-        "title": "APEC",
+        "type": "image",
+        "image": "../assets/hero/apec-2023-logo.png",
+        "alt": "APEC 2023",
+        "title": "APEC 2023",
         "subtitle": "United States"
       },
       "title_html": "APEC 2023<br><span class=\"apec-highlight\">Enterprise Partner</span>",
