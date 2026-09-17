@@ -5380,9 +5380,11 @@ body.no-js .fade-in {
 .k19-lead {
   margin: 0 0 var(--space-md);
   text-align: center;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--color-text-light);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--color-primary-dark);
 }
 
 /* ---------- Strengths: 2x2 grid ---------- */
@@ -5420,10 +5422,11 @@ body.no-js .fade-in {
 .mia-fig--merged {
   margin-top: 0;
 }
+.mia-fig > .mia-subtitle {
+  margin: var(--space-sm) auto var(--space-md);
+}
 .mia-fig--merged .k19-lead {
-  margin-top: var(--space-lg);
-  padding-top: var(--space-lg);
-  border-top: 1px solid var(--color-border);
+  margin: var(--space-xl) 0;
 }
 .mia-calls--below {
   margin: var(--space-lg) auto 0;
@@ -5493,37 +5496,24 @@ body.no-js .fade-in {
   position: absolute;
   inset: 0;
   display: block;
-  background: #06232e;
   opacity: 0;
   transition: opacity 0.7s ease;
 }
 .fc-slide.active { opacity: 1; z-index: 1; }
 .fc-slide img {
-  position: relative;
-  z-index: 1;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  box-sizing: border-box;
-  padding: 0 0 6.5rem;
+  object-fit: cover;
+  object-position: center top;
   display: block;
-}
-.fc-bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  filter: blur(22px) brightness(0.45) saturate(1.1);
-  transform: scale(1.25);
 }
 .fc-caption {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 1.1rem calc(var(--space-xl) + 4rem) 1.5rem var(--space-xl);
-  background: rgba(6, 45, 62, 0.94);
-  z-index: 2;
+  padding: 3rem calc(var(--space-xl) + 4rem) 1.6rem var(--space-xl);
+  background: linear-gradient(transparent, rgba(6, 45, 62, 0.88));
   color: #fff;
   font-family: var(--font-heading);
   font-weight: 600;
@@ -5555,8 +5545,7 @@ body.no-js .fade-in {
 .fc-dot.active { background: #fff; transform: scale(1.25); }
 @media (max-width: 768px) {
   .feat-carousel { height: 300px; margin: var(--space-lg) 0 var(--space-xl); }
-  .fc-caption { font-size: 1.02rem; padding: 0.9rem var(--space-lg) 3rem var(--space-lg); }
-  .fc-slide img { padding-bottom: 7rem; }
+  .fc-caption { font-size: 1.02rem; padding: 2rem var(--space-lg) 3rem var(--space-lg); }
   .fc-dots { bottom: 0.9rem; }
 }
 
