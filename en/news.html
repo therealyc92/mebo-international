@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20260914">
+  <link rel="stylesheet" href="../css/style.css?v=20260917">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -31,8 +31,8 @@
         <li><a href="about.html">About MEBO</a></li>
         <li><a href="technology.html">Regenerative Medicine</a></li>
         <li><a href="product.html">Product</a></li>
-        <li><a href="evidence.html">Clinical Studies</a></li>
-        <li><a href="news.html" class="active">News &amp; Journals</a></li>
+        <li><a href="evidence.html">Clinical Studies &amp; Journals</a></li>
+        <li><a href="news.html" class="active">News</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -72,6 +72,27 @@
       </div>
       <div class="news-filter" role="tablist" aria-label="Categories">
         <button type="button" data-cat="all" class="active">All</button><button type="button" data-cat="med" class="">Medical</button><button type="button" data-cat="apec" class="">APEC</button><button type="button" data-cat="gp" class="">Global Programs</button><button type="button" data-cat="csr" class="">CSR</button>
+      </div>
+      <!-- Featured News Carousel -->
+      <div class="feat-carousel" id="feat-carousel" data-src="../assets/data/featured-news-en.json" data-base="../">
+        <a class="fc-slide active" href="news/apec-2024-1112b.html"><img src="../assets/news/apec-2024-1112b.jpg" alt="Inside the APEC 2024 Official Gift Bag"><span class="fc-caption">Inside the APEC 2024 Official Gift Bag: Unique Design, Rich Culture</span></a>
+        <a class="fc-slide" href="news/apec-2024-1111.html"><img src="../assets/news/apec-2024-1111.jpg" alt="2024 APEC Silicon Valley Summit in Peru" loading="lazy"><span class="fc-caption">2024 APEC Silicon Valley Summit and Regenerative Life Action Global Tour Launch in Peru, Opening APEC Leaders' Week</span></a>
+        <a class="fc-slide" href="news/apec-2024-1109.html"><img src="../assets/news/apec-2024-1109.jpg" alt="APEC 2024 Silicon Valley Summit Comes to Lima" loading="lazy"><span class="fc-caption">Silicon Valley Wisdom Meets Asia-Pacific Strength: APEC 2024 Silicon Valley Summit Comes to Lima</span></a>
+        <a class="fc-slide" href="news/apec-2024-0623.html"><img src="../assets/news/apec-2024-0623.jpg" alt="Kevin Xu Talks with Peru APEC SOM Chair Carlos Vásquez" loading="lazy"><span class="fc-caption">Former APEC Host Committee Chair Kevin Xu Holds In-Depth Talks with Peru's APEC SOM Chair Carlos Vásquez</span></a>
+        <a class="fc-slide" href="news/csr-2024-1020.html"><img src="../assets/news/csr-2024-1020.jpg" alt="MEBO In-Depth Hospital Visit in Peru" loading="lazy"><span class="fc-caption">MEBO APEC 2024 in Action: In-Depth Hospital Visit in Peru Builds Consensus for a Healthier Future</span></a>
+        <a class="fc-slide" href="news/csr-2024-1016.html"><img src="../assets/news/csr-2024-1016.jpg" alt="MEBO Partners with ANIQUEM for Children" loading="lazy"><span class="fc-caption">MEBO APEC 2024 in Action: Partnering with ANIQUEM to Build a Bridge of Care for Children</span></a>
+        <a class="fc-slide" href="news/csr-2024-0422.html"><img src="../assets/news/csr-2024-0422.jpg" alt="MEBO Group Visits ANIQUEM in Lima" loading="lazy"><span class="fc-caption">First Stop of APEC 2024 Activities: MEBO Group Visits ANIQUEM, Peru's Burned Children Rehabilitation Association</span></a>
+        <a class="fc-slide" href="news/med-2026-hospitalar.html"><img src="../assets/news/med-2026-hospitalar.png" alt="MEBO International at Hospitalar 2026 Brazil" loading="lazy"><span class="fc-caption">MEBO International at Hospitalar 2026 Brazil: Expanding Regenerative Medical Technology into Latin America</span></a>
+        <div class="fc-dots">
+          <button type="button" class="fc-dot active" data-slide="0" aria-label="Featured story 1"></button>
+          <button type="button" class="fc-dot" data-slide="1" aria-label="Featured story 2"></button>
+          <button type="button" class="fc-dot" data-slide="2" aria-label="Featured story 3"></button>
+          <button type="button" class="fc-dot" data-slide="3" aria-label="Featured story 4"></button>
+          <button type="button" class="fc-dot" data-slide="4" aria-label="Featured story 5"></button>
+          <button type="button" class="fc-dot" data-slide="5" aria-label="Featured story 6"></button>
+          <button type="button" class="fc-dot" data-slide="6" aria-label="Featured story 7"></button>
+          <button type="button" class="fc-dot" data-slide="7" aria-label="Featured story 8"></button>
+        </div>
       </div>
       <div class="story-list" id="story-list" data-src="../assets/data/news-en.json" data-base="../" data-article-href="news/article.html?slug={slug}" data-read-more="Read Story">
       <article class="story-item" data-cat="apec">
@@ -574,27 +595,6 @@
     </div>
   </section>
 
-  <!-- MEBO Journal -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Publications</span>
-        <h2>MEBO Journal</h2>
-        <p>The scientific journal of regenerative life science — clinical advances, case studies, and expert reviews in wound care and regenerative therapy.</p>
-      </div>
-      <div class="jn-layout">
-        <div class="jn-intro fade-in">
-          <p class="jn-lead">Published bi-monthly since 2020, MEBO Journal brings together clinical research, treatment protocols, and real-world cases from the global regenerative medicine community.</p>
-          <div class="jn-themes">
-            <span>Burn Care</span><span>Chronic Wounds</span><span>Diabetic Foot</span><span>Pediatrics</span><span>Aesthetic Medicine</span><span>Case Studies</span>
-          </div>
-          <a class="btn btn--primary" href="https://www.mebo.education/research/?cat_id=56" target="_blank" rel="noopener">Browse All Issues on MEBO Education &rarr;</a>
-        </div>
-      </div>
-      <p class="jn-note fade-in">Full archive and online reading on our academic platform MEBO Education. <a href="https://www.mebo.education/research/?cat_id=56" target="_blank" rel="noopener">mebo.education/research &rarr;</a></p>
-    </div>
-  </section>
-
 
 
   </main>
@@ -611,8 +611,8 @@
           <ul>
             <li><a href="about.html">About MEBO</a></li>
             <li><a href="technology.html">Regenerative Medicine</a></li>
-            <li><a href="evidence.html">Clinical Studies</a></li>
-            <li><a href="news.html">News &amp; Journals</a></li>
+            <li><a href="evidence.html">Clinical Studies &amp; Journals</a></li>
+            <li><a href="news.html">News</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -698,8 +698,8 @@
   })();
   window.initNewsPager();
   </script>
-  <script src="../js/content.js?v=20260903b" defer></script>
-  <script src="../js/main.js?v=20260914"></script>
+  <script src="../js/content.js?v=20260917" defer></script>
+  <script src="../js/main.js?v=20260917"></script>
   <script src="../js/search.js?v=20260827"></script>
   <script src="../js/analytics.js"></script>
 </body>

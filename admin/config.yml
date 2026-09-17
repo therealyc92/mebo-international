@@ -122,6 +122,41 @@ collections:
             minimize_collapsed: true
             fields: *news_fields
 
+  # ---------------- 置顶新闻轮播 ----------------
+  - label: "置顶新闻轮播(西语)"
+    name: featured_es
+    files:
+      - label: "轮播条目"
+        name: featured_es_file
+        file: assets/data/featured-news-es.json
+        fields:
+          - label: "轮播条目"
+            name: items
+            label_singular: "条目"
+            widget: list
+            summary: "{{fields.title}}"
+            minimize_collapsed: true
+            fields: &featured_fields
+              - { label: "标题", name: title, widget: string }
+              - { label: "链接", name: url, widget: string, hint: "站内相对链接,如 noticias/apec-2024-1112b.html" }
+              - { label: "封面图", name: image, widget: image }
+              - { label: "封面图替代文字", name: image_alt, widget: string }
+
+  - label: "置顶新闻轮播(英语)"
+    name: featured_en
+    files:
+      - label: "轮播条目"
+        name: featured_en_file
+        file: assets/data/featured-news-en.json
+        fields:
+          - label: "轮播条目"
+            name: items
+            label_singular: "条目"
+            widget: list
+            summary: "{{fields.title}}"
+            minimize_collapsed: true
+            fields: *featured_fields
+
   # ---------------- 临床证据 ----------------
   - label: "临床证据(西语)"
     name: evidence_es

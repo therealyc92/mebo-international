@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "url": "noticias/apec-2024-1112b.html",
+      "image": "assets/news/apec-2024-1112b.jpg",
+      "image_alt": "Dentro de la bolsa de regalo oficial de APEC 2024",
+      "title": "Dentro de la bolsa de regalo oficial de APEC 2024: diseño único, rica cultura"
+    },
+    {
+      "url": "noticias/apec-2024-1111.html",
+      "image": "assets/news/apec-2024-1111.jpg",
+      "image_alt": "Cumbre APEC Silicon Valley 2024 en Perú",
+      "title": "La Cumbre APEC Silicon Valley 2024 y la gira global de la Acción Vida Regenerativa arrancan en Perú"
+    },
+    {
+      "url": "noticias/apec-2024-1109.html",
+      "image": "assets/news/apec-2024-1109.jpg",
+      "image_alt": "Cumbre APEC Silicon Valley 2024 llega a Lima",
+      "title": "La sabiduría de Silicon Valley se une a la fuerza de Asia-Pacífico: la Cumbre APEC Silicon Valley 2024 llega a Lima"
+    },
+    {
+      "url": "noticias/apec-2024-0623.html",
+      "image": "assets/news/apec-2024-0623.jpg",
+      "image_alt": "Kevin Xu conversa con Carlos Vásquez de APEC Perú",
+      "title": "Kevin Xu mantiene conversaciones en profundidad con el presidente de la reunión de altos funcionarios de APEC Perú, Carlos Vásquez"
+    },
+    {
+      "url": "noticias/csr-2024-1020.html",
+      "image": "assets/news/csr-2024-1020.jpg",
+      "image_alt": "Visita hospitalaria de MEBO en Perú",
+      "title": "MEBO APEC 2024 en acción: una visita hospitalaria en profundidad en Perú construye consenso para un futuro más saludable"
+    },
+    {
+      "url": "noticias/csr-2024-1016.html",
+      "image": "assets/news/csr-2024-1016.jpg",
+      "image_alt": "Alianza MEBO y ANIQUEM para la infancia",
+      "title": "MEBO APEC 2024 en acción: alianza con ANIQUEM para construir un puente de cuidado para la infancia"
+    },
+    {
+      "url": "noticias/csr-2024-0422.html",
+      "image": "assets/news/csr-2024-0422.jpg",
+      "image_alt": "El Grupo MEBO visita ANIQUEM en Lima",
+      "title": "Primera parada de las actividades APEC 2024: el Grupo MEBO visita ANIQUEM, la asociación peruana de rehabilitación de niños quemados"
+    },
+    {
+      "url": "noticias/med-2026-hospitalar.html",
+      "image": "assets/news/med-2026-hospitalar.png",
+      "image_alt": "MEBO International en Hospitalar 2026 Brasil",
+      "title": "MEBO International en Hospitalar 2026 Brasil: expandiendo la tecnología médica regenerativa en América Latina"
+    }
+  ]
+}

@@ -123,6 +123,24 @@
     }).catch(function (e) { console.warn('[content] news:', e); }));
   }
 
+  /* ---------- 置顶新闻轮播 ---------- */
+  function renderFeatured(box) {
+    var base = box.getAttribute('data-base') || '';
+    jobs.push(loadJSON(box.getAttribute('data-src')).then(function (data) {
+      var items = (data && data.items) || [];
+      if (!items.length) return;
+      var html = items.map(function (it, i) {
+        return '<a class="fc-slide' + (i === 0 ? ' active' : '') + '" href="' + esc(it.url) + '">'
+          + '<img src="' + esc(resolve(base, it.image)) + '" alt="' + esc(it.image_alt || it.title) + '"' + (i === 0 ? '' : ' loading="lazy"') + '>'
+          + '<span class="fc-caption">' + esc(it.title) + '</span></a>';
+      }).join('');
+      html += '<div class="fc-dots">' + items.map(function (it, i) {
+        return '<button type="button" class="fc-dot' + (i === 0 ? ' active' : '') + '" data-slide="' + i + '" aria-label="' + esc(it.title) + '"></button>';
+      }).join('') + '</div>';
+      box.innerHTML = html;
+    }).catch(function (e) { console.warn('[content] featured:', e); }));
+  }
+
   /* ---------- 临床证据 ---------- */
   function renderEvidence(strip) {
     var base = strip.getAttribute('data-base') || '';
@@ -280,6 +298,8 @@
   if (heroBox) renderHero(heroBox);
   var newsList = document.querySelector('.story-list[data-src]');
   if (newsList) renderNews(newsList);
+  var featBox = document.querySelector('.feat-carousel[data-src]');
+  if (featBox) renderFeatured(featBox);
   var factStrip = document.querySelector('.fact-strip[data-src]');
   if (factStrip) renderEvidence(factStrip);
   renderCopy();

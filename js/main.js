@@ -52,6 +52,46 @@
     start();
   }
 
+  /* ---------- Featured News Carousel (news page) ---------- */
+  function initFeaturedCarousel() {
+    var box = document.querySelector('.feat-carousel');
+    if (!box) return;
+    var slides = box.querySelectorAll('.fc-slide');
+    var dots = box.querySelectorAll('.fc-dot');
+    if (!slides.length || !dots.length) return;
+
+    var current = 0;
+    var total = slides.length;
+    var interval = 5000;
+    var timer = null;
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = ((index % total) + total) % total;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function next() { goTo(current + 1); }
+    function start() { if (!timer) timer = setInterval(next, interval); }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function (e) {
+        e.preventDefault();
+        stop();
+        goTo(i);
+        start();
+      });
+    });
+
+    box.addEventListener('mouseenter', stop);
+    box.addEventListener('mouseleave', start);
+
+    start();
+  }
+
   /* ---------- Navegación Móvil ---------- */
   function initMobileNav() {
     var toggle = document.querySelector('.nav-toggle');
@@ -353,6 +393,7 @@
   /* ---------- Inicialización ---------- */
   function init() {
     initHeroCarousel();
+    initFeaturedCarousel();
     initMobileNav();
     initNavScroll();
     initScrollAnimations();
@@ -376,7 +417,7 @@
     var wrap = document.createElement('div');
     wrap.className = 'contact-float';
     wrap.innerHTML =
-      '<a class="cf-btn cf-btn--mail" href="mailto:chenwt@mebo.com" aria-label="' + mailLabel + '">'
+      '<a class="cf-btn cf-btn--mail" href="mailto:contacto@mebo.com" aria-label="' + mailLabel + '">'
       + '<span class="cf-tip">' + mailLabel + '</span>'
       + '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>'
       + '</a>'

@@ -46,12 +46,12 @@
   "contact": {
     "hero": {
       "title": "Contact Us",
-      "lead": "Find our headquarters in Beijing and Brea, California, and reach our team directly by phone, fax, or email."
+      "lead": "Thank you for your interest and support. If you have any questions, suggestions, or partnership inquiries, please feel free to contact our Latin America Regional Manager using the details below."
     },
     "s1": {
       "eyebrow": "Contact",
       "h2": "Contact Information",
-      "lead": "Find our headquarters and reach our team directly — we will route your inquiry to the right office."
+      "lead": "Contact our Latin America Regional Manager directly &mdash; we will respond as soon as possible."
     },
     "s2": {
       "eyebrow": "Frequently Asked Questions",
@@ -59,7 +59,7 @@
       "lead": ""
     },
     "phone": "(86) 10-58700001",
-    "email": "inter@mebo.com",
-    "distributor": "Interested in distributing MEBO products in your market? Write to <a href=\"mailto:inter@mebo.com?subject=Distribution%20Inquiry\">inter@mebo.com</a> to explore collaboration opportunities."
+    "email": "contacto@mebo.com",
+    "distributor": "Interested in distributing MEBO products in your market? Write to <a href=\"mailto:contacto@mebo.com?subject=Distribution%20Inquiry\">contacto@mebo.com</a> to explore collaboration opportunities."
   }
 }

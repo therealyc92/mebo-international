@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260914">
+  <link rel="stylesheet" href="css/style.css?v=20260917">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
@@ -31,8 +31,8 @@
         <li><a href="sobre-mebo.html">Sobre MEBO</a></li>
         <li><a href="tecnologia.html">Medicina Regenerativa</a></li>
         <li><a href="producto.html">Producto</a></li>
-        <li><a href="evidencia.html">Estudios Clínicos</a></li>
-        <li><a href="noticias.html" class="active">Noticias y Revistas</a></li>
+        <li><a href="evidencia.html">Estudios Clínicos &amp; Revistas</a></li>
+        <li><a href="noticias.html" class="active">Noticias</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
       <div class="nav-actions">
@@ -72,6 +72,27 @@
       </div>
       <div class="news-filter" role="tablist" aria-label="Categories">
         <button type="button" data-cat="all" class="active">Todos</button><button type="button" data-cat="med" class="">Medicina</button><button type="button" data-cat="apec" class="">APEC</button><button type="button" data-cat="gp" class="">Programas Globales</button><button type="button" data-cat="csr" class="">RSC</button>
+      </div>
+      <!-- Featured News Carousel -->
+      <div class="feat-carousel" id="feat-carousel" data-src="assets/data/featured-news-es.json" data-base="">
+        <a class="fc-slide active" href="noticias/apec-2024-1112b.html"><img src="assets/news/apec-2024-1112b.jpg" alt="Dentro de la bolsa de regalo oficial de APEC 2024"><span class="fc-caption">Dentro de la bolsa de regalo oficial de APEC 2024: diseño único, rica cultura</span></a>
+        <a class="fc-slide" href="noticias/apec-2024-1111.html"><img src="assets/news/apec-2024-1111.jpg" alt="Cumbre APEC Silicon Valley 2024 en Perú" loading="lazy"><span class="fc-caption">La Cumbre APEC Silicon Valley 2024 y la gira global de la Acción Vida Regenerativa arrancan en Perú</span></a>
+        <a class="fc-slide" href="noticias/apec-2024-1109.html"><img src="assets/news/apec-2024-1109.jpg" alt="Cumbre APEC Silicon Valley 2024 llega a Lima" loading="lazy"><span class="fc-caption">La sabiduría de Silicon Valley se une a la fuerza de Asia-Pacífico: la Cumbre APEC Silicon Valley 2024 llega a Lima</span></a>
+        <a class="fc-slide" href="noticias/apec-2024-0623.html"><img src="assets/news/apec-2024-0623.jpg" alt="Kevin Xu conversa con Carlos Vásquez de APEC Perú" loading="lazy"><span class="fc-caption">Kevin Xu mantiene conversaciones en profundidad con el presidente de la reunión de altos funcionarios de APEC Perú, Carlos Vásquez</span></a>
+        <a class="fc-slide" href="noticias/csr-2024-1020.html"><img src="assets/news/csr-2024-1020.jpg" alt="Visita hospitalaria de MEBO en Perú" loading="lazy"><span class="fc-caption">MEBO APEC 2024 en acción: una visita hospitalaria en profundidad en Perú construye consenso para un futuro más saludable</span></a>
+        <a class="fc-slide" href="noticias/csr-2024-1016.html"><img src="assets/news/csr-2024-1016.jpg" alt="Alianza MEBO y ANIQUEM para la infancia" loading="lazy"><span class="fc-caption">MEBO APEC 2024 en acción: alianza con ANIQUEM para construir un puente de cuidado para la infancia</span></a>
+        <a class="fc-slide" href="noticias/csr-2024-0422.html"><img src="assets/news/csr-2024-0422.jpg" alt="El Grupo MEBO visita ANIQUEM en Lima" loading="lazy"><span class="fc-caption">Primera parada de las actividades APEC 2024: el Grupo MEBO visita ANIQUEM, la asociación peruana de rehabilitación de niños quemados</span></a>
+        <a class="fc-slide" href="noticias/med-2026-hospitalar.html"><img src="assets/news/med-2026-hospitalar.png" alt="MEBO International en Hospitalar 2026 Brasil" loading="lazy"><span class="fc-caption">MEBO International en Hospitalar 2026 Brasil: expandiendo la tecnología médica regenerativa en América Latina</span></a>
+        <div class="fc-dots">
+          <button type="button" class="fc-dot active" data-slide="0" aria-label="Historia destacada 1"></button>
+          <button type="button" class="fc-dot" data-slide="1" aria-label="Historia destacada 2"></button>
+          <button type="button" class="fc-dot" data-slide="2" aria-label="Historia destacada 3"></button>
+          <button type="button" class="fc-dot" data-slide="3" aria-label="Historia destacada 4"></button>
+          <button type="button" class="fc-dot" data-slide="4" aria-label="Historia destacada 5"></button>
+          <button type="button" class="fc-dot" data-slide="5" aria-label="Historia destacada 6"></button>
+          <button type="button" class="fc-dot" data-slide="6" aria-label="Historia destacada 7"></button>
+          <button type="button" class="fc-dot" data-slide="7" aria-label="Historia destacada 8"></button>
+        </div>
       </div>
       <div class="story-list" id="story-list" data-src="assets/data/news-es.json" data-base="" data-article-href="noticias/articulo.html?slug={slug}" data-read-more="Leer la historia">
       <article class="story-item" data-cat="apec">
@@ -574,27 +595,6 @@
     </div>
   </section>
 
-  <!-- MEBO Journal -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Publicaciones</span>
-        <h2>Revista MEBO</h2>
-        <p>La revista científica de las ciencias de la vida regenerativa: avances clínicos, casos de estudio y revisiones de expertos en el cuidado de heridas y la terapia regenerativa.</p>
-      </div>
-      <div class="jn-layout">
-        <div class="jn-intro fade-in">
-          <p class="jn-lead">Publicada bimestralmente desde 2020, la Revista MEBO reúne investigación clínica, protocolos de tratamiento y casos reales de la comunidad global de medicina regenerativa.</p>
-          <div class="jn-themes">
-            <span>Quemaduras</span><span>Heridas crónicas</span><span>Pie diabético</span><span>Pediatría</span><span>Medicina estética</span><span>Casos clínicos</span>
-          </div>
-          <a class="btn btn--primary" href="https://www.mebo.education/research/?cat_id=56" target="_blank" rel="noopener">Explore todos los números en MEBO Education &rarr;</a>
-        </div>
-      </div>
-      <p class="jn-note fade-in">Archivo completo y lectura en línea en nuestra plataforma académica MEBO Education. <a href="https://www.mebo.education/research/?cat_id=56" target="_blank" rel="noopener">mebo.education/research &rarr;</a></p>
-    </div>
-  </section>
-
 
 
   </main>
@@ -611,8 +611,8 @@
           <ul>
             <li><a href="sobre-mebo.html">Sobre MEBO</a></li>
             <li><a href="tecnologia.html">Medicina Regenerativa</a></li>
-            <li><a href="evidencia.html">Estudios Clínicos</a></li>
-            <li><a href="noticias.html">Noticias y Revistas</a></li>
+            <li><a href="evidencia.html">Estudios Clínicos &amp; Revistas</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -698,8 +698,8 @@
   })();
   window.initNewsPager();
   </script>
-  <script src="js/content.js?v=20260903b" defer></script>
-  <script src="js/main.js?v=20260914"></script>
+  <script src="js/content.js?v=20260917" defer></script>
+  <script src="js/main.js?v=20260917"></script>
   <script src="js/search.js?v=20260827"></script>
   <script src="js/analytics.js"></script>
 </body>
