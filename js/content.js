@@ -131,6 +131,7 @@
       if (!items.length) return;
       var html = items.map(function (it, i) {
         return '<a class="fc-slide' + (i === 0 ? ' active' : '') + '" href="' + esc(it.url) + '">'
+          + '<span class="fc-bg" aria-hidden="true" style="background-image:url(\'' + esc(resolve(base, it.image)) + '\')"></span>'
           + '<img src="' + esc(resolve(base, it.image)) + '" alt="' + esc(it.image_alt || it.title) + '"' + (i === 0 ? '' : ' loading="lazy"') + '>'
           + '<span class="fc-caption">' + esc(it.title) + '</span></a>';
       }).join('');
