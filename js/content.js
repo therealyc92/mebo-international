@@ -272,7 +272,7 @@
           + ' <a href="' + esc(it.source_url) + '" target="_blank" rel="noopener">' + esc(it.source_name || it.source_url) + '</a>.</div>';
       }
       set('art-body', html);
-      document.title = it.title + ' | MEBO International';
+      document.title = it.title + ' | MEBO Group';
       var nav = document.getElementById('art-nav');
       if (nav) {
         var linkFor = function (x) {
