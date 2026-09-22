@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=20260922">
+  <link rel="stylesheet" href="../css/style.css?v=20260922b">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -588,7 +588,7 @@
       </div>
       <div class="story-pager" id="story-pager">
         <button type="button" class="pager-btn" id="pager-prev" aria-label="Previous page">&#8249;</button>
-        <span class="pager-label" id="pager-label"></span>
+        <span class="pager-label"><input type="number" class="pager-input" id="pager-input" min="1" value="1" inputmode="numeric" aria-label="Go to page"> <span id="pager-total"></span></span>
         <button type="button" class="pager-btn" id="pager-next" aria-label="Next page">&#8250;</button>
       </div>
       <noscript><p style="text-align:center;color:var(--color-text-muted)">Enable JavaScript to filter stories by topic.</p></noscript>
@@ -651,13 +651,14 @@
   <script>
   window.initNewsPager = (function () {
     var PAGE_SIZE = 5;
-    var cat = 'all', page = 1, bound = false;
+    var cat = 'all', page = 1, bound = false, curPages = 1;
     var ofWord = 'of';
     function apply() {
       var btns = document.querySelectorAll('.news-filter button');
       var items = Array.prototype.slice.call(document.querySelectorAll('.story-item'));
       var pager = document.getElementById('story-pager');
-      var label = document.getElementById('pager-label');
+      var input = document.getElementById('pager-input');
+      var total = document.getElementById('pager-total');
       var prev = document.getElementById('pager-prev');
       var next = document.getElementById('pager-next');
       var visible = items.filter(function (it) { return cat === 'all' || it.dataset.cat === cat; });
@@ -668,7 +669,10 @@
       btns.forEach(function (b) { b.classList.toggle('active', b.dataset.cat === cat); });
       if (visible.length > PAGE_SIZE) {
         pager.style.display = 'flex';
-        label.textContent = page + ' ' + ofWord + ' ' + pages;
+        curPages = pages;
+        input.max = pages;
+        input.value = page;
+        total.textContent = ofWord + ' ' + pages;
         prev.disabled = (page === 1);
         next.disabled = (page === pages);
       } else {
@@ -689,7 +693,16 @@
           });
         });
         document.getElementById('pager-prev').addEventListener('click', function () { if (page > 1) { page--; apply(); scrollTop(); } });
-        document.getElementById('pager-next').addEventListener('click', function () { page++; apply(); scrollTop(); });
+        document.getElementById('pager-next').addEventListener('click', function () { if (page < curPages) { page++; apply(); scrollTop(); } });
+        var pageInput = document.getElementById('pager-input');
+        function jumpTo() {
+          var v = parseInt(pageInput.value, 10);
+          if (isNaN(v)) { pageInput.value = page; return; }
+          v = Math.max(1, Math.min(curPages, v));
+          if (v !== page) { page = v; apply(); scrollTop(); } else { pageInput.value = page; }
+        }
+        pageInput.addEventListener('change', jumpTo);
+        pageInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); jumpTo(); } });
         var h = location.hash.replace('#', '');
         if (['all', 'med', 'apec', 'gp', 'csr'].indexOf(h) > -1) cat = h;
       }
@@ -698,8 +711,8 @@
   })();
   window.initNewsPager();
   </script>
-  <script src="../js/content.js?v=20260922" defer></script>
-  <script src="../js/main.js?v=20260922"></script>
+  <script src="../js/content.js?v=20260922b" defer></script>
+  <script src="../js/main.js?v=20260922b"></script>
   <script src="../js/search.js?v=20260827"></script>
   <script src="../js/analytics.js"></script>
 </body>

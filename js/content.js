@@ -99,6 +99,34 @@
     return template.replace('{slug}', encodeURIComponent(item.slug));
   }
 
+  /* 本地化日期 → 可比较键(yyyy-mm-dd);支持 "September 3, 2026" 与 "3 de septiembre de 2026" */
+  var STORY_MONTHS = {
+    january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+    july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+    enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6,
+    julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10,
+    noviembre: 11, diciembre: 12
+  };
+  function storyDateKey(s) {
+    if (!s) return '';
+    var m = /^\s*(\d{1,2})\s+de\s+([A-Za-z\u00e1\u00e9\u00ed\u00f3\u00fa\u00f1]+)\s+de\s+(\d{4})\s*$/i.exec(s);
+    if (m && STORY_MONTHS[m[2].toLowerCase()]) {
+      return m[3] + '-' + ('0' + STORY_MONTHS[m[2].toLowerCase()]).slice(-2) + '-' + ('0' + m[1]).slice(-2);
+    }
+    m = /^\s*([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})\s*$/.exec(s);
+    if (m && STORY_MONTHS[m[1].toLowerCase()]) {
+      return m[3] + '-' + ('0' + STORY_MONTHS[m[1].toLowerCase()]).slice(-2) + '-' + ('0' + m[2]).slice(-2);
+    }
+    return '';
+  }
+  function sortStoriesDesc(items) {
+    return items.slice().sort(function (a, b) {
+      var ka = storyDateKey(a.date), kb = storyDateKey(b.date);
+      if (ka === kb) return 0;
+      return ka < kb ? 1 : -1;
+    });
+  }
+
   function renderNews(list) {
     var base = list.getAttribute('data-base') || '';
     var template = list.getAttribute('data-article-href') || 'articulo.html?slug={slug}';
@@ -106,6 +134,7 @@
     jobs.push(loadJSON(list.getAttribute('data-src')).then(function (data) {
       var items = (data && data.items) || [];
       if (!items.length) return;
+      items = sortStoriesDesc(items);
       list.innerHTML = items.map(function (it) {
         var link = storyLink(it, template);
         return '<article class="story-item" data-cat="' + esc(it.cat) + '">'
