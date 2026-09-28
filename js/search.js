@@ -2,15 +2,15 @@
 (function () {
   'use strict';
 
-  var lang = /\/en\//.test(location.pathname) ? 'en' : 'es';
+  var lang = /\/en\//.test(location.pathname) ? 'en' : (/\/pt\//.test(location.pathname) ? 'pt' : 'es');
   var base = (function () {
     // fetch base to site root for the JSON index
     var p = location.pathname;
-    if (/\/en\/news\//.test(p) || /\/noticias\//.test(p)) return '../../';
-    if (/\/en\//.test(p)) return '../';
+    if (/\/en\/news\//.test(p) || /\/noticias\//.test(p) || /\/pt\/noticias\//.test(p)) return '../../';
+    if (/\/en\//.test(p) || /\/pt\//.test(p)) return '../';
     return '';
   })();
-  var linkBase = /\/(en\/news|noticias)\//.test(location.pathname) ? '../' : '';
+  var linkBase = /\/(en\/news|noticias|pt\/noticias)\//.test(location.pathname) ? '../' : '';
 
   var I18N = {
     en: {
@@ -19,6 +19,13 @@
       nores: 'No results for',
       close: 'Close',
       results: 'results'
+    },
+    pt: {
+      placeholder: 'Pesquisar na MEBO\u2026',
+      hint: 'Digite para pesquisar em p\u00e1ginas e not\u00edcias',
+      nores: 'Sem resultados para',
+      close: 'Fechar',
+      results: 'resultados'
     },
     es: {
       placeholder: 'Buscar en MEBO…',

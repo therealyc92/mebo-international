@@ -1,0 +1,65 @@
+{
+  "product": {
+    "hero": {
+      "title": "Pomada para Feridas MEBO",
+      "lead": "Nosso carro-chefe em medicina regenerativa tópica para queimaduras e feridas."
+    },
+    "s1": {
+      "eyebrow": "Visão Geral",
+      "h2": "Pomada Tópica para Queimaduras e Feridas",
+      "p1": "A Pomada para Feridas MEBO é um medicamento tópico para o tratamento de queimaduras e feridas. Combina múltiplos ingredientes ativos de origem natural com uma forma farmacêutica patentada.",
+      "p2": "A pomada proporciona um ambiente úmido fisiológico, liquefaz e remove tecidos necróticos, reduz a dor, previne e controla infecções, previne e minimiza a formação de cicatrizes e promove a regeneração da pele in situ."
+    },
+    "s2": {
+      "eyebrow": "Composição",
+      "h2": "O Que Há Dentro"
+    },
+    "s3": {
+      "eyebrow": "Indicações",
+      "h2": "Para Que É Usada"
+    },
+    "s4": {
+      "eyebrow": "Mecanismo de Ação",
+      "h2": "O Ambiente Ideal para a Cicatrização",
+      "lead": "Sete ações complementares apoiam a ferida da proteção à regeneração."
+    },
+    "s5": {
+      "eyebrow": "Visual",
+      "h2": "A Medicina Regenerativa em Ação",
+      "lead": "Uma explicação animada de como a tecnologia da medicina regenerativa atua no nível celular."
+    },
+    "s6": {
+      "eyebrow": "Protocolo de Troca de Curativo",
+      "h2": "Como Aplicar a MEBO",
+      "lead": "Três métodos de aplicação, escolhidos conforme o tipo e a condição da ferida. Limpe a ferida com cuidado — nunca use soluções estéreis ou antissépticos."
+    },
+    "s7": {
+      "eyebrow": "Linhas de Produtos",
+      "h2": "Mais do MEBO Group",
+      "lead": "Além da nossa pomada carro-chefe, a MEBO estende a ciência regenerativa a cinco categorias de produtos."
+    },
+    "cta": {
+      "h2": "Precisa de Mais Informações?",
+      "p": "Acesse recursos profissionais, dados clínicos completos e documentação técnica para profissionais de saúde."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Fale Conosco",
+      "lead": "Agradecemos o seu interesse e apoio. Se tiver dúvidas, sugestões ou interesse em parcerias, entre em contato com nosso Gerente Regional para a América Latina pelos canais abaixo."
+    },
+    "s1": {
+      "eyebrow": "Contato",
+      "h2": "Informações de Contato",
+      "lead": "Fale diretamente com nosso Gerente Regional para a América Latina — responderemos o mais breve possível."
+    },
+    "s2": {
+      "eyebrow": "Perguntas Frequentes",
+      "h2": "Consultas Comuns",
+      "lead": ""
+    },
+    "phone": "(86) 10-58700001",
+    "email": "contacto@mebo.com",
+    "distributor": "Tem interesse em distribuir os produtos MEBO no seu mercado? Escreva para <a href=\"mailto:contacto@mebo.com?subject=Distribution%20Inquiry\">contacto@mebo.com</a> para explorar oportunidades de colaboração."
+  }
+}

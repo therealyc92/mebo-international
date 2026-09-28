@@ -1,0 +1,169 @@
+{
+  "facts": [
+    {
+      "value": "45+",
+      "label": "Publicações Revisadas por Pares",
+      "source": "Indexadas em mais de 70 países"
+    },
+    {
+      "value": "70+",
+      "label": "Países com Experiência Clínica",
+      "source": "Na América Latina e em quatro continentes"
+    }
+  ],
+  "rct_cards": [
+    {
+      "badge": "PU",
+      "title": "Úlceras por Pressão — Estágios III e IV",
+      "metrics": [
+        {
+          "label": "Taxa de Cicatrização",
+          "unit": "%",
+          "mebo_label": "MEBO",
+          "mebo_width": "98.3",
+          "mebo_value": "98.3",
+          "ctrl_label": "Alginato de Prata",
+          "ctrl_width": "92.2",
+          "ctrl_value": "92.2",
+          "note": "Quanto maior, melhor"
+        },
+        {
+          "label": "Tempo de Cicatrização",
+          "unit": "dias",
+          "mebo_label": "MEBO",
+          "mebo_width": "76.7",
+          "mebo_value": "46",
+          "ctrl_label": "Alginato de Prata",
+          "ctrl_width": "80.5",
+          "ctrl_value": "48.29",
+          "note": "Quanto menor, melhor"
+        },
+        {
+          "label": "Trocas de Curativo",
+          "unit": "número de trocas",
+          "mebo_label": "MEBO",
+          "mebo_width": "78.3",
+          "mebo_value": "43.05",
+          "ctrl_label": "Alginato de Prata",
+          "ctrl_width": "86.2",
+          "ctrl_value": "47.39",
+          "note": "Quanto menor, melhor"
+        },
+        {
+          "label": "Custo do Tratamento",
+          "unit": "USD por caso",
+          "mebo_label": "MEBO",
+          "mebo_width": "37.4",
+          "mebo_value": "157.09",
+          "ctrl_label": "Alginato de Prata",
+          "ctrl_width": "93.2",
+          "ctrl_value": "391.48",
+          "note": "Quanto menor, melhor"
+        }
+      ],
+      "cite_html": "Chen X, Tao S, Xu H, Ji X. <em>Efficacy of Moist Exposed Burn Ointment combined with MEBO Wound and Ulcer Dressing in the Treatment of Stage III & IV Pressure Ulcers.</em> The Chinese Journal of Burns Wounds & Surface Ulcers. 2017;29(5)."
+    },
+    {
+      "badge": "DFU",
+      "title": "Úlceras de Pé Diabético — Wagner 1 a 4",
+      "metrics": [
+        {
+          "label": "Taxa de Eficácia Total em 60 Dias",
+          "unit": "%",
+          "mebo_label": "MEBO",
+          "mebo_width": "100.0",
+          "mebo_value": "100",
+          "ctrl_label": "Silicone Suave",
+          "ctrl_width": "81.7",
+          "ctrl_value": "81.67",
+          "note": "Quanto maior, melhor"
+        },
+        {
+          "label": "Área da Ferida no Dia 30",
+          "unit": "cm²",
+          "mebo_label": "MEBO",
+          "mebo_width": "59.0",
+          "mebo_value": "0.59",
+          "ctrl_label": "Silicone Suave",
+          "ctrl_width": "84.0",
+          "ctrl_value": "0.84",
+          "note": "Quanto menor, melhor"
+        },
+        {
+          "label": "Tempo de Cicatrização",
+          "unit": "dias",
+          "mebo_label": "MEBO",
+          "mebo_width": "86.7",
+          "mebo_value": "56.35",
+          "ctrl_label": "Silicone Suave",
+          "ctrl_width": "89.6",
+          "ctrl_value": "58.24",
+          "note": "Quanto menor, melhor"
+        },
+        {
+          "label": "Escore de Cicatriz (Vancouver)",
+          "unit": "pontos — quanto menor, melhor",
+          "mebo_label": "MEBO",
+          "mebo_width": "65.3",
+          "mebo_value": "5.88",
+          "ctrl_label": "Silicone Suave",
+          "ctrl_width": "84.2",
+          "ctrl_value": "7.58",
+          "note": "Quanto menor, melhor"
+        }
+      ],
+      "cite_html": "Liu Y, Wang Y, Shan P. <em>Observation on the Clinical Efficacy of MEBT/MEBO in the Treatment of Diabetic Foot.</em> The Chinese Journal of Burns Wounds & Surface Ulcers. 2019;31(3)."
+    }
+  ],
+  "studies": [
+    {
+      "title": "A Comparative Study of the Wound Healing Properties of Moist Exposed Burn Ointment (MEBO) and Silver Sulphadiazine",
+      "summary": "Propriedades comparadas de cicatrização de feridas da MEBO versus sulfadiazina de prata em queimaduras.",
+      "source": "J Wound Care / PMC3188221",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3188221/",
+      "link_label": "Ver"
+    },
+    {
+      "title": "Moist Exposed Burn Ointment Accelerates Diabetes-related Wound Healing by Promoting Re-epithelialization",
+      "summary": "A MEBO promove a reepitelização em feridas relacionadas ao diabetes.",
+      "source": "Frontiers in Medicine, 2022",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2022.1042015/full",
+      "link_label": "Ver"
+    },
+    {
+      "title": "A Controlled Randomized Trial Assessing Regenerative Therapy in Healing of Chronic Pressure Ulcers",
+      "summary": "Terapia regenerativa na cicatrização de úlceras por pressão crônicas.",
+      "source": "Randomised Controlled Trial (PDF)",
+      "url": "https://d1wqtxts1xzle7.cloudfront.net/79174492/a-controlled-randomized-trial-assessing-regenerative-therapy-in-healing-ofchronic-pressure-ulcers-libre.pdf?1642698021=&response-content-disposition=inline%3B+filename%3DA_Controlled_Randomized_Trial_Assessing.pdf&Expires=1787906177&Signature=crghJ-a3QdUR5NzwS8gNzLunmhD368fmkOljI1g8Af-ev1zOqNBTAqfxoBdCpFh~I0dsOjeoKr05-Rsm1QEmzAX0e1uQJjFU1uO6caMwnlXvpUM1MzM6jbCo1mVMONzfmZlw8PcaME~zwKidakT7ml1BCXaSHnkidu0RTj0Bqf0j~0MMsD98f1Hp7nKPQxTBNNeeA9G9iBaHb-K84~aO3cLDU52Z6bRA7S063mNbfHXW4zIeA89mJTM1Uo7dcE~WOJdhHiJIrroPajHyyQW2CtZLjRgxca1OypCJbW7uOYDh4mrfmvU9D06IFGz0bsJ2QUv5blyngUM1LljZnDySiQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+      "link_label": "Ver"
+    },
+    {
+      "title": "Moist Occlusive Dressing (Aquacel® Ag) versus Moist Open Dressing (MEBO®) in the Management of Partial-thickness Facial Burns: A Comparative Study in Ain Shams University",
+      "summary": "Curativo úmido aberto (MEBO) versus Aquacel Ag oclusivo em queimaduras faciais.",
+      "source": "Burns, 2011",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0305417911003081?via%3Dihub",
+      "link_label": "Ver"
+    },
+    {
+      "title": "The Effect of Moist and Moist Exposed Dressings on Healing and Barrier Function Restoration of Partial Thickness Wounds",
+      "summary": "Curativos úmidos versus úmidos expostos na cicatrização e restauração da função de barreira.",
+      "source": "European Journal of Plastic Surgery, 2002",
+      "url": "https://link.springer.com/article/10.1007/s00238-002-0460-y",
+      "link_label": "Ver"
+    },
+    {
+      "title": "Benefit–Cost Analysis of Moist Exposed Burn Ointment",
+      "summary": "Avaliação econômico-sanitária da pomada para queimaduras de exposição úmida.",
+      "source": "Burns, 2002",
+      "url": "https://www.sciencedirect.com/science/article/pii/S030541790200075X",
+      "link_label": "Ver"
+    },
+    {
+      "title": "Moist Exposed Burn Ointment for Treating Pressure Ulcers",
+      "summary": "Revisão de evidências da pomada para queimaduras de exposição úmida no cuidado de úlceras por pressão.",
+      "source": "PMC5521936",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5521936/",
+      "link_label": "Ver"
+    }
+  ]
+}

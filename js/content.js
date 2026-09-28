@@ -105,11 +105,13 @@
     july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
     enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6,
     julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10,
-    noviembre: 11, diciembre: 12
+    noviembre: 11, diciembre: 12,
+    janeiro: 1, fevereiro: 2, março: 3, maio: 5, junho: 6,
+    julho: 7, setembro: 9, outubro: 10, novembro: 11, dezembro: 12
   };
   function storyDateKey(s) {
     if (!s) return '';
-    var m = /^\s*(\d{1,2})\s+de\s+([A-Za-z\u00e1\u00e9\u00ed\u00f3\u00fa\u00f1]+)\s+de\s+(\d{4})\s*$/i.exec(s);
+    var m = /^\s*(\d{1,2})\s+de\s+([A-Za-z\u00e1\u00e9\u00ed\u00f3\u00fa\u00f1\u00e7\u00e3\u00f5\u00ea\u00e2]+)\s+de\s+(\d{4})\s*$/i.exec(s);
     if (m && STORY_MONTHS[m[2].toLowerCase()]) {
       return m[3] + '-' + ('0' + STORY_MONTHS[m[2].toLowerCase()]).slice(-2) + '-' + ('0' + m[1]).slice(-2);
     }

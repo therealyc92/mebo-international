@@ -1,0 +1,106 @@
+{
+  "slides": [
+    {
+      "background": "../assets/hero/isbi-santiago.jpg",
+      "badge": {
+        "type": "image",
+        "image": "../assets/partners/isbi.png",
+        "alt": "ISBI",
+        "title": "Congresso ISBI 2026",
+        "subtitle": "Santiago, Chile · 11–15 de out."
+      },
+      "title_html": "Encontre-nos no<br><span class=\"apec-highlight\">ISBI 2026</span>",
+      "title_class": "",
+      "extra_class": "hero-slide--photo",
+      "subtitle": "A MEBO International participará do Congresso da Sociedade Internacional de Lesões por Queimadura (ISBI) em Santiago, Chile, de 11 a 15 de outubro de 2026 — compartilhando a medicina regenerativa com a comunidade global de tratamento de queimaduras.",
+      "actions": [
+        {
+          "label": "Fale com a Equipe",
+          "href": "contato.html",
+          "style": "accent"
+        },
+        {
+          "label": "Nossa História",
+          "href": "sobre-mebo.html",
+          "style": "light"
+        }
+      ]
+    },
+    {
+      "background": "../assets/hero/apec-goldengate.jpg",
+      "badge": {
+        "type": "image",
+        "image": "../assets/hero/apec-2023-logo.png",
+        "alt": "APEC 2023",
+        "title": "APEC 2023",
+        "subtitle": "Estados Unidos"
+      },
+      "title_html": "APEC 2023<br><span class=\"apec-highlight\">Parceiro Empresarial</span>",
+      "title_class": "",
+      "extra_class": "hero-slide--photo",
+      "subtitle": "A MEBO International atuou como parceira empresarial oficial da APEC 2023 em São Francisco — promovendo a colaboração global em medicina regenerativa e inovação em saúde.",
+      "actions": [
+        {
+          "label": "Nossa Jornada na APEC",
+          "href": "noticias.html#apec",
+          "style": "accent"
+        },
+        {
+          "label": "Nossa História",
+          "href": "sobre-mebo.html",
+          "style": "light"
+        }
+      ]
+    },
+    {
+      "background": "../assets/hero/webinar-collage.jpg",
+      "badge": {
+        "type": "icon",
+        "icon": "webinar",
+        "title": "Série de Webinars de Medicina Regenerativa",
+        "subtitle": "América Latina · Online"
+      },
+      "title_html": "Webinars para a<br><span class=\"apec-highlight\">América Latina</span>",
+      "title_class": "",
+      "extra_class": "hero-slide--photo hero-slide--collage",
+      "subtitle": "Uma série contínua de seminários online que leva a tecnologia médica regenerativa a equipes clínicas de toda a América Latina — sessões práticas sobre o cuidado de feridas crônicas no âmbito da cooperação da APEC.",
+      "actions": [
+        {
+          "label": "Leia as Últimas",
+          "href": "noticias.html",
+          "style": "accent"
+        },
+        {
+          "label": "Nossa História",
+          "href": "sobre-mebo.html",
+          "style": "light"
+        }
+      ]
+    },
+    {
+      "background": "/assets/uploads/微信图片_20260903150232_820_772.png",
+      "badge": {
+        "type": "icon",
+        "icon": "dna",
+        "title": "Mais de 40 Anos de Medicina Regenerativa",
+        "subtitle": "MEBO International · Mais de 70 Países"
+      },
+      "title_html": "Pioneiro no Campo da<br><span class=\"apec-highlight\">Ciência da Regeneração da Vida.</span>",
+      "title_class": "hero-h1--long",
+      "extra_class": "hero-slide--photo",
+      "subtitle": "De úlceras de pé diabético e lesões por pressão a queimaduras, a MEBO apoia a fisiologia do reparo tecidual — mais de 40 anos de medicina regenerativa em mais de 70 países.",
+      "actions": [
+        {
+          "label": "Conheça Nossos Produtos",
+          "href": "produto.html",
+          "style": "accent"
+        },
+        {
+          "label": "Explore Nossa Tecnologia",
+          "href": "tecnologia.html",
+          "style": "light"
+        }
+      ]
+    }
+  ]
+}
