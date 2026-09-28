@@ -93,8 +93,8 @@ collections:
             minimize_collapsed: true
             fields: &news_fields
               - { label: "标识(slug)", name: slug, widget: string, hint: "唯一英文小写短横线标识,如 med-2026-xxxx;不要与其他条目重复" }
-              - { label: "分类", name: cat, widget: select, options: [{ label: "APEC", value: apec }, { label: "医学", value: med }, { label: "全球项目", value: gp }, { label: "社会责任", value: csr }] }
-              - { label: "分类显示名", name: cat_label, widget: string, hint: "如 APEC / Medicina / Programas Globales / RSC" }
+              - { label: "分类", name: cat, widget: select, options: [{ label: "APEC", value: apec }, { label: "拉美(LATAM)", value: latam }, { label: "全球项目", value: gp }, { label: "社会责任", value: csr }] }
+              - { label: "分类显示名", name: cat_label, widget: string, hint: "如 APEC / LATAM / Programas Globales / RSC" }
               - { label: "日期(显示)", name: date, widget: string, hint: "按页面语言写,如 2 de junio de 2026" }
               - { label: "标题", name: title, widget: string }
               - { label: "摘要", name: excerpt, widget: text }
