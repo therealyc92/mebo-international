@@ -40,11 +40,14 @@
     document.head.appendChild(s);
   }
 
-  // Public API: track event
+  // Public API: track event (auto-attaches language + page path to every event)
   function trackEvent(eventName, params) {
     if (!hasAnalyticsConsent()) return;
     if (typeof window.gtag !== 'function') return;
-    window.gtag('event', eventName, params || {});
+    params = params || {};
+    if (!params.language) params.language = document.documentElement.lang || 'unknown';
+    if (!params.page_path) params.page_path = window.location.pathname;
+    window.gtag('event', eventName, params);
   }
 
   // ---------- Auto-tracking setups ----------
@@ -185,11 +188,14 @@
   // 6. Page metadata enrichment
   function enrichPageView() {
     var lang = document.documentElement.lang || 'unknown';
+    var is404 = /404\.html/.test(window.location.pathname) ||
+      document.title.indexOf('404') > -1;
     var pageType = 'standard';
-    if (document.querySelector('.hcp-gate')) pageType = 'hcp_gated';
-    if (document.querySelector('.hero')) pageType = 'home';
-    if (document.querySelector('.page-hero')) pageType = 'inner_page';
-    if (document.querySelector('#contact-form')) pageType = 'contact';
+    if (is404) pageType = '404_error';
+    else if (document.querySelector('.hcp-gate')) pageType = 'hcp_gated';
+    else if (document.querySelector('.hero')) pageType = 'home';
+    else if (document.querySelector('.page-hero')) pageType = 'inner_page';
+    else if (document.querySelector('#contact-form')) pageType = 'contact';
 
     setTimeout(function () {
       trackEvent('page_view_enriched', {
@@ -199,6 +205,12 @@
         has_contact_form: !!document.querySelector('#contact-form'),
         sections_count: document.querySelectorAll('section').length
       });
+      if (is404) {
+        trackEvent('page_not_found', {
+          attempted_url: window.location.pathname + window.location.search,
+          referrer: document.referrer || '(direct)'
+        });
+      }
     }, 1000);
   }
 
@@ -251,6 +263,175 @@
     });
   }
 
+  // 10. Site search (search.js overlay)
+  function initSearchTracking() {
+    // Overlay open
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('.nav-search')) {
+        trackEvent('search_open', { page: window.location.pathname });
+      }
+    });
+    // Query submitted (debounced keystrokes -> one 'search' event per query)
+    var debounceTimer = null;
+    var lastTracked = '';
+    document.addEventListener('input', function (e) {
+      if (!e.target || !e.target.classList || !e.target.classList.contains('search-input')) return;
+      var q = (e.target.value || '').trim();
+      if (q.length < 2) return;
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function () {
+        if (q === lastTracked) return;
+        lastTracked = q;
+        trackEvent('search', { search_term: q });
+      }, 900);
+    });
+    // Result click
+    document.addEventListener('click', function (e) {
+      var item = e.target.closest('.search-item');
+      if (!item) return;
+      var input = document.querySelector('.search-input');
+      var items = document.querySelectorAll('.search-item');
+      var pos = Array.prototype.indexOf.call(items, item) + 1;
+      trackEvent('select_search_result', {
+        search_term: input ? (input.value || '').trim() : '',
+        result_url: item.getAttribute('href') || '',
+        result_position: pos
+      });
+    });
+  }
+
+  // 11. News category filter
+  function initNewsFilterTracking() {
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('.news-filter button[data-cat]');
+      if (!btn) return;
+      trackEvent('news_filter', {
+        category: btn.getAttribute('data-cat'),
+        filter_label: (btn.textContent || '').trim()
+      });
+    });
+  }
+
+  // 12. News list pagination
+  function initNewsPagerTracking() {
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('#pager-prev, #pager-next');
+      if (!btn) return;
+      var input = document.getElementById('pager-input');
+      trackEvent('news_pager', {
+        direction: btn.id === 'pager-prev' ? 'prev' : 'next',
+        from_page: input ? parseInt(input.value, 10) || 1 : 1
+      });
+    });
+    document.addEventListener('change', function (e) {
+      if (e.target && e.target.id === 'pager-input') {
+        trackEvent('news_pager', {
+          direction: 'jump',
+          to_page: parseInt(e.target.value, 10) || 1
+        });
+      }
+    });
+  }
+
+  // 13. Featured story carousel
+  function initCarouselTracking() {
+    document.addEventListener('click', function (e) {
+      var dot = e.target.closest('.fc-dot');
+      if (dot) {
+        trackEvent('carousel_interaction', {
+          action: 'dot_nav',
+          slide_index: parseInt(dot.getAttribute('data-slide'), 10) + 1 || 0,
+          slide_title: dot.getAttribute('aria-label') || ''
+        });
+        return;
+      }
+      var slide = e.target.closest('.fc-slide');
+      if (slide) {
+        var t = slide.querySelector('.fc-title, h3, h2');
+        trackEvent('carousel_interaction', {
+          action: 'slide_click',
+          slide_title: t ? (t.textContent || '').trim().substring(0, 80) : (slide.getAttribute('href') || '')
+        });
+      }
+    });
+  }
+
+  // 14. Video engagement (media events don't bubble -> capture phase)
+  function initVideoTracking() {
+    function videoName(v) {
+      return v.getAttribute('aria-label') || v.id ||
+        (v.currentSrc || v.src || '').split('/').pop() || 'unknown';
+    }
+    document.addEventListener('play', function (e) {
+      if (e.target.tagName !== 'VIDEO') return;
+      trackEvent('video_play', {
+        video_title: videoName(e.target),
+        video_location: getElementSection(e.target)
+      });
+    }, true);
+    document.addEventListener('timeupdate', function (e) {
+      var v = e.target;
+      if (v.tagName !== 'VIDEO' || !v.duration) return;
+      var pct = (v.currentTime / v.duration) * 100;
+      if (pct >= 50 && !v._meboTracked50) {
+        v._meboTracked50 = true;
+        trackEvent('video_progress', {
+          video_title: videoName(v),
+          percent: 50
+        });
+      }
+    }, true);
+    document.addEventListener('ended', function (e) {
+      if (e.target.tagName !== 'VIDEO') return;
+      trackEvent('video_complete', {
+        video_title: videoName(e.target)
+      });
+    }, true);
+  }
+
+  // 15. Contact channels: floating widget + any mailto/WhatsApp link
+  function initContactChannelTracking() {
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      var href = link.getAttribute('href') || '';
+      var isFloat = !!link.closest('.contact-float');
+      if (href.indexOf('https://wa.me/') === 0) {
+        trackEvent('contact_click', {
+          channel: 'whatsapp',
+          source: isFloat ? 'float_widget' : 'page',
+          link_location: getElementSection(link)
+        });
+      } else if (href.indexOf('mailto:') === 0) {
+        trackEvent('contact_click', {
+          channel: 'email',
+          source: isFloat ? 'float_widget' : 'page',
+          email_address: href.replace('mailto:', '').split('?')[0]
+        });
+      }
+    });
+  }
+
+  // 16. File downloads (PDF studies, etc.)
+  function initFileDownloadTracking() {
+    var exts = ['.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.zip'];
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      var href = (link.getAttribute('href') || '').split('?')[0].toLowerCase();
+      for (var i = 0; i < exts.length; i++) {
+        if (href.slice(-exts[i].length) === exts[i]) {
+          trackEvent('file_download', {
+            file_name: decodeURIComponent(href.split('/').pop()),
+            file_extension: exts[i].replace('.', ''),
+            link_url: link.getAttribute('href')
+          });
+          return;
+        }
+      }
+    });
+  }
+
   // ---------- Public API ----------
   window.MEBOAnalytics = {
     track: trackEvent,
@@ -299,6 +480,13 @@
     initReadingProgressTracking();
     initExternalLinkTracking();
     initCookieConsentTracking();
+    initSearchTracking();
+    initNewsFilterTracking();
+    initNewsPagerTracking();
+    initCarouselTracking();
+    initVideoTracking();
+    initContactChannelTracking();
+    initFileDownloadTracking();
     enrichPageView();
   }
 
