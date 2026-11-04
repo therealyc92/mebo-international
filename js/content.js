@@ -291,6 +291,7 @@
       set('art-cat', esc(it.cat_label));
       set('art-title', esc(it.title));
       set('art-date', esc(it.date));
+      if (it.author) set('art-author', esc(it.author));
       set('art-tags', String(it.tags || '').split(',').filter(function (t) { return t.trim(); })
         .map(function (t) { return '<span class="article-tag">' + esc(t.trim().toUpperCase()) + '</span>'; }).join(''));
       var fig = document.getElementById('art-figure');
