@@ -1,27 +1,27 @@
 {
   "slides": [
     {
-      "background": "assets/hero/isbi-santiago.jpg",
+      "background": "assets/hero/b20-g20.jpg",
       "badge": {
-        "type": "image",
-        "image": "assets/partners/isbi.png",
-        "alt": "ISBI",
-        "title": "Congreso ISBI 2026",
-        "subtitle": "Santiago, Chile · Oct 11–15"
+        "type": "icon",
+        "icon": "g20",
+        "alt": "",
+        "title": "B20 Estados Unidos 2026",
+        "subtitle": "El foro empresarial del G20"
       },
-      "title_html": "MEBO International en el<br><span class=\"apec-highlight\">23.º Congreso de ISBI 2026</span>",
+      "title_html": "Del B20 al G20:<br><span class=\"apec-highlight\">conectando con América Latina</span>",
       "title_class": "",
       "extra_class": "hero-slide--photo",
-      "subtitle": "Del 11 al 15 de octubre de 2026, MEBO International participó en el 23.º Congreso de ISBI en Santiago de Chile. El webinar sobre tecnología de medicina regenerativa registró un lleno total, con ponencias de expertos de China y Perú; el presidente de ISBI, junto con representantes de instituciones de África y América Latina, visitaron el stand de MEBO International para conocer e intercambiar impresiones.",
+      "subtitle": "MEBO Group participa en el ciclo del B20 Estados Unidos 2026, llevando la medicina regenerativa al diálogo económico global del G20, con especial atención a las economías latinoamericanas del grupo: México, Brasil y Argentina.",
       "actions": [
         {
-          "label": "Contactar al Equipo",
-          "href": "contacto.html",
+          "label": "Leer la Noticia",
+          "href": "noticias/articulo.html?slug=gp-2026-b20-usa-partner",
           "style": "accent"
         },
         {
           "label": "Nuestra Historia",
-          "href": "noticias/articulo.html?slug=gp-2026-isbi-santiago",
+          "href": "sobre-mebo.html",
           "style": "light"
         }
       ]
@@ -48,6 +48,32 @@
         {
           "label": "Nuestra Historia",
           "href": "sobre-mebo.html",
+          "style": "light"
+        }
+      ]
+    },
+    {
+      "background": "assets/hero/isbi-santiago.jpg",
+      "badge": {
+        "type": "image",
+        "image": "assets/partners/isbi.png",
+        "alt": "ISBI",
+        "title": "Congreso ISBI 2026",
+        "subtitle": "Santiago, Chile · Oct 11–15"
+      },
+      "title_html": "MEBO International en el<br><span class=\"apec-highlight\">23.º Congreso de ISBI 2026</span>",
+      "title_class": "",
+      "extra_class": "hero-slide--photo",
+      "subtitle": "Del 11 al 15 de octubre de 2026, MEBO International participó en el 23.º Congreso de ISBI en Santiago de Chile. El webinar sobre tecnología de medicina regenerativa registró un lleno total, con ponencias de expertos de China y Perú; el presidente de ISBI, junto con representantes de instituciones de África y América Latina, visitaron el stand de MEBO International para conocer e intercambiar impresiones.",
+      "actions": [
+        {
+          "label": "Contactar al Equipo",
+          "href": "contacto.html",
+          "style": "accent"
+        },
+        {
+          "label": "Nuestra Historia",
+          "href": "noticias/articulo.html?slug=gp-2026-isbi-santiago",
           "style": "light"
         }
       ]

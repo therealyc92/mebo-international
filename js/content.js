@@ -40,6 +40,14 @@
       + '<path d="M20 55 L40 5 L60 55" stroke="#5eead4" stroke-width="3" fill="none" stroke-linecap="round"/>'
       + '<path d="M28 40 L52 40" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>'
       + '<text x="62" y="18" fill="#5eead4" font-family="Poppins" font-weight="700" font-size="16">2023</text></svg>',
+    g20: '<svg viewBox="0 0 80 60" fill="none" aria-hidden="true">'
+      + '<circle cx="30" cy="30" r="21" stroke="#5eead4" stroke-width="2.5"/>'
+      + '<ellipse cx="30" cy="30" rx="9" ry="21" stroke="#5eead4" stroke-width="1.5"/>'
+      + '<path d="M9 30 L51 30" stroke="#5eead4" stroke-width="1.5"/>'
+      + '<path d="M14 16 Q30 23 46 16" stroke="#5eead4" stroke-width="1" fill="none"/>'
+      + '<path d="M14 44 Q30 37 46 44" stroke="#5eead4" stroke-width="1" fill="none"/>'
+      + '<text x="56" y="29" fill="#5eead4" font-family="Poppins" font-weight="700" font-size="17">G20</text>'
+      + '<text x="57" y="43" fill="#5eead4" font-family="Poppins" font-weight="400" font-size="9">B20</text></svg>',
     webinar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><polygon points="10 8 15 10.5 10 13" fill="currentColor" stroke="none"/><line x1="8" y1="21" x2="16" y2="21"/></svg>',
     dna: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 3c0 5 16 5 16 10S4 18 4 23"/><path d="M20 3c0 5-16 5-16 10s16 5 16 10" transform="translate(0 -2)"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="13" x2="16" y2="13"/></svg>'
   };
