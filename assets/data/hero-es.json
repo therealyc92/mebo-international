@@ -3,9 +3,9 @@
     {
       "background": "assets/hero/b20-g20.jpg",
       "badge": {
-        "type": "icon",
-        "icon": "g20",
-        "alt": "",
+        "type": "image",
+        "image": "assets/hero/b20-usa-2026-logo.png",
+        "alt": "B20 U.S.A. 2026",
         "title": "B20 Estados Unidos 2026",
         "subtitle": "El foro empresarial del G20"
       },
